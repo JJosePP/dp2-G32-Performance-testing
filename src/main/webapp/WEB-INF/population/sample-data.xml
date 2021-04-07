@@ -39,5 +39,36 @@
 		<property name="text" value="Just turning 50!"/>
 		<property name="info"><null/></property>		
 	</bean>
+	
+	
+	<bean id="task01" class="acme.entities.tasks.Task">
+		<property name="title" value="Create an entity"/>
+		<property name="description" value="Create your first entity"/>
+		<property name="startExecution" value="2021/07/27 12:02"/>
+		<property name="endExecution" value="2021/09/11 12:02"/>
+		<property name="workload" value="23.15"/>
+		<property name="info" value="http://www.example.org"/>
+		<property name="isPrivate" value="false"/>
+	</bean>
+	
+	<bean id="task02" class="acme.entities.tasks.Task">
+		<property name="title" value="Just another example"/>
+		<property name="description" value="Is this a joke?"/>
+		<property name="startExecution" value="2021/08/12 9:32"/>
+		<property name="endExecution" value="2021/11/03 18:26"/>
+		<property name="workload" value="172.47"/>
+		<property name="info"><null/></property>
+		<property name="isPrivate" value="true"/>
+	</bean>
+	
+	<bean id="task03" class="acme.entities.tasks.Task">
+		<property name="title" value="Customize your webpage"/>
+		<property name="description" value="Try some cool stuff"/>
+		<property name="startExecution" value="2021/06/05 22:33"/>
+		<property name="endExecution" value="2022/02/11 7:46"/>
+		<property name="workload" value="98.59"/>
+		<property name="info" value="http://www.example.org"/>
+		<property name="isPrivate"><null/></property>
+	</bean>
 
 </beans>
