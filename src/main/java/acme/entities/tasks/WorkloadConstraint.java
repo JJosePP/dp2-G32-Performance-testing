@@ -1,0 +1,20 @@
+package acme.entities.tasks;
+
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+import javax.validation.Constraint;
+import javax.validation.Payload;
+
+@Documented
+@Constraint(validatedBy = WorkloadValidator.class)
+@Target({ElementType.METHOD, ElementType.FIELD})
+@Retention(RetentionPolicy.RUNTIME)
+public @interface WorkloadConstraint {
+	String message() default "Workload can't fit in execution period";
+	Class<?>[] groups() default {};
+	Class<? extends Payload>[] payload() default{};
+}
