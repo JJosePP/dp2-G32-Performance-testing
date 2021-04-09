@@ -6,7 +6,6 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.constraints.DecimalMax;
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.Future;
@@ -23,6 +22,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@TaskConstraint
 public class Task extends DomainEntity {
 	
 	// Serial version identifier ----------------------------------
@@ -42,7 +42,6 @@ public class Task extends DomainEntity {
 	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
 	@Future
-	@ExecutionPeriodConstraint
 	protected Date startExecution;
 	
 	@NotNull
@@ -51,10 +50,8 @@ public class Task extends DomainEntity {
 	protected Date endExecution;
 	
 	@NotNull
-	@Digits(integer = 2, fraction = 2)
+	@Digits(integer = 3, fraction = 2)
 	@DecimalMin(value="0.0", inclusive=true)
-	@DecimalMax(value="0.6", inclusive=true)
-	@WorkloadConstraint
 	protected BigDecimal workload;
 	
 	@URL

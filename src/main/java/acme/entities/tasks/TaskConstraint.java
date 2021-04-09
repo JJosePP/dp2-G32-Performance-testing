@@ -10,12 +10,14 @@ import javax.validation.Constraint;
 import javax.validation.Payload;
 
 @Documented
-@Constraint(validatedBy = ExecutionPeriodValidator.class)
-@Target({ElementType.METHOD, ElementType.FIELD})
+@Constraint(validatedBy = TaskValidator.class)
+@Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface ExecutionPeriodConstraint {
-	String message() default "Start must be before the end of the period";
-	Class<?>[] groups() default {};
-	Class<? extends Payload>[] payload() default{};
-}
+public @interface TaskConstraint {
+	String message() default "One or more attributes are incorrect";
+	
+    Class<?>[] groups() default {};
 
+    Class<? extends Payload>[] payload() default {};
+
+}
