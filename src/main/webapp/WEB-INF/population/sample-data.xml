@@ -49,6 +49,7 @@
 		<property name="workload" value="23.15"/>
 		<property name="info" value="http://www.example.org"/>
 		<property name="isPrivate" value="false"/>
+		<property name="isFinished" value="true"></property>
 	</bean>
 	
 	<bean id="task02" class="acme.entities.tasks.Task">
@@ -59,6 +60,7 @@
 		<property name="workload" value="172.47"/>
 		<property name="info"><null/></property>
 		<property name="isPrivate" value="true"/>
+		<property name="isFinished" value="false"></property>
 	</bean>
 	
 	<bean id="task03" class="acme.entities.tasks.Task">
@@ -68,7 +70,19 @@
 		<property name="endExecution" value="2022/02/11 7:46"/>
 		<property name="workload" value="98.59"/>
 		<property name="info" value="http://www.example.org"/>
-		<property name="isPrivate"><null/></property>
+		<property name="isPrivate" value="true"></property>
+		<property name="isFinished" value="true"></property>
+	</bean>
+	
+		<bean id="task04" class="acme.entities.tasks.Task">
+		<property name="title" value="Change style"/>
+		<property name="description" value="Try some cool stuff"/>
+		<property name="startExecution" value="2022/03/01 22:33"/>
+		<property name="endExecution" value="2022/04/05 7:46"/>
+		<property name="workload" value="32.59"/>
+		<property name="info" value="http://www.example.org"/>
+		<property name="isPrivate" value="false"></property>
+		<property name="isFinished" value="true"></property>
 	</bean>
 
 </beans>

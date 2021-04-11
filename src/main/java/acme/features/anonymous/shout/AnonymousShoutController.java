@@ -28,7 +28,7 @@ public class AnonymousShoutController extends AbstractController<Anonymous, Shou
 	@PostConstruct
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
-    super.addBasicCommand(BasicCommand.LIST, this.listService);
+		super.addBasicCommand(BasicCommand.LIST, this.listService);
 	}
 	
 }
