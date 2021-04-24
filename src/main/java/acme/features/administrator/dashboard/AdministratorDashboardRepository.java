@@ -1,5 +1,6 @@
 package acme.features.administrator.dashboard;
 
+import java.math.BigDecimal;
 import java.util.Collection;
 import java.util.Date;
 
@@ -27,10 +28,8 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select t from Task t")
 	Collection<Task> allTasks();
 	
-	@Query("select avg(t.executionPeriod) from Task t ")
-	Double averageTaskExecutionPeriod();
-	
-
+	@Query("select workload from Task t")
+	Collection<BigDecimal> allWorkloads();
 	//COMPLETAR:
 	
 }

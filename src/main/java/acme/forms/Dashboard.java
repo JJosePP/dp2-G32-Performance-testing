@@ -13,6 +13,7 @@
 package acme.forms;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -23,10 +24,14 @@ public class Dashboard implements Serializable {
 
 	protected static final long	serialVersionUID	= 1L;
 
-	Integer totalPublicTasks;
-	Integer totalPrivateTasks;
-	Integer totalFinishedTasks;
-	Integer totalNonFinishedTasks;
-	Double averageTaskExecutionPeriod;
-	Double deviationTaskExecutionPeriod;
+	
+	private Integer totalPublicTasks;
+	private Integer totalPrivateTasks;
+	private Integer totalFinishedTasks;
+	private Integer totalNonFinishedTasks;
+	private Double averageTaskExecutionPeriod;
+	private Double deviationTaskExecutionPeriod;
+	private Double minimunTaskExecutionPeriod;
+	private Double maximunTaskExecutionPeriod;
+	private BigDecimal averageTaskWorkloads;
 }

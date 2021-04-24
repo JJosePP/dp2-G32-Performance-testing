@@ -48,20 +48,20 @@
 		<th scope="row"><acme:message
 				code="administrator.dashboard.form.label.minimum-task-execution-periods" />
 		</th>
-		<td><acme:print value=""/></td>
+		<td><acme:print value="${minimunTaskExecutionPeriod}"/></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
 				code="administrator.dashboard.form.label.maximum-task-execution-periods" />
 		</th>
-		<td><acme:print value=""/></td>
+		<td><acme:print value="${maximunTaskExecutionPeriod}"/></td>
 	</tr>
 	
 	<tr>
 		<th scope="row"><acme:message
 				code="administrator.dashboard.form.label.average-task-workloads" />
 		</th>
-		<td><acme:print value=""/></td>
+		<td><acme:print value="${averageTaskWorkloads}"/></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message

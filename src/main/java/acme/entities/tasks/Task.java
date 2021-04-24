@@ -59,14 +59,4 @@ public class Task extends DomainEntity {
 	
 	protected Boolean isPrivate;
 	
-	// Derived Attributes ----------------------------------------------
-	
-	double executionPeriod;
-	
-	
-	
-	public void setExecutionPeriod() { //days
-		this.executionPeriod = (this.endExecution.getTime() - this.startExecution.getTime())  /  (8.64e7); //(1000 * 60 * 60 * 24)
-	}
-	
 }
