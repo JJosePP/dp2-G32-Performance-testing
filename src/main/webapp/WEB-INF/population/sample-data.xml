@@ -70,5 +70,15 @@
 		<property name="info" value="http://www.example.org"/>
 		<property name="isPrivate"><null/></property>
 	</bean>
+	
+	<bean id="task04" class="acme.entities.tasks.Task">
+		<property name="title" value="Customize your webpage"/>
+		<property name="description" value="Try some cool stuff"/>
+		<property name="startExecution" value="2021/06/05 22:34"/>
+		<property name="endExecution" value="2022/02/11 7:47"/>
+		<property name="workload" value="98.59"/>
+		<property name="info" value="http://www.example.org"/>
+		<property name="isPrivate" value="false"></property>
+	</bean>
 
 </beans>

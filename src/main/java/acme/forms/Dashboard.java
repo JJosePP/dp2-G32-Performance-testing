@@ -21,16 +21,12 @@ import lombok.Setter;
 @Setter
 public class Dashboard implements Serializable {
 
-	// Serialisation identifier -----------------------------------------------
-
 	protected static final long	serialVersionUID	= 1L;
 
-	// Attributes -------------------------------------------------------------
-
-
-
-	// Derived attributes -----------------------------------------------------
-
-	// Relationships ----------------------------------------------------------
-
+	Integer totalPublicTasks;
+	Integer totalPrivateTasks;
+	Integer totalFinishedTasks;
+	Integer totalNonFinishedTasks;
+	Double averageTaskExecutionPeriod;
+	Double deviationTaskExecutionPeriod;
 }

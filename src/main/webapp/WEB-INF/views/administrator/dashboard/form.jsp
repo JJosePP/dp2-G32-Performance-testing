@@ -12,37 +12,37 @@
 	<tr>
 		<th scope="row"><acme:message
 				code="administrator.dashboard.form.label.total-public-tasks" /></th>
-		<td><acme:print value=""/></td>
+		<td><acme:print value="${totalPublicTasks}"/></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
 				code="administrator.dashboard.form.label.total-private-tasks" /></th>
-		<td><acme:print value=""/></td>
+		<td><acme:print value="${totalPrivateTasks}"/></td>
 	</tr>
 	
 	<tr>
 		<th scope="row"><acme:message
 				code="administrator.dashboard.form.label.total-finished-tasks" /></th>
-		<td><acme:print value=""/></td>
+		<td><acme:print value="${totalFinishedTasks}"/></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
 				code="administrator.dashboard.form.label.total-non-finished-tasks" />
 		</th>
-		<td><acme:print value=""/></td>
+		<td><acme:print value="${totalNonFinishedTasks}"/></td>
 	</tr>
 	
 	<tr>
 		<th scope="row"><acme:message
 				code="administrator.dashboard.form.label.average-task-execution-periods" />
 		</th>
-		<td><acme:print value=""/></td>
+		<td><acme:print value="${averageTaskExecutionPeriod}"/></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
 				code="administrator.dashboard.form.label.deviation-task-execution-periods" />
 		</th>
-		<td><acme:print value=""/></td>
+		<td><acme:print value="${deviationTaskExecutionPeriod}"/></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
