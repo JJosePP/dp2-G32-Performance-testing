@@ -42,20 +42,18 @@ public class SpamShowService implements AbstractShowService<Anonymous, Spam>{
 		
 		Spam result;
 		
-		result = this.repository.findSpamById(12);
+		result = this.repository.findSpamById();
 		
 		return result;
 	}
 
 	public boolean esSpam(final Shout entity) {
 		
-		final Spam spamObject = this.repository.findSpamById(12);
-		System.out.println(spamObject);
+		final Spam spamObject = this.repository.findSpamById();
 		
 		final List<String> spamWords = Arrays.asList(spamObject.getWords().split(", "));
 		
 		final String[] shoutWords = entity.getText().replaceAll("(?![À-ÿ\\u00f1\\u00d1a-zA-Z0-9]).", "").toLowerCase().split(" ");
-		System.out.println(shoutWords[0]);
 		
 		Double numberSpamWords = 0.;
 		Double spamPercentaje;

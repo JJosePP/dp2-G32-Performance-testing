@@ -67,7 +67,7 @@ public class SpamUpdateService implements AbstractUpdateService<Administrator, S
 		
 		Spam result;
 		
-		result = this.repository.findSpamById(12);
+		result = this.repository.findSpamById();
 		
 		return result;
 	}

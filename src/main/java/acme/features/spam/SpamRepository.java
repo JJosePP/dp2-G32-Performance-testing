@@ -22,7 +22,7 @@ import acme.framework.repositories.AbstractRepository;
 public interface SpamRepository extends AbstractRepository {
 
 
-	@Query("select s from Spam s where s.id = ?1")
-	Spam findSpamById(int id);
+	@Query("select s from Spam s")
+	Spam findSpamById();
 
 }
