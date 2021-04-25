@@ -138,7 +138,7 @@
 		<property name="info" value="http://www.example.org"/>
 		<property name="isPrivate" value="false"></property>
 		<property name="isFinished" value="false"></property>
-
+	</bean>
 	
 	<bean id="spam01" class="acme.entities.spam.Spam">
 		<property name="words" value="sex, hard core, viagra, cialis, nigeria, you’ve won, million dollar"/>
