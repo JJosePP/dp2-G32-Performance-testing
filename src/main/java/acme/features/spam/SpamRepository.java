@@ -1,5 +1,5 @@
 /*
- * CustomCommand.java
+ * AdministratorUserAccountRepository.java
  *
  * Copyright (C) 2012-2021 Rafael Corchuelo.
  *
@@ -10,12 +10,19 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.components;
+package acme.features.spam;
 
-import acme.framework.components.Command;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 
-public enum CustomCommand implements Command {
-	
-	LIST_LAST_MONTH
+import acme.entities.spam.Spam;
+import acme.framework.repositories.AbstractRepository;
+
+@Repository
+public interface SpamRepository extends AbstractRepository {
+
+
+	@Query("select s from Spam s where s.id = ?1")
+	Spam findSpamById(int id);
 
 }
