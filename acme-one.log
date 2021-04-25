@@ -1,3 +1,7 @@
+
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 11324 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 19.535 seconds (JVM running for 24.056)
 ERROR [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task]
 WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task]
 ERROR [org.springframework.boot.SpringApplication] at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788): Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task]
@@ -31,6 +35,7 @@ INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting
 INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on LAPTOP-FU52PV4C with PID 11292 (C:\Users\Dani\OneDrive - UNIVERSIDAD DE SEVILLA\Escritorio\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by Dani in C:\Users\Dani\OneDrive - UNIVERSIDAD DE SEVILLA\Escritorio\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
 INFO [acme.Launcher] The following profiles are active: development,populator
 INFO [acme.Launcher] Started Launcher in 8.455 seconds (JVM running for 9.331)
+
 INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
 INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
 INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
@@ -60,6 +65,7 @@ INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
 INFO [acme.framework.utilities.DatabasePopulator] Validating task01 ... PASS
 INFO [acme.framework.utilities.DatabasePopulator] Validating task02 ... PASS
 INFO [acme.framework.utilities.DatabasePopulator] Validating task03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task05 ... PASS
 INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for shout01.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for shout02.
@@ -67,6 +73,7 @@ INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for shout03.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for task01.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for task02.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for task03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for task05.
 INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=6, version=0}
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=7, version=0}
@@ -74,6 +81,12 @@ INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.en
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=9, version=0}
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=10, version=0}
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=11, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=12, version=0}
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[dispatcherServlet]] at org.springframework.security.web.firewall.StrictHttpFirewall.rejectedBlocklistedUrls(StrictHttpFirewall.java:456): The request was rejected because the URL contained a potentially malicious String "//"
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.security.web.firewall.StrictHttpFirewall.rejectedBlocklistedUrls(StrictHttpFirewall.java:456): The request was rejected because the URL contained a potentially malicious String "//"
 INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
 INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on LAPTOP-FU52PV4C with PID 16044 (C:\Users\Dani\OneDrive - UNIVERSIDAD DE SEVILLA\Escritorio\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by Dani in C:\Users\Dani\OneDrive - UNIVERSIDAD DE SEVILLA\Escritorio\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
 INFO [acme.Launcher] The following profiles are active: development,populator
