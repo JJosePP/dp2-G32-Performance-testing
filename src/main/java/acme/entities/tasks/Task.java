@@ -69,6 +69,4 @@ public class Task extends DomainEntity {
 	protected UserAccount userAccount;
 
 	protected Boolean isFinished;
-
-
 }

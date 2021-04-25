@@ -1,7 +1,3 @@
-
-INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 11324 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
-INFO [acme.Launcher] The following profiles are active: development,populator
-INFO [acme.Launcher] Started Launcher in 19.535 seconds (JVM running for 24.056)
 ERROR [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task]
 WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task]
 ERROR [org.springframework.boot.SpringApplication] at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788): Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task]
@@ -31,6 +27,11 @@ INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousAnonymou
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorUserAccount = acme.framework.entities.UserAccount{id=3, version=0}
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAdministrator = acme.framework.entities.Administrator{id=4, version=0}
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAuthenticated = acme.framework.entities.Authenticated{id=5, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on LAPTOP-FU52PV4C with PID 12392 (C:\Users\Dani\OneDrive - UNIVERSIDAD DE SEVILLA\Escritorio\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by Dani in C:\Users\Dani\OneDrive - UNIVERSIDAD DE SEVILLA\Escritorio\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 11.074 seconds (JVM running for 12.374)
 INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
 INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on LAPTOP-FU52PV4C with PID 11292 (C:\Users\Dani\OneDrive - UNIVERSIDAD DE SEVILLA\Escritorio\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by Dani in C:\Users\Dani\OneDrive - UNIVERSIDAD DE SEVILLA\Escritorio\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
 INFO [acme.Launcher] The following profiles are active: development,populator
@@ -65,7 +66,7 @@ INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
 INFO [acme.framework.utilities.DatabasePopulator] Validating task01 ... PASS
 INFO [acme.framework.utilities.DatabasePopulator] Validating task02 ... PASS
 INFO [acme.framework.utilities.DatabasePopulator] Validating task03 ... PASS
-INFO [acme.framework.utilities.DatabasePopulator] Validating task05 ... PASS
+
 INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for shout01.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for shout02.
@@ -73,7 +74,7 @@ INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for shout03.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for task01.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for task02.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for task03.
-INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for task05.
+
 INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=6, version=0}
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=7, version=0}
@@ -81,12 +82,7 @@ INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.en
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=9, version=0}
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=10, version=0}
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=11, version=0}
-INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=12, version=0}
-INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
-ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[dispatcherServlet]] at org.springframework.security.web.firewall.StrictHttpFirewall.rejectedBlocklistedUrls(StrictHttpFirewall.java:456): The request was rejected because the URL contained a potentially malicious String "//"
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
-ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.security.web.firewall.StrictHttpFirewall.rejectedBlocklistedUrls(StrictHttpFirewall.java:456): The request was rejected because the URL contained a potentially malicious String "//"
+
 INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
 INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on LAPTOP-FU52PV4C with PID 16044 (C:\Users\Dani\OneDrive - UNIVERSIDAD DE SEVILLA\Escritorio\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by Dani in C:\Users\Dani\OneDrive - UNIVERSIDAD DE SEVILLA\Escritorio\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
 INFO [acme.Launcher] The following profiles are active: development,populator
@@ -112,6 +108,37 @@ INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousAnonymou
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorUserAccount = acme.framework.entities.UserAccount{id=3, version=0}
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAdministrator = acme.framework.entities.Administrator{id=4, version=0}
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAuthenticated = acme.framework.entities.Authenticated{id=5, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task04 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for shout01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for shout02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for shout03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for task01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for task02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for task03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for task04.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=6, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=7, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=8, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=9, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=10, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=11, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=12, version=0}
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 4024 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 6232 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 18.485 seconds (JVM running for 19.659)
 INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
 INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on LAPTOP-FU52PV4C with PID 3092 (C:\Users\Dani\OneDrive - UNIVERSIDAD DE SEVILLA\Escritorio\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by Dani in C:\Users\Dani\OneDrive - UNIVERSIDAD DE SEVILLA\Escritorio\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
 INFO [acme.Launcher] The following profiles are active: development,populator
@@ -145,6 +172,7 @@ INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
 INFO [acme.framework.utilities.DatabasePopulator] Validating task01 ... PASS
 INFO [acme.framework.utilities.DatabasePopulator] Validating task02 ... PASS
 INFO [acme.framework.utilities.DatabasePopulator] Validating task03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task04 ... PASS
 INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for shout01.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for shout02.
@@ -152,6 +180,7 @@ INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for shout03.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for task01.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for task02.
 INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for task03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for task04.
 INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=6, version=0}
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=7, version=0}
@@ -161,6 +190,40 @@ INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.ent
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=11, version=0}
 INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=12, version=0}
 INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4179): Rounding necessary
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4179): Rounding necessary
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: java.math.BigDecimal.commonNeedIncrement(BigDecimal.java:4179): Rounding necessary
+ERROR [org.hibernate.hql.internal.ast.ErrorTracker] line 1:23: unexpected token: t
+ERROR [org.hibernate.hql.internal.ast.ErrorTracker] at org.hibernate.hql.internal.antlr.HqlBaseParser.aliasedExpression(HqlBaseParser.java:2620): unexpected token: t
+WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'administratorDashboardController': Unsatisfied dependency expressed through field 'showService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'administratorDashboardShowService': Unsatisfied dependency expressed through field 'repository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'administratorDashboardRepository' defined in acme.features.administrator.dashboard.AdministratorDashboardRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.Collection acme.features.administrator.dashboard.AdministratorDashboardRepository.allTasks()!
+ERROR [org.springframework.boot.SpringApplication] at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643): Error creating bean with name 'administratorDashboardController': Unsatisfied dependency expressed through field 'showService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'administratorDashboardShowService': Unsatisfied dependency expressed through field 'repository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'administratorDashboardRepository' defined in acme.features.administrator.dashboard.AdministratorDashboardRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.Collection acme.features.administrator.dashboard.AdministratorDashboardRepository.allTasks()!
+at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643): Error creating bean with name 'administratorDashboardShowService': Unsatisfied dependency expressed through field 'repository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'administratorDashboardRepository' defined in acme.features.administrator.dashboard.AdministratorDashboardRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.Collection acme.features.administrator.dashboard.AdministratorDashboardRepository.allTasks()!
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788): Error creating bean with name 'administratorDashboardRepository' defined in acme.features.administrator.dashboard.AdministratorDashboardRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.Collection acme.features.administrator.dashboard.AdministratorDashboardRepository.allTasks()!
+at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:93): Validation failed for query for method public abstract java.util.Collection acme.features.administrator.dashboard.AdministratorDashboardRepository.allTasks()!
+at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:138): org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected token: t near line 1, column 23 [select t.endExecution t.startExecution from acme.entities.tasks.Task t]
+at org.hibernate.hql.internal.ast.QuerySyntaxException.convert(QuerySyntaxException.java:74): unexpected token: t near line 1, column 23 [select t.endExecution t.startExecution from acme.entities.tasks.Task t]
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47): Failed to convert from type [java.lang.Object[]] to type [@org.springframework.data.jpa.repository.Query acme.entities.tasks.Task] for value '{2021-09-11 12:02:00.0, 2021-07-27 12:02:00.0}'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.sql.Timestamp] to type [@org.springframework.data.jpa.repository.Query acme.entities.tasks.Task]
+org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:322): No converter found capable of converting from type [java.sql.Timestamp] to type [@org.springframework.data.jpa.repository.Query acme.entities.tasks.Task]
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47): Failed to convert from type [java.lang.Object[]] to type [@org.springframework.data.jpa.repository.Query acme.entities.tasks.Task] for value '{2021-09-11 12:02:00.0, 2021-07-27 12:02:00.0}'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.sql.Timestamp] to type [@org.springframework.data.jpa.repository.Query acme.entities.tasks.Task]
+org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:322): No converter found capable of converting from type [java.sql.Timestamp] to type [@org.springframework.data.jpa.repository.Query acme.entities.tasks.Task]
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47): Failed to convert from type [java.lang.Object[]] to type [@org.springframework.data.jpa.repository.Query acme.entities.tasks.Task] for value '{2021-09-11 12:02:00.0, 2021-07-27 12:02:00.0}'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.sql.Timestamp] to type [@org.springframework.data.jpa.repository.Query acme.entities.tasks.Task]
+org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:322): No converter found capable of converting from type [java.sql.Timestamp] to type [@org.springframework.data.jpa.repository.Query acme.entities.tasks.Task]
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47): Failed to convert from type [java.lang.Object[]] to type [@org.springframework.data.jpa.repository.Query acme.entities.tasks.Task] for value '{23.15, 2021-07-27 12:02:00.0, 2021-09-11 12:02:00.0}'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.math.BigDecimal] to type [@org.springframework.data.jpa.repository.Query acme.entities.tasks.Task]
+org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:322): No converter found capable of converting from type [java.math.BigDecimal] to type [@org.springframework.data.jpa.repository.Query acme.entities.tasks.Task]
 ERROR [com.zaxxer.hikari.pool.HikariPool] at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174): Communications link failure
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method): Communications link failure
