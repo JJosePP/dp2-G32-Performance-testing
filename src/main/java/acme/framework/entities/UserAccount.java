@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
@@ -27,6 +28,7 @@ import javax.validation.constraints.NotEmpty;
 import org.hibernate.validator.constraints.Length;
 
 import acme.datatypes.UserIdentity;
+import acme.entities.tasks.Task;
 import acme.framework.helpers.PasswordHelper;
 import acme.framework.helpers.StringHelper;
 import lombok.Getter;
@@ -89,6 +91,9 @@ public class UserAccount extends DomainEntity {
 	@NotEmpty
 	@OneToMany(mappedBy = "userAccount")
 	protected Collection<@Valid UserRole> roles;
+	
+	@OneToMany(mappedBy = "userAccount", cascade = CascadeType.ALL)
+	protected Collection<Task> task;
 
 
 	@Transient

@@ -1,0 +1,15 @@
+manager.task.list.label.title = Título
+manager.task.list.label.description = Descripción
+manager.task.list.label.info = Info
+
+manager.task.form.label.title = Título
+manager.task.form.label.description = Descripción
+manager.task.form.label.startExecution = Inicio de ejecución
+manager.task.form.label.endExecution = Fin de ejecución
+manager.task.form.label.workload = Carga de trabajo
+manager.task.form.label.info = Info
+manager.task.form.label.isPrivate = Privado
+manager.task.form.button.return = Volver
+manager.task.form.button.submit= Enviar
+manager.task.form.button.update = Actualizar
+manager.task.form.button.delete = Eliminar

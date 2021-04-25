@@ -36,6 +36,7 @@ master.menu.anonymous.JuanJose-favourite-link = Enlace favorito de Juan Jose Per
 master.menu.anonymous.alejandro-favourite-link = Enlace favorito de Piury
 master.menu.anonymous.create-shout-link = Crear grito
 master.menu.anonymous.shout-list= Lista de gritos
+master.menu.anonymous.task-list= Lista de tareas
 
 
 # master.menu.administrator ###################################################
@@ -117,3 +118,7 @@ master.panic.label.status = Estado:
 master.panic.label.exceptions = Excepciones:
 master.panic.text.consult-log = Por favor, consulte el log para ver más detalles.
 
+# master.menu.manager ################################################################
+master.menu.manager = Manager
+master.menu.manager.tasks.list = Mis tareas
+master.menu.manager.tasks.create = Crear tarea

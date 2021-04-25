@@ -4,6 +4,8 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.DecimalMin;
@@ -16,6 +18,7 @@ import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
 import acme.framework.entities.DomainEntity;
+import acme.framework.entities.UserAccount;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -61,6 +64,9 @@ public class Task extends DomainEntity {
 	protected Boolean isPrivate;
 	
 	@NotNull
+	@ManyToOne
+	@JoinColumn(name="user")
+	protected UserAccount userAccount;
+
 	protected Boolean isFinished;
-  
 }

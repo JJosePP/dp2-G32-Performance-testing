@@ -36,6 +36,7 @@ master.menu.anonymous.JuanJose-favourite-link = Juan Jose Perez´s favourite lin
 master.menu.anonymous.alejandro-favourite-link = Piury's favourite link
 master.menu.anonymous.create-shout-link = Create shout
 master.menu.anonymous.shout-list = List shouts
+master.menu.anonymous.task-list = List tasks
 
 # master.menu.administrator ###################################################
 
@@ -113,3 +114,7 @@ master.panic.label.status = Status:
 master.panic.label.exceptions = Exceptions:
 master.panic.text.consult-log = Please, consult the log to see them full stack trace.
 
+# master.menu.manager ################################################################
+master.menu.manager = Manager
+master.menu.manager.tasks.list = My tasks
+master.menu.manager.tasks.create = Create task
