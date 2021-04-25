@@ -17,3 +17,6 @@ anonymous.shout.form.button.return = Volver
 anonymous.shout.list.label.moment = Momento
 anonymous.shout.list.label.author = Autor
 anonymous.shout.list.label.text = Texto
+
+anonymous.shout.list.button.all = Todos
+anonymous.shout.list.button.last-month = Último mes
