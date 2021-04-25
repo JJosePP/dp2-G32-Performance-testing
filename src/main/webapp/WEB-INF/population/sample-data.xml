@@ -134,6 +134,7 @@
 		<property name="info" value="http://www.example.org"/>
 		<property name="isPrivate" value="false"/>
 		<property name="userAccount"> <ref bean="managerUserAccount"/></property>
+		<property name="isFinished" value="true"></property>
 	</bean>
 	
 	<bean id="task02" class="acme.entities.tasks.Task">
@@ -145,6 +146,7 @@
 		<property name="info"><null/></property>
 		<property name="isPrivate" value="true"/>
 		<property name="userAccount"> <ref bean="managerUserAccount"/></property>
+		<property name="isFinished" value="false"></property>
 	</bean>
 	
 	<bean id="task03" class="acme.entities.tasks.Task">
@@ -154,8 +156,9 @@
 		<property name="endExecution" value="2022/02/11 7:46"/>
 		<property name="workload" value="98.59"/>
 		<property name="info" value="http://www.example.org"/>
-		<property name="isPrivate"><null/></property>
 		<property name="userAccount"> <ref bean="administratorUserAccount"/></property>
+		<property name="isPrivate" value="true"></property>
+		<property name="isFinished" value="true"></property>
 	</bean>
 	
 	

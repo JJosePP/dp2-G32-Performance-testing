@@ -60,12 +60,15 @@ public class Task extends DomainEntity {
 	@URL
 	protected String info;
 	
+	@NotNull
 	protected Boolean isPrivate;
 	
 	@NotNull
 	@ManyToOne
 	@JoinColumn(name="user")
 	protected UserAccount userAccount;
-	
+
+	protected Boolean isFinished;
+
 
 }
