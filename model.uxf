@@ -338,6 +338,17 @@ Task
   <element>
     <id>UMLClass</id>
     <coordinates>
+      <x>108</x>
+      <y>513</y>
+      <w>333</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Spam
+--
++ word String (NotBlank, Length(5,25))</panel_attributes>
+    <additional_attributes/>
+  </element>
       <x>981</x>
       <y>378</y>
       <w>90</w>

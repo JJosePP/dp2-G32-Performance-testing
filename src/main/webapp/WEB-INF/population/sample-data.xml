@@ -70,5 +70,10 @@
 		<property name="info" value="http://www.example.org"/>
 		<property name="isPrivate"><null/></property>
 	</bean>
+	
+	<bean id="spam01" class="acme.entities.spam.Spam">
+		<property name="words" value="sex, hard core, viagra, cialis, nigeria, you’ve won, million dollar"/>
+		<property name="threshold" value="10"/>
+	</bean>
 
 </beans>
