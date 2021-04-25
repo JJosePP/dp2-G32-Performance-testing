@@ -58,7 +58,6 @@ public abstract class UserRole extends DomainEntity {
 		UserIdentity result;
 
 		result = this.userAccount.getIdentity();
-
 		return result;
 	}
 

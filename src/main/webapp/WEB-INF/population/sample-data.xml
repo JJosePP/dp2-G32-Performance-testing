@@ -73,6 +73,17 @@
 		<property name="isPrivate" value="true"></property>
 		<property name="isFinished" value="true"></property>
 	</bean>
+  
+  <bean id="task04" class="acme.entities.tasks.Task">
+		<property name="title" value="Change style"/>
+		<property name="description" value="Try some cool stuff"/>
+		<property name="startExecution" value="2022/03/01 22:33"/>
+		<property name="endExecution" value="2022/04/05 7:46"/>
+		<property name="workload" value="32.59"/>
+		<property name="info" value="http://www.example.org"/>
+		<property name="isPrivate" value="false"></property>
+		<property name="isFinished" value="true"></property>
+	</bean>
 	
 	<bean id="task05" class="acme.entities.tasks.Task">
 		<property name="title" value="Add your favorite website"/>
@@ -106,6 +117,7 @@
 		<property name="isPrivate" value="false"></property>
 		<property name="isFinished" value="false"></property>
 	</bean>
+
 	<bean id="task08" class="acme.entities.tasks.Task">
 		<property name="title" value="Just another example "/>
 		<property name="description" value="Hello world!"/>
@@ -116,6 +128,7 @@
 		<property name="isPrivate" value="false"></property>
 		<property name="isFinished" value="false"></property>
 	</bean>
+
 	<bean id="task09" class="acme.entities.tasks.Task">
 		<property name="title" value="Just another example "/>
 		<property name="description" value="Hello Spain!"/>
@@ -125,5 +138,10 @@
 		<property name="info" value="http://www.example.org"/>
 		<property name="isPrivate" value="false"></property>
 		<property name="isFinished" value="false"></property>
+
+	
+	<bean id="spam01" class="acme.entities.spam.Spam">
+		<property name="words" value="sex, hard core, viagra, cialis, nigeria, you’ve won, million dollar"/>
+		<property name="threshold" value="10"/>
 	</bean>
 </beans>
