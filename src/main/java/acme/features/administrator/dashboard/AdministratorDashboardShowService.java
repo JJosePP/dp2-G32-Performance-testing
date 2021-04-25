@@ -2,6 +2,7 @@
 package acme.features.administrator.dashboard;
 
 import java.math.BigDecimal;
+import java.math.MathContext;
 import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -25,6 +26,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 	@Autowired
 	AdministratorDashboardRepository repository;
 
+	private static final MathContext mc = new MathContext(2, RoundingMode.HALF_DOWN);
 	//	@Autowired
 	//	Dashboard dashboard;
 
@@ -119,7 +121,6 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		}
 
 		final Double average = (double) (sum / periods.size());
-
 		final Double avgDays = average / (8.64e7); //(1000 * 60 * 60 * 24)
 
 		d.setAverageTaskExecutionPeriod(average);
@@ -163,8 +164,8 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 	BigDecimal avgWorkloadTask() {
 		final Collection<BigDecimal> workloads = this.repository.allWorkloads();
 		BigDecimal sum = BigDecimal.ZERO; 
-		BigDecimal parteEntera = new BigDecimal(0.00); //Inicializo 0 horas
-		BigDecimal parteDecimal = new BigDecimal(0.00); //Inicializo 0 minutos
+		BigDecimal parteEntera = new BigDecimal("0.00"); //Inicializo 0 horas
+		BigDecimal parteDecimal = new BigDecimal("0.00"); //Inicializo 0 minutos
 		
 		for (final BigDecimal w : workloads) { // sumo las horas y minutos por separado
 			parteEntera = parteEntera.add(w.setScale(0, RoundingMode.FLOOR));
@@ -172,18 +173,19 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 			parteDecimal = parteDecimal.add(w.subtract(aux));
 		}
 		
-		parteDecimal = parteDecimal.multiply(new BigDecimal(100));
-		final BigDecimal aux = parteDecimal.divide(new BigDecimal(60));
+		parteDecimal = parteDecimal.multiply(new BigDecimal("100."));
+		
+		final BigDecimal aux = parteDecimal.divide(new BigDecimal("60."), AdministratorDashboardShowService.mc);
 		BigDecimal horas = aux.setScale(2, RoundingMode.FLOOR);
-		final BigDecimal minutos = aux.subtract(horas).multiply(new BigDecimal(60)).divide(new BigDecimal(100).setScale(2, RoundingMode.HALF_UP));
+		final BigDecimal minutos = aux.subtract(horas).multiply(new BigDecimal("60.")).divide(new BigDecimal("100.", AdministratorDashboardShowService.mc));
 		horas = horas.add(parteEntera).add(minutos);
 		sum = horas.add(minutos);
-		BigDecimal average = sum.divide(new BigDecimal(workloads.size()));
+		BigDecimal average = sum.divide(new BigDecimal(workloads.size()), AdministratorDashboardShowService.mc);
 		parteEntera = average.setScale(0, RoundingMode.FLOOR); 
 		
 		parteDecimal = average.subtract(parteEntera);
 		
-		parteDecimal = parteDecimal.multiply(new BigDecimal(0.60)).setScale(2, RoundingMode.HALF_UP);
+		parteDecimal = parteDecimal.multiply(new BigDecimal("0.60"), AdministratorDashboardShowService.mc);
 		
 		average = parteEntera.add(parteDecimal);
 		
@@ -193,7 +195,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 	BigDecimal devTaskWorkload(final Dashboard d) {
 		
 		final BigDecimal average = d.getAverageTaskWorkloads();
-		BigDecimal variance = new BigDecimal(0.00);
+		BigDecimal variance = new BigDecimal("0.00");
 		final Collection<BigDecimal> workloads = this.repository.allWorkloads();
 		
 		for(final BigDecimal w : workloads) {
@@ -204,7 +206,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		
 		variance = variance.divide(BigDecimal.valueOf(workloads.size()));
 
-		final BigDecimal deviation = BigDecimal.valueOf(Math.sqrt(variance.doubleValue())).setScale(2, RoundingMode.HALF_UP);;
+		final BigDecimal deviation = BigDecimal.valueOf(Math.sqrt(variance.doubleValue())).setScale(2, RoundingMode.HALF_UP);
 
 		return deviation;
 	}
