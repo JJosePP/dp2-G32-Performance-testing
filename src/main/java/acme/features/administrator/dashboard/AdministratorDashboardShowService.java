@@ -1,3 +1,4 @@
+
 package acme.features.administrator.dashboard;
 
 import java.math.BigDecimal;
@@ -23,9 +24,10 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 	@Autowired
 	AdministratorDashboardRepository repository;
-	
-//	@Autowired
-//	Dashboard dashboard;
+
+	//	@Autowired
+	//	Dashboard dashboard;
+
 
 	@Override
 	public boolean authorise(final Request<Dashboard> request) {
@@ -40,9 +42,8 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "totalPublicTasks", "totalPrivateTasks","totalFinishedTasks", "totalNonFinishedTasks", 
-			"averageTaskExecutionPeriod", "deviationTaskExecutionPeriod", "minimunTaskExecutionPeriod","maximunTaskExecutionPeriod",
-			"averageTaskWorkloads");
+		request.unbind(entity, model, "totalPublicTasks", "totalPrivateTasks", "totalFinishedTasks", "totalNonFinishedTasks", "averageTaskExecutionPeriod", "deviationTaskExecutionPeriod", "minimunTaskExecutionPeriod", "maximunTaskExecutionPeriod",
+			"averageTaskWorkloads", "deviationTaskWorkload", "minimunTaskWorkload", "maximumTaskWorkload");
 	}
 
 	@Override
@@ -59,7 +60,10 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		final Double minimunTaskExecutionPeriod;
 		final Double maximunTaskExecutionPeriod;
 		final BigDecimal averageTaskWorkloads;
-		
+		final BigDecimal deviationTaskWorkload;
+		final Double minimunTaskWorkload;
+		final Double maximumTaskWorkload;
+
 		result = new Dashboard();
 		totalPublicTasks = this.repository.totalPublicTasks();
 		totalPrivateTasks = this.repository.totalPrivateTasks();
@@ -67,12 +71,15 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		totalNonFinishedTasks = this.repository.totalNonFinishedTasks(new Date());
 		final Collection<Long> periods = this.calculatePeriods();
 		averageTaskExecutionPeriod = this.avgPeriodTask(result, periods);
-		deviationTaskExecutionPeriod = this.deviationPeriodTask(result,periods);
+		deviationTaskExecutionPeriod = this.deviationPeriodTask(result, periods);
 		minimunTaskExecutionPeriod = this.minimunTaskExecutionPeriod(periods);
 		maximunTaskExecutionPeriod = this.maximunTaskExecutionPeriod(periods);
-		averageTaskWorkloads = this.avgWorkloadTask(result);
-				
-		
+		averageTaskWorkloads = this.avgWorkloadTask();
+		result.setAverageTaskWorkloads(averageTaskWorkloads);
+		deviationTaskWorkload = this.devTaskWorkload(result);
+		minimunTaskWorkload = this.repository.minimunTaskWorkload();
+		maximumTaskWorkload = this.repository.maximumTaskWorkload();
+
 		result.setTotalPublicTasks(totalPublicTasks);
 		result.setTotalPrivateTasks(totalPrivateTasks);
 		result.setTotalFinishedTasks(totalFinishedTasks);
@@ -81,109 +88,126 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		result.setDeviationTaskExecutionPeriod(deviationTaskExecutionPeriod);
 		result.setMinimunTaskExecutionPeriod(minimunTaskExecutionPeriod);
 		result.setMaximunTaskExecutionPeriod(maximunTaskExecutionPeriod);
-		
-				
+		result.setDeviationTaskWorkload(deviationTaskWorkload);
+		result.setMinimunTaskWorkload(minimunTaskWorkload);
+		result.setMaximumTaskWorkload(maximumTaskWorkload);
+
 		return result;
 	}
-	
+
 	/** Aux **/
-	
-	private Collection<Long> calculatePeriods(){
+
+	private Collection<Long> calculatePeriods() {
 		final Collection<Task> allTasks = this.repository.allTasks();
 		final List<Long> periodsList = new ArrayList<>();
-		
-		for(final Task t : allTasks) {
+
+		for (final Task t : allTasks) {
 			final long startDate = t.getStartExecution().getTime();
 			final long endDate = t.getEndExecution().getTime();
 			final long period = endDate - startDate;
 			periodsList.add(period);
 		}
-		
+
 		final Collection<Long> periods = periodsList;
 		return periods;
 	}
-	private Double avgPeriodTask(final Dashboard d, final Collection<Long> periods){
-				long sum = 0L;
-		
-		for(final Long p:periods) {
+	private Double avgPeriodTask(final Dashboard d, final Collection<Long> periods) {
+		long sum = 0L;
+
+		for (final Long p : periods) {
 			sum = sum + p;
 		}
-		
+
 		final Double average = (double) (sum / periods.size());
-		
-		final Double avgDays = average /(8.64e7); //(1000 * 60 * 60 * 24)
+
+		final Double avgDays = average / (8.64e7); //(1000 * 60 * 60 * 24)
 
 		d.setAverageTaskExecutionPeriod(average);
-	
+
 		return avgDays;
 	}
-	
-	private Double deviationPeriodTask(final Dashboard d,final Collection<Long> periods) {
-		
+
+	private Double deviationPeriodTask(final Dashboard d, final Collection<Long> periods) {
+
 		final double avg = d.getAverageTaskExecutionPeriod();
 
 		Double variance = 0.;
-		
-		for(final Long p : periods) {
+
+		for (final Long p : periods) {
 			Double range;
 			range = Math.pow(p - avg, 2f);
 			variance = variance + range;
 		}
-		
+
 		variance = variance / periods.size();
-		
+
 		final Double deviation = Math.sqrt(variance);
-		
+
 		final Double devDays = deviation / (8.64e7);
-		
+
 		return devDays;
 	}
 
 	Double minimunTaskExecutionPeriod(final Collection<Long> periods) {
 		final Long min = Collections.min(periods);
-		
-		return min/8.64e7;
+
+		return min / 8.64e7;
 	}
-	
+
 	Double maximunTaskExecutionPeriod(final Collection<Long> periods) {
 		final Long max = Collections.max(periods);
-		
-		return max/8.64e7;
-	}
-	
-	BigDecimal avgWorkloadTask(final Dashboard d) {
-		final Collection<BigDecimal> workloads = this.repository.allWorkloads();
-		BigDecimal sum = BigDecimal.ZERO;
-		BigDecimal parteEntera = new BigDecimal(0.00);
-		System.out.println("Inicializo parteEntera: " + parteEntera);
-		BigDecimal parteDecimal = new BigDecimal(0.00);
-		System.out.println("Inicializo parteDecimal: " + parteDecimal);
-		for(final BigDecimal w : workloads) {
-			parteEntera = parteEntera.add(w.setScale(0, RoundingMode.FLOOR));
-			final BigDecimal aux = w.setScale(0,RoundingMode.FLOOR);
-			System.out.println(aux);
-			parteDecimal = parteDecimal.add(w.subtract(aux));
 
-		}
-		System.out.println("parteEntera despues de bucle: " + parteEntera);
-		System.out.println("parteDecimal despues de bucle: " + parteDecimal);
-		//parte decimal = 0.92
-		parteDecimal = parteDecimal.multiply(new BigDecimal(100)); //92
-		System.out.println("parteDecimal*100 = " + parteDecimal);
-		final BigDecimal aux = parteDecimal.divide(new BigDecimal(60));//aux = 1.53333
-		System.out.println("aux = " + parteDecimal + " /60 = " + aux);
-		BigDecimal horas = aux.setScale(2, RoundingMode.FLOOR); // horas = 1 //parteDecimal.divide(new BigDecimal(60).setScale(2, RoundingMode.FLOOR));
-		System.out.println("horas = " + horas);
-		final BigDecimal minutos = aux.subtract(horas).multiply(new BigDecimal(60)).divide(new BigDecimal(100).setScale(2, RoundingMode.CEILING));
-		System.out.println("minutos = " + minutos);
-		horas = horas.add(parteEntera).add(minutos);
-		System.out.println("horas = " + horas);
-		sum = horas.add(minutos);
-		final BigDecimal average = sum.divide(new BigDecimal(workloads.size()));
+		return max / 8.64e7;
+	}
+
+	BigDecimal avgWorkloadTask() {
+		final Collection<BigDecimal> workloads = this.repository.allWorkloads();
+		BigDecimal sum = BigDecimal.ZERO; 
+		BigDecimal parteEntera = new BigDecimal(0.00); //Inicializo 0 horas
+		BigDecimal parteDecimal = new BigDecimal(0.00); //Inicializo 0 minutos
 		
-		d.setAverageTaskWorkloads(average);
+		for (final BigDecimal w : workloads) { // sumo las horas y minutos por separado
+			parteEntera = parteEntera.add(w.setScale(0, RoundingMode.FLOOR));
+			final BigDecimal aux = w.setScale(0, RoundingMode.FLOOR);
+			parteDecimal = parteDecimal.add(w.subtract(aux));
+		}
+		
+		parteDecimal = parteDecimal.multiply(new BigDecimal(100));
+		final BigDecimal aux = parteDecimal.divide(new BigDecimal(60));
+		BigDecimal horas = aux.setScale(2, RoundingMode.FLOOR);
+		final BigDecimal minutos = aux.subtract(horas).multiply(new BigDecimal(60)).divide(new BigDecimal(100).setScale(2, RoundingMode.HALF_UP));
+		horas = horas.add(parteEntera).add(minutos);
+		sum = horas.add(minutos);
+		BigDecimal average = sum.divide(new BigDecimal(workloads.size()));
+		parteEntera = average.setScale(0, RoundingMode.FLOOR); 
+		
+		parteDecimal = average.subtract(parteEntera);
+		
+		parteDecimal = parteDecimal.multiply(new BigDecimal(0.60)).setScale(2, RoundingMode.HALF_UP);
+		
+		average = parteEntera.add(parteDecimal);
 		
 		return average;
 	}
 	
+	BigDecimal devTaskWorkload(final Dashboard d) {
+		
+		final BigDecimal average = d.getAverageTaskWorkloads();
+		BigDecimal variance = new BigDecimal(0.00);
+		final Collection<BigDecimal> workloads = this.repository.allWorkloads();
+		
+		for(final BigDecimal w : workloads) {
+			Double range;
+			range = Math.pow(w.subtract(average).doubleValue(), 2f);
+			variance = variance.add(BigDecimal.valueOf(range));
+		}
+		
+		variance = variance.divide(BigDecimal.valueOf(workloads.size()));
+
+		final BigDecimal deviation = BigDecimal.valueOf(Math.sqrt(variance.doubleValue())).setScale(2, RoundingMode.HALF_UP);;
+
+		return deviation;
+	}
+
+
 }

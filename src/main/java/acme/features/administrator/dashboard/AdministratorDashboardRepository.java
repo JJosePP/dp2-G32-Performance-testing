@@ -30,7 +30,12 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	
 	@Query("select workload from Task t")
 	Collection<BigDecimal> allWorkloads();
-	//COMPLETAR:
+
+	@Query("select min(t.workload) from Task t")
+	Double minimunTaskWorkload();
+	
+	@Query("select max(t.workload) from Task t")
+	Double maximumTaskWorkload();
 	
 }
 

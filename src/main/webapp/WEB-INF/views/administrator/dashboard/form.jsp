@@ -67,18 +67,18 @@
 		<th scope="row"><acme:message
 				code="administrator.dashboard.form.label.deviation-task-workloads" />
 		</th>
-		<td><acme:print value=""/></td>
+		<td><acme:print value="${deviationTaskWorkload}"/></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
 				code="administrator.dashboard.form.label.minimum-task-workloads" />
 		</th>
-		<td><acme:print value=""/></td>
+		<td><acme:print value="${minimunTaskWorkload}"/></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
 				code="administrator.dashboard.form.label.maximum-task-workloads" />
 		</th>
-		<td><acme:print value=""/></td>
+		<td><acme:print value="${maximumTaskWorkload}"/></td>
 	</tr>
 </table>
