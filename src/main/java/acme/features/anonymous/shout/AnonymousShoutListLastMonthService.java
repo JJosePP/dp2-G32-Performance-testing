@@ -1,6 +1,7 @@
 
 package acme.features.anonymous.shout;
 
+import java.util.Calendar;
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,14 +14,10 @@ import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AnonymousShoutListService implements AbstractListService<Anonymous, Shout> {
-
-	// Internal state ---------------------------------------------------------
+public class AnonymousShoutListLastMonthService implements AbstractListService<Anonymous, Shout> {
 
 	@Autowired
 	AnonymousShoutRepository repository;
-
-	// AbstractListService<Administrator, Shout> interface -------------
 
 
 	@Override
@@ -45,9 +42,13 @@ public class AnonymousShoutListService implements AbstractListService<Anonymous,
 
 		Collection<Shout> result;
 
-		result = this.repository.findMany();
+		final Calendar calendar = Calendar.getInstance();
+		calendar.add(Calendar.MONTH, -1); //al mes dado, le resta uno
+
+		result = this.repository.findLastMonth(calendar.getTime());
 
 		return result;
 	}
 
 }
+
