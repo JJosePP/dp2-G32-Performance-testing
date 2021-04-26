@@ -60,6 +60,7 @@ public class Task extends DomainEntity {
 	@URL
 	protected String info;
 	
+
 	protected Boolean isPrivate;
 	
 	@NotNull
