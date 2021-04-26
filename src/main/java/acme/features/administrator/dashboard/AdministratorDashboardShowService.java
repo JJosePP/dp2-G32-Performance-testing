@@ -27,9 +27,6 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 	AdministratorDashboardRepository repository;
 
 	private static final MathContext mc = new MathContext(2, RoundingMode.HALF_DOWN);
-	//	@Autowired
-	//	Dashboard dashboard;
-
 
 	@Override
 	public boolean authorise(final Request<Dashboard> request) {
@@ -204,7 +201,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 			variance = variance.add(BigDecimal.valueOf(range));
 		}
 		
-		variance = variance.divide(BigDecimal.valueOf(workloads.size()));
+		variance = variance.divide(BigDecimal.valueOf(workloads.size()), AdministratorDashboardShowService.mc);
 
 		final BigDecimal deviation = BigDecimal.valueOf(Math.sqrt(variance.doubleValue())).setScale(2, RoundingMode.HALF_UP);
 
