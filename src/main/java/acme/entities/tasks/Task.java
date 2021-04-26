@@ -53,7 +53,7 @@ public class Task extends DomainEntity {
 	protected Date endExecution;
 	
 	@NotNull
-	@Digits(integer = 3, fraction = 2)
+	@Digits(integer = 8, fraction = 2)
 	@DecimalMin(value="0.0", inclusive=true)
 	protected BigDecimal workload;
 	
@@ -68,8 +68,7 @@ public class Task extends DomainEntity {
 	@ManyToOne
 	@JoinColumn(name="user")
 	protected UserAccount userAccount;
-
+	
+	@NotNull
 	protected Boolean isFinished;
-
-
 }

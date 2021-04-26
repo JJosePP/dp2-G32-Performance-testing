@@ -28,9 +28,12 @@
 			<acme:menu-suboption code="master.menu.anonymous.alejandro-favourite-link" action="https://danielmarin.naukas.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.create-shout-link" action="/anonymous/shout/create"/>
 			<acme:menu-suboption code="master.menu.anonymous.shout-list" action="/anonymous/shout/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.task-list" action="/anonymous/task/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
+			<acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.populate-initial" action="/master/populate-initial"/>
