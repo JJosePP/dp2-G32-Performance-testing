@@ -27,11 +27,7 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 	public boolean authorise(final Request<Task> request) {
 		// TODO Auto-generated method stub
 		assert request != null;
-		if(request.getModel().hasAttribute("id")) {
-			return request.getModel().getInteger("id").equals(request.getPrincipal().getAccountId());
-		}else {
-			return true;
-		}
+		return true;
 	}
 
 	@Override

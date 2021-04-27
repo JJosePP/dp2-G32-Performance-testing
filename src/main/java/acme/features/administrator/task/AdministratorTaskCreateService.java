@@ -25,11 +25,7 @@ public class AdministratorTaskCreateService implements AbstractCreateService<Adm
 	public boolean authorise(final Request<Task> request) {
 		// TODO Auto-generated method stub
 		assert request != null;
-		if(request.getModel().hasAttribute("id")) {
-			return request.getModel().getInteger("id").equals(request.getPrincipal().getAccountId());
-		}else {
-			return true;
-		}
+		return true;
 	}
 
 	@Override
@@ -48,6 +44,7 @@ public class AdministratorTaskCreateService implements AbstractCreateService<Adm
 		assert entity != null;
 		assert model != null;
 		request.unbind(entity, model, "title", "description", "startExecution","endExecution","info","workload","isPrivate");
+		request.getModel().setAttribute("idPrincipal", request.getPrincipal().getAccountId());
 	}
 
 	@Override
