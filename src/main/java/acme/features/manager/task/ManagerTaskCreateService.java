@@ -27,7 +27,11 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 	public boolean authorise(final Request<Task> request) {
 		// TODO Auto-generated method stub
 		assert request != null;
-		return true;
+		if(request.getModel().hasAttribute("id")) {
+			return request.getModel().getInteger("id").equals(request.getPrincipal().getAccountId());
+		}else {
+			return true;
+		}
 	}
 
 	@Override
@@ -70,6 +74,7 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 		result.setWorkload(BigDecimal.valueOf(20.12));
 		result.setUserAccount(usuario);
 		result.setIsPrivate(true);
+		result.setIsFinished(false);
 		return result;
 	}
 
@@ -87,6 +92,17 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 		// TODO Auto-generated method stub
 		assert request != null;
 		assert entity != null;
+		if(request.getModel().getString("newStatus").equals("True")) {
+			entity.setIsPrivate(Boolean.TRUE);
+		}else if(request.getModel().getString("newStatus").equals("False")){
+			entity.setIsPrivate(Boolean.FALSE);
+		}
+		
+		if(request.getModel().getString("newFinished").equals("True")) {
+			entity.setIsFinished(Boolean.TRUE);
+		}else if(request.getModel().getString("newFinished").equals("False")){
+			entity.setIsFinished(Boolean.FALSE);
+		}
 		this.repository.save(entity);
 	}
 
