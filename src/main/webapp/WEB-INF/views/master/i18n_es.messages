@@ -27,13 +27,6 @@ master.menu.sign-out = Salir
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anónimo
-master.menu.anonymous.favourite-link = Enlace favorito
-master.menu.anonymous.manuel-favourite-link = Enlace favorito de Manuel Perez
-master.menu.anonymous.antonio-favourite-link = Enlace favorito de Antonio Perez
-master.menu.anonymous.daniel-favourite-link = Enlace favorito de Toro
-master.menu.anonymous.alvaro-favourite-link = Enlace favorito de Echegoyan
-master.menu.anonymous.JuanJose-favourite-link = Enlace favorito de Juan Jose Perez
-master.menu.anonymous.alejandro-favourite-link = Enlace favorito de Piury
 master.menu.anonymous.create-shout-link = Crear grito
 master.menu.anonymous.shout-list= Lista de gritos
 master.menu.anonymous.task-list= Lista de tareas
