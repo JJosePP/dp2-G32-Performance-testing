@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>9</zoom_level>
+  <zoom_level>7</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
@@ -358,11 +358,14 @@ Spam
       <w>90</w>
       <h>54</h>
     </coordinates>
-    <panel_attributes>&lt;&lt;Role&gt;&gt;
-Manager
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+WorkPlan
 --
-
-bg=yellow</panel_attributes>
++ title: String (NotBlank, Length(1,80))
++ isPrivate: Boolean
++ startExecution: Date (NotNull, Temporal(TIMESTAMP))
++ endExecution: Date (NotNull, Temporal(TIMESTAMP))
++ /workload: BigDecimal (NotNull, Digits(integer = 3, fraction = 2), DecimalMin(value="0.0", inclusive=true))</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
