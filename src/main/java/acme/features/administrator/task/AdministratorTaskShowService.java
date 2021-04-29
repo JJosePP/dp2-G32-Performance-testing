@@ -1,4 +1,4 @@
-package acme.features.manager.task;
+package acme.features.administrator.task;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -6,17 +6,16 @@ import org.springframework.stereotype.Service;
 import acme.entities.tasks.Task;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Manager;
+import acme.framework.entities.Administrator;
 import acme.framework.entities.Principal;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class ManagerTaskShowService implements AbstractShowService<Manager, Task>{
+public class AdministratorTaskShowService implements AbstractShowService<Administrator, Task>{
 
 	@Autowired
-	protected ManagerTaskRepository repository;
+	protected AdministratorTaskRepository repository;
 	
-
 	@Override
 	public boolean authorise(final Request<Task> request) {
 		// TODO Auto-generated method stub
@@ -47,4 +46,5 @@ public class ManagerTaskShowService implements AbstractShowService<Manager, Task
 		assert request != null;
 		return this.repository.findOneTaskById(request.getModel().getInteger("id"));
 	}
+
 }

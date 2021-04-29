@@ -8,19 +8,29 @@ import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Manager;
+import acme.framework.entities.Principal;
 import acme.framework.services.AbstractDeleteService;
 
 @Service
 public class ManagerTaskDeleteService implements AbstractDeleteService<Manager, Task>{
 
 	@Autowired
-	ManagerTaskRepository repository;
+	protected ManagerTaskRepository repository;
 	
 	@Override
 	public boolean authorise(final Request<Task> request) {
 		// TODO Auto-generated method stub
 		assert request != null;
-		return true;
+		assert request != null;
+		final Principal principal;
+		final int idPrincipal = request.getPrincipal().getAccountId();
+		
+		final int idUserTask = this.repository.findOneTaskById(request.getModel().getInteger("id")).getUserAccount().getId();
+		if(idPrincipal == idUserTask) {
+			return true;
+		}else {
+			return false;
+		}
 	}
 
 	@Override

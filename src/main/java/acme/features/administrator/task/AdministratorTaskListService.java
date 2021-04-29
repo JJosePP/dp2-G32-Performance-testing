@@ -1,4 +1,4 @@
-package acme.features.manager.task;
+package acme.features.administrator.task;
 
 import java.util.Collection;
 
@@ -8,21 +8,20 @@ import org.springframework.stereotype.Service;
 import acme.entities.tasks.Task;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Manager;
+import acme.framework.entities.Administrator;
 import acme.framework.entities.Principal;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class ManagerTaskListService implements AbstractListService<Manager, Task>{
-
+public class AdministratorTaskListService implements AbstractListService<Administrator, Task>{
+	
 	@Autowired
-	protected ManagerTaskRepository repository;
+	protected AdministratorTaskRepository repository;
 
 	@Override
 	public boolean authorise(final Request<Task> request) {
 		// TODO Auto-generated method stub
 		assert request != null;
-		
 		if(request.getModel().hasAttribute("id")) {
 			return request.getModel().getInteger("id").equals(request.getPrincipal().getAccountId());
 		}else {
@@ -38,7 +37,7 @@ public class ManagerTaskListService implements AbstractListService<Manager, Task
 		assert model != null;
 		
 		request.unbind(entity, model, "title",  "description", "info");
-
+		
 	}
 
 	@Override
@@ -49,4 +48,6 @@ public class ManagerTaskListService implements AbstractListService<Manager, Task
 		principal = request.getPrincipal();
 		return this.repository.findAllTaskById(principal.getAccountId());
 	}
+	
+	
 }

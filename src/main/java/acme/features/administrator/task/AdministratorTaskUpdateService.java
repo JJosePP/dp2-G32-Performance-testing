@@ -1,4 +1,4 @@
-package acme.features.manager.task;
+package acme.features.administrator.task;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -7,15 +7,15 @@ import acme.entities.tasks.Task;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Manager;
+import acme.framework.entities.Administrator;
 import acme.framework.entities.Principal;
 import acme.framework.services.AbstractUpdateService;
 
 @Service
-public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, Task>{
-	
+public class AdministratorTaskUpdateService implements AbstractUpdateService<Administrator, Task>{
+
 	@Autowired
-	protected ManagerTaskRepository repository;
+	protected AdministratorTaskRepository repository;
 
 	@Override
 	public boolean authorise(final Request<Task> request) {
@@ -30,7 +30,6 @@ public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, 
 		}else {
 			return false;
 		}
-		
 	}
 
 	@Override
@@ -61,11 +60,9 @@ public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, 
 	@Override
 	public void validate(final Request<Task> request, final Task entity, final Errors errors) {
 		// TODO Auto-generated method stub
-		//Falta VALIDAR SPAM -----
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		
 	}
 
 	@Override
@@ -87,5 +84,4 @@ public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, 
 		}
 		this.repository.save(entity);
 	}
-
 }
