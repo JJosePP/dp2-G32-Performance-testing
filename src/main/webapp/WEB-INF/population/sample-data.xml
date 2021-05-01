@@ -238,6 +238,29 @@
 		<property name="threshold" value="10"/>
 	</bean>
 	
+	<bean id="task10" class="acme.entities.tasks.Task">
+		<property name="title" value="Just another example "/>
+		<property name="description" value="Hello Spain!"/>
+		<property name="startExecution" value="2021/05/02 22:33"/>
+		<property name="endExecution" value="2022/06/13 9:46"/>
+		<property name="workload" value="51.59"/>
+		<property name="info" value="http://www.example.org"/>
+    	<property name="userAccount"> <ref bean="managerUserAccount"/></property>
+		<property name="isPrivate" value="false"></property>
+		<property name="isFinished" value="false"></property>
+	</bean>
+	
+	<bean id="task11" class="acme.entities.tasks.Task">
+		<property name="title" value="Just another example "/>
+		<property name="description" value="Hello Spain!"/>
+		<property name="startExecution" value="2021/05/02 22:33"/>
+		<property name="endExecution" value="2022/06/13 9:46"/>
+		<property name="workload" value="51.59"/>
+		<property name="info" value="http://www.example.org"/>
+    	<property name="userAccount"> <ref bean="managerUserAccount"/></property>
+		<property name="isPrivate" value="false"></property>
+		<property name="isFinished" value="false"></property>
+	</bean>
 	<!-- Workplan -->
 	<bean name="workPlan1" class="acme.entities.workPlan.WorkPlan">
 		<property name="title" value="Work Plan example" />
@@ -251,5 +274,33 @@
 			</list>
 		</property>
 		<property name="userAccount"> <ref bean="anonymousUserAccount"/></property>
+	</bean>
+	
+	<bean name="workPlan2" class="acme.entities.workPlan.WorkPlan">
+		<property name="title" value="Work Plan example" />
+		<property name="isPrivate" value="false" />
+		<property name="startExecution" value="2021/05/05 22:32" />
+		<property name="endExecution" value="2022/06/15 9:47" />
+		<property name="tasks">
+			<list>
+				<ref bean="task10" />
+				<ref bean="task11" />
+			</list>
+		</property>
+		<property name="userAccount"> <ref bean="managerUserAccount"/></property>
+	</bean>
+	
+	<bean name="workPlan3" class="acme.entities.workPlan.WorkPlan">
+		<property name="title" value="Work Plan example" />
+		<property name="isPrivate" value="false" />
+		<property name="startExecution" value="2021/06/16 22:32" />
+		<property name="endExecution" value="2022/07/15 9:47" />
+		<property name="tasks">
+			<list>
+				<ref bean="task10" />
+				<ref bean="task11" />
+			</list>
+		</property>
+		<property name="userAccount"> <ref bean="managerUserAccount"/></property>
 	</bean>
 </beans>

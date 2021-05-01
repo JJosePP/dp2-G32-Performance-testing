@@ -115,3 +115,5 @@ master.panic.text.consult-log = Por favor, consulte el log para ver más detalle
 master.menu.manager = Manager
 master.menu.manager.tasks.list = Mis tareas
 master.menu.manager.tasks.create = Crear tarea
+master.menu.manager.workplans.list = Mis planes de trabajo
+master.menu.manager.workplans.create = Crear plan de trabajo

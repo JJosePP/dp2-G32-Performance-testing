@@ -1,0 +1,14 @@
+manager.workplan.list.label.title = Título
+manager.workplan.list.label.startExecution = Inicio de ejecución
+manager.workplan.list.label.endExecution = Fin de ejecución
+manager.workplan.list.label.workload = Carga de trabajo
+manager.workplan.list.label.isPrivate = Privado
+
+manager.workplan.form.label.title = Título
+manager.workplan.form.label.startExecution = Inicio de ejecución
+manager.workplan.form.label.endExecution = Fin de ejecución
+manager.workplan.form.label.workload = Carga de trabajo
+manager.workplan.form.label.isPrivate = Privacidad
+manager.workplan.form.label.private = Privado
+manager.workplan.form.label.public = Público
+manager.workplan.form.button.submit = Crear

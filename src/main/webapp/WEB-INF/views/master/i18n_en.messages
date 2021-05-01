@@ -111,3 +111,5 @@ master.panic.text.consult-log = Please, consult the log to see them full stack t
 master.menu.manager = Manager
 master.menu.manager.tasks.list = My tasks
 master.menu.manager.tasks.create = Create task
+master.menu.manager.workplans.list = My workplans
+master.menu.manager.workplans.create = Create workplan
