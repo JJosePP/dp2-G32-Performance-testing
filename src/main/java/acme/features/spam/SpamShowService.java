@@ -1,12 +1,8 @@
 package acme.features.spam;
 
-import java.util.Arrays;
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.shouts.Shout;
 import acme.entities.spam.Spam;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -45,34 +41,6 @@ public class SpamShowService implements AbstractShowService<Anonymous, Spam>{
 		result = this.repository.findSpamById();
 		
 		return result;
-	}
-
-	public boolean esSpam(final Shout entity) {
-		
-		final Spam spamObject = this.repository.findSpamById();
-		
-		final List<String> spamWords = Arrays.asList(spamObject.getWords().split(", "));
-		
-		final String[] shoutWords = entity.getText().replaceAll("(?![À-ÿ\\u00f1\\u00d1a-zA-Z0-9]).", "").toLowerCase().split(" ");
-		
-		Double numberSpamWords = 0.;
-		Double spamPercentaje;
-		final Double length = (double) shoutWords.length;
-		
-		for(final String word:shoutWords) {
-			if(spamWords.contains(word)) {
-				numberSpamWords++;
-			}
-		}
-		
-		spamPercentaje = ((numberSpamWords/length)*100);
-		System.out.println(spamPercentaje);
-		if(spamPercentaje>spamObject.getThreshold()) {
-			return true;
-		}else {
-			return false;
-		}
-		
 	}
 
 }

@@ -1,12 +1,16 @@
 package acme.features.manager.task;
 
 import java.math.BigDecimal;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.spam.Spam;
 import acme.entities.tasks.Task;
+import acme.features.spam.SpamRepository;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -21,7 +25,8 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 	@Autowired
 	protected ManagerTaskRepository repository;
 	
-
+	@Autowired
+	protected SpamRepository spamRepository;
 	
 	@Override
 	public boolean authorise(final Request<Task> request) {
@@ -81,6 +86,12 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+		
+		final boolean notSpamTitle = this.esSpam(entity.getTitle());
+		final boolean notSpamDescription = this.esSpam(entity.getDescription());
+
+		errors.state(request, !notSpamTitle, "title", "anonymous.shout.error.text");
+		errors.state(request, !notSpamDescription, "description", "anonymous.shout.error.text");
 	}
 
 	@Override
@@ -100,6 +111,37 @@ public class ManagerTaskCreateService implements AbstractCreateService<Manager, 
 			entity.setIsFinished(Boolean.FALSE);
 		}
 		this.repository.save(entity);
+	}
+	
+	public boolean esSpam(final String text) {
+		
+		final Spam spamObject = this.spamRepository.findSpamById();
+		
+		final List<String> spamWords = Arrays.asList(spamObject.getWords().split(", "));
+		System.out.println(spamWords);
+		
+		final String[] taskWords = text.toLowerCase().split(" ");
+		
+		Double numberSpamWords = 0.;
+		Double spamPercentaje;
+		final Double length = (double) taskWords.length;
+		
+		for(final String word:taskWords) {
+			final String cleanWord = word.replaceAll("(?![À-ÿ\\u00f1\\u00d1a-zA-Z0-9]).", "");
+			System.out.println(cleanWord);
+			if(spamWords.contains(cleanWord)) {
+				numberSpamWords++;
+			}
+		}
+		
+		spamPercentaje = ((numberSpamWords/length)*100);
+		System.out.println(spamPercentaje);
+		if(spamPercentaje>spamObject.getThreshold()) {
+			return true;
+		}else {
+			return false;
+		}
+		
 	}
 
 }
