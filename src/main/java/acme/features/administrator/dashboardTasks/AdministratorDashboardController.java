@@ -1,4 +1,4 @@
-package acme.features.administrator.dashboard;
+package acme.features.administrator.dashboardTasks;
 
 import javax.annotation.PostConstruct;
 

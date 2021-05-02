@@ -19,10 +19,10 @@ import acme.entities.spam.Spam;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
-public interface SpamRepository extends AbstractRepository {
+public interface AnySpamRepository extends AbstractRepository {
 
 
 	@Query("select s from Spam s")
-	Spam findSpamById();
+	Spam findSpam();
 
 }

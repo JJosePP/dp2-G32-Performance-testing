@@ -1,7 +1,10 @@
 package acme.entities.spam;
 
 import javax.persistence.Entity;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -21,5 +24,8 @@ public class Spam extends DomainEntity {
 	@NotBlank
 	protected String words;
 	
+	@NotNull
+	@Min(value=0)
+	@Max(value=100)
 	protected Double threshold;
 }

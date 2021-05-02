@@ -18,7 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.shouts.Shout;
-import acme.features.spam.SpamShowService;
+import acme.features.administrator.spam.AdministratorSpamShowService;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -34,7 +34,7 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 	protected AnonymousShoutRepository repository;
 	
 	@Autowired
-	protected SpamShowService spamService;
+	protected AdministratorSpamShowService spamService;
 
 	// AbstractCreateService<Administrator, Shout> interface --------------
 
@@ -87,9 +87,9 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		assert entity != null;
 		assert errors != null;
 		
-		final boolean notSpam = this.spamService.esSpam(entity);
-
-		errors.state(request, !notSpam, "text", "anonymous.shout.error.text");
+//		final boolean notSpam = this.spamService.esSpam(entity);
+//
+//		errors.state(request, !notSpam, "text", "anonymous.shout.error.text");
 
 	}
 

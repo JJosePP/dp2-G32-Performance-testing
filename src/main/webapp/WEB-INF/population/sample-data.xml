@@ -19,6 +19,7 @@
 
 	<import resource="classpath:/WEB-INF/population/conversion-service.xml"/>
 	
+	
 	<!-- Anonymous user -->
 
 	<bean name="anonymousUserAccount" class="acme.framework.entities.UserAccount">
@@ -71,7 +72,7 @@
 	<bean name="administratorAuthenticated" class="acme.framework.entities.Authenticated">
 		<property name="userAccount" ref="administratorUserAccount" />
 	</bean>
-	
+		
 	<!-- Managers -->
 	
 	<bean  name="managerUserAccount" class="acme.framework.entities.UserAccount">
@@ -261,7 +262,7 @@
 	</bean>
 	
 	<bean id="spam01" class="acme.entities.spam.Spam">
-		<property name="words" value="sex, hard core, viagra, cialis, nigeria, you’ve won, million dollar"/>
+		<property name="words" value="sex, hardcore, viagra, cialis, nigeria, you’ve won, million dollar, sexo, duro, viagra, cialis, nigeria, has ganado, 1 millón de dólares, 1 millon de dolares, un millón de dólares , un millon de dolares"/>
 		<property name="threshold" value="10"/>
 	</bean>
 	
@@ -271,6 +272,7 @@
 		<property name="isPrivate" value="false" />
 		<property name="startExecution" value="2021/05/02 22:32" />
 		<property name="endExecution" value="2022/06/13 9:47" />
+		<property name="workload" value="430.32"/>
 		<property name="tasks">
 			<list>
 				<ref bean="task01" />
@@ -278,5 +280,20 @@
 			</list>
 		</property>
 		<property name="userAccount"> <ref bean="anonymousUserAccount"/></property>
+	</bean>
+	
+		<bean name="workPlan2" class="acme.entities.workPlan.WorkPlan">
+		<property name="title" value="Work Plan example 2" />
+		<property name="isPrivate" value="true" />
+		<property name="startExecution" value="2021/07/09 17:15" />
+		<property name="endExecution" value="2022/09/07 9:13" />
+		<property name="workload" value="310.35"/>
+		<property name="tasks">
+			<list>
+				<ref bean="task06" />
+				<ref bean="task09" />
+			</list>
+		</property>
+		<property name="userAccount"> <ref bean="managerUserAccount2"/></property>
 	</bean>
 </beans>

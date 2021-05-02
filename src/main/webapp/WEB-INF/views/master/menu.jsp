@@ -27,6 +27,8 @@
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show"/>
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.dashboard-workplan" action="/administrator/dashboard-workplan/show"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.populate-initial" action="/master/populate-initial"/>
@@ -39,6 +41,10 @@
 			<acme:menu-suboption code="administrator.menu.manager.tasks.list" action="/administrator/task/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="administrator.menu.manager.tasks.create" action="/administrator/task/create"/>
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.administrator.spam" access="hasRole('Administrator')">
+			<acme:menu-suboption code="master.menu.administrator.spam.show" action="/administrator/spam/show"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.manager" access="hasRole('Manager')">
