@@ -176,6 +176,54 @@
 		<property name="isFinished" value="false"></property>
 	</bean>
 	
+	<bean id="task12" class="acme.entities.tasks.Task">
+		<property name="title" value="Just another example 1"/>
+		<property name="description" value="Is this a joke?"/>
+		<property name="startExecution" value="2021/08/12 9:32"/>
+		<property name="endExecution" value="2021/11/15 18:26"/>
+		<property name="workload" value="172.47"/>
+		<property name="info"><null/></property>
+		<property name="isPrivate" value="false"/>
+		<property name="userAccount"> <ref bean="managerUserAccount"/></property>
+		<property name="isFinished" value="true"></property>
+	</bean>
+	
+	<bean id="task13" class="acme.entities.tasks.Task">
+		<property name="title" value="Just another example 2"/>
+		<property name="description" value="Is this a joke?"/>
+		<property name="startExecution" value="2021/08/12 9:32"/>
+		<property name="endExecution" value="2021/11/19 18:26"/>
+		<property name="workload" value="80.47"/>
+		<property name="info"><null/></property>
+		<property name="isPrivate" value="false"/>
+		<property name="userAccount"> <ref bean="managerUserAccount"/></property>
+		<property name="isFinished" value="true"></property>
+	</bean>
+	
+	<bean id="task14" class="acme.entities.tasks.Task">
+		<property name="title" value="Just another example 3"/>
+		<property name="description" value="Is this a joke?"/>
+		<property name="startExecution" value="2021/08/12 9:32"/>
+		<property name="endExecution" value="2021/11/12 18:26"/>
+		<property name="workload" value="96.47"/>
+		<property name="info"><null/></property>
+		<property name="isPrivate" value="false"/>
+		<property name="userAccount"> <ref bean="managerUserAccount"/></property>
+		<property name="isFinished" value="true"></property>
+	</bean>
+	
+	<bean id="task15" class="acme.entities.tasks.Task">
+		<property name="title" value="Just another example 4"/>
+		<property name="description" value="Is this a joke?"/>
+		<property name="startExecution" value="2021/08/12 9:32"/>
+		<property name="endExecution" value="2021/11/03 18:26"/>
+		<property name="workload" value="90.47"/>
+		<property name="info"><null/></property>
+		<property name="isPrivate" value="false"/>
+		<property name="userAccount"> <ref bean="managerUserAccount"/></property>
+		<property name="isFinished" value="true"></property>
+	</bean>
+	
 	<bean id="task03" class="acme.entities.tasks.Task">
 		<property name="title" value="Customize your webpage"/>
 		<property name="description" value="Try some cool stuff"/>
@@ -188,14 +236,38 @@
 		<property name="isFinished" value="true"></property>
 	</bean>
   
-  <bean id="task04" class="acme.entities.tasks.Task">
-		<property name="title" value="Change style"/>
+  	<bean id="task04" class="acme.entities.tasks.Task">
+		<property name="title" value="Change style 9"/>
 		<property name="description" value="Try some cool stuff"/>
 		<property name="startExecution" value="2022/03/01 22:33"/>
 		<property name="endExecution" value="2022/04/05 7:46"/>
 		<property name="workload" value="32.59"/>
 		<property name="info" value="http://www.example.org"/>
-    	<property name="userAccount"> <ref bean="anonymousUserAccount"/></property>
+    	<property name="userAccount"> <ref bean="administratorUserAccount"/></property>
+		<property name="isPrivate" value="false"></property>
+		<property name="isFinished" value="true"></property>
+	</bean>
+	
+	<bean id="task10" class="acme.entities.tasks.Task">
+		<property name="title" value="Change style 10"/>
+		<property name="description" value="Try some cool stuff"/>
+		<property name="startExecution" value="2022/03/01 22:33"/>
+		<property name="endExecution" value="2022/04/07 7:46"/>
+		<property name="workload" value="30.42"/>
+		<property name="info" value="http://www.example.org"/>
+    	<property name="userAccount"> <ref bean="administratorUserAccount"/></property>
+		<property name="isPrivate" value="false"></property>
+		<property name="isFinished" value="true"></property>
+	</bean>
+	
+	<bean id="task11" class="acme.entities.tasks.Task">
+		<property name="title" value="Change style 11"/>
+		<property name="description" value="Try some cool stuff"/>
+		<property name="startExecution" value="2022/03/01 22:33"/>
+		<property name="endExecution" value="2022/04/06 7:46"/>
+		<property name="workload" value="48.45"/>
+		<property name="info" value="http://www.example.org"/>
+    	<property name="userAccount"> <ref bean="administratorUserAccount"/></property>
 		<property name="isPrivate" value="false"></property>
 		<property name="isFinished" value="true"></property>
 	</bean>

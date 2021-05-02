@@ -23,3 +23,6 @@ authenticated.task.list.label.startExecution: Inicio de ejecución
 authenticated.task.list.label.endExecution = Fin de ejecución
 authenticated.task.list.label.workload = Carga de trabajo
 authenticated.task.list.label.isFinished = Terminada
+authenticated.task.list.button.sortId = Ordenar por ID
+authenticated.task.list.button.sortExecutionPeriod = Ordenar por periodo de ejecución
+authenticated.task.list.button.sortWorkload = Ordenar por carga de trabajo

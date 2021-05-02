@@ -1,6 +1,9 @@
 administrator.task.list.label.title = Título
 administrator.task.list.label.description = Descripción
 administrator.task.list.label.info = Info
+administrator.task.list.button.sortId = Ordenar por ID
+administrator.task.list.button.sortExecutionPeriod = Ordenar por periodo de ejecución
+administrator.task.list.button.sortWorkload = Ordenar por carga de trabajo
 
 administrator.task.form.label.title = Título
 administrator.task.form.label.description = Descripción
