@@ -21,5 +21,8 @@ authenticated.task.list.label.startExecution =  Start Execution
 authenticated.task.list.label.endExecution = End Execution
 authenticated.task.list.label.workload = Workload
 authenticated.task.list.label.isFinished = Finished
+authenticated.task.list.button.sortId = Sort by ID
+authenticated.task.list.button.sortExecutionPeriod = Sort by execution period
+authenticated.task.list.button.sortWorkload = Sort by workload
 
 
