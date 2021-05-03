@@ -106,7 +106,6 @@ public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, 
 		final Spam spamObject = this.spamRepository.findSpam();
 		
 		final List<String> spamWords = Arrays.asList(spamObject.getWords().split(", "));
-		System.out.println(spamWords);
 		
 		final String[] taskWords = text.toLowerCase().split(" ");
 		
@@ -116,14 +115,12 @@ public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, 
 		
 		for(final String word:taskWords) {
 			final String cleanWord = word.replaceAll("(?![À-ÿ\\u00f1\\u00d1a-zA-Z0-9]).", "");
-			System.out.println(cleanWord);
 			if(spamWords.contains(cleanWord)) {
 				numberSpamWords++;
 			}
 		}
 		
 		spamPercentaje = ((numberSpamWords/length)*100);
-		System.out.println(spamPercentaje);
 		if(spamPercentaje>spamObject.getThreshold()) {
 			return true;
 		}else {
