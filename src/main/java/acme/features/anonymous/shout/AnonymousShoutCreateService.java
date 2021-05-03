@@ -91,9 +91,13 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		assert entity != null;
 		assert errors != null;
 		
-		final boolean notSpam = this.esSpam(entity.getText());
+		final boolean notSpamText = this.esSpam(entity.getText());
+		final boolean notSpamAuthor = this.esSpam(entity.getAuthor());
+		final boolean notSpamInfo = this.esSpam(entity.getInfo());
 
-		errors.state(request, !notSpam, "text", "anonymous.shout.error.text");
+		errors.state(request, !notSpamText, "text", "anonymous.shout.error.text");
+		errors.state(request, !notSpamAuthor, "author", "anonymous.shout.error.text");
+		errors.state(request, !notSpamInfo, "info", "anonymous.shout.error.text");
 
 
 	}
@@ -116,7 +120,6 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		final Spam spamObject = this.spamRepository.findSpam();
 		
 		final List<String> spamWords = Arrays.asList(spamObject.getWords().split(", "));
-		System.out.println(spamWords);
 		
 		final String[] shoutWords = text.toLowerCase().split(" ");
 		
@@ -126,14 +129,12 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		
 		for(final String word:shoutWords) {
 			final String cleanWord = word.replaceAll("(?![À-ÿ\\u00f1\\u00d1a-zA-Z0-9]).", "");
-			System.out.println(cleanWord);
 			if(spamWords.contains(cleanWord)) {
 				numberSpamWords++;
 			}
 		}
 		
 		spamPercentaje = ((numberSpamWords/length)*100);
-		System.out.println(spamPercentaje);
 		if(spamPercentaje>spamObject.getThreshold()) {
 			return true;
 		}else {
