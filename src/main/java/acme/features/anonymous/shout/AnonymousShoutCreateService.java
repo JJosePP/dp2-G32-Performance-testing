@@ -12,13 +12,16 @@
 
 package acme.features.anonymous.shout;
 
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.shouts.Shout;
-import acme.features.administrator.spam.AdministratorSpamShowService;
+import acme.entities.spam.Spam;
+import acme.features.spam.AnySpamRepository;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -34,7 +37,8 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 	protected AnonymousShoutRepository repository;
 	
 	@Autowired
-	protected AdministratorSpamShowService spamService;
+	protected AnySpamRepository spamRepository;
+
 
 	// AbstractCreateService<Administrator, Shout> interface --------------
 
@@ -87,9 +91,10 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		assert entity != null;
 		assert errors != null;
 		
-//		final boolean notSpam = this.spamService.esSpam(entity);
-//
-//		errors.state(request, !notSpam, "text", "anonymous.shout.error.text");
+		final boolean notSpam = this.esSpam(entity.getText());
+
+		errors.state(request, !notSpam, "text", "anonymous.shout.error.text");
+
 
 	}
 
@@ -104,6 +109,37 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		entity.setMoment(moment);
 		this.repository.save(entity);
 
+	}
+	
+	public boolean esSpam(final String text) {
+		
+		final Spam spamObject = this.spamRepository.findSpam();
+		
+		final List<String> spamWords = Arrays.asList(spamObject.getWords().split(", "));
+		System.out.println(spamWords);
+		
+		final String[] shoutWords = text.toLowerCase().split(" ");
+		
+		Double numberSpamWords = 0.;
+		Double spamPercentaje;
+		final Double length = (double) shoutWords.length;
+		
+		for(final String word:shoutWords) {
+			final String cleanWord = word.replaceAll("(?![À-ÿ\\u00f1\\u00d1a-zA-Z0-9]).", "");
+			System.out.println(cleanWord);
+			if(spamWords.contains(cleanWord)) {
+				numberSpamWords++;
+			}
+		}
+		
+		spamPercentaje = ((numberSpamWords/length)*100);
+		System.out.println(spamPercentaje);
+		if(spamPercentaje>spamObject.getThreshold()) {
+			return true;
+		}else {
+			return false;
+		}
+		
 	}
 
 }
