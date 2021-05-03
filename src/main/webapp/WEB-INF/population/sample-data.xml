@@ -287,8 +287,8 @@
 	<bean id="task06" class="acme.entities.tasks.Task">
 		<property name="title" value="Implement a Dashboard"/>
 		<property name="description" value="add a dashboard where the page statistics appear"/>
-		<property name="startExecution" value="2021/05/02 21:33"/>
-		<property name="endExecution" value="2022/06/13 9:46"/>
+		<property name="startExecution" value="2021/06/02 21:33"/>
+		<property name="endExecution" value="2022/07/13 9:46"/>
 		<property name="workload" value="80.59"/>
 		<property name="info" value="http://www.example.org"/>
     	<property name="userAccount"> <ref bean="anonymousUserAccount"/></property>
@@ -299,8 +299,8 @@
 	<bean id="task07" class="acme.entities.tasks.Task">
 		<property name="title" value="Dashboard view "/>
 		<property name="description" value="Implement dashboard view"/>
-		<property name="startExecution" value="2021/05/02 22:33"/>
-		<property name="endExecution" value="2022/06/13 9:46"/>
+		<property name="startExecution" value="2021/06/02 22:33"/>
+		<property name="endExecution" value="2022/07/13 9:46"/>
 		<property name="workload" value="51.59"/>
 		<property name="info" value="http://www.example.org"/>
    		<property name="userAccount"> <ref bean="anonymousUserAccount"/></property>
@@ -311,8 +311,8 @@
 	<bean id="task08" class="acme.entities.tasks.Task">
 		<property name="title" value="Just another example "/>
 		<property name="description" value="Hello world!"/>
-		<property name="startExecution" value="2021/05/02 22:33"/>
-		<property name="endExecution" value="2022/06/13 9:46"/>
+		<property name="startExecution" value="2021/06/02 22:33"/>
+		<property name="endExecution" value="2022/07/13 9:46"/>
 		<property name="workload" value="51.59"/>
 		<property name="info" value="http://www.example.org"/>
     	<property name="userAccount"> <ref bean="anonymousUserAccount"/></property>
@@ -323,8 +323,8 @@
 	<bean id="task09" class="acme.entities.tasks.Task">
 		<property name="title" value="Just another example "/>
 		<property name="description" value="Hello Spain!"/>
-		<property name="startExecution" value="2021/05/02 22:33"/>
-		<property name="endExecution" value="2022/06/13 9:46"/>
+		<property name="startExecution" value="2021/06/02 22:33"/>
+		<property name="endExecution" value="2022/07/13 9:46"/>
 		<property name="workload" value="51.59"/>
 		<property name="info" value="http://www.example.org"/>
     	<property name="userAccount"> <ref bean="anonymousUserAccount"/></property>
@@ -341,8 +341,8 @@
 	<bean name="workPlan1" class="acme.entities.workPlan.WorkPlan">
 		<property name="title" value="Work Plan example" />
 		<property name="isPrivate" value="false" />
-		<property name="startExecution" value="2021/05/02 22:32" />
-		<property name="endExecution" value="2022/06/13 9:47" />
+		<property name="startExecution" value="2021/06/02 22:32" />
+		<property name="endExecution" value="2022/07/13 9:47" />
 		<property name="tasks">
 			<list>
 				<ref bean="task01" />
