@@ -18,6 +18,7 @@ administrator.task.form.button.update = Actualizar
 administrator.task.form.button.delete = Eliminar
 administrator.task.form.label.newStatus = Nuevo estado:
 administrator.task.form.label.isFinished = Terminada:
+administrator.task.form.label.newFinished = Nuevo estado:
 Private = Privado
 Public = Publico
 YES = Sí

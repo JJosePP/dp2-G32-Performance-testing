@@ -19,7 +19,7 @@
 	<acme:form-textbox code="administrator.task.form.label.isFinished" path="isFinished" readonly="true"/>
 	</jstl:if>
 	
-	<acme:form-select code="administrator.task.form.label.isFinished" path="newFinished">
+	<acme:form-select code="administrator.task.form.label.newFinished" path="newFinished">
 		<jstl:if test="${isFinished}">
 			<acme:form-option code="YES" value="True" selected="true"/>
 			<acme:form-option code="NO" value="False"/>

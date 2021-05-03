@@ -1,4 +1,4 @@
-package acme.features.administrator.dashboard;
+package acme.features.administrator.dashboardTasks;
 
 import java.math.BigDecimal;
 import java.util.Collection;

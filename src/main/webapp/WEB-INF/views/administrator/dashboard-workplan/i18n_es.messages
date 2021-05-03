@@ -1,0 +1,15 @@
+administrator.dashboard-workplan.form.title.general-indicators = Indicadores generales
+administrator.dashboard-workplan.form.label.total-public-workplans = Número total de planes de trabajo públics
+administrator.dashboard-workplan.form.label.total-private-workplans = Número total de planes de trabajo privados
+administrator.dashboard-workplan.form.label.total-finished-workplans = Número total de planes de trabajo terminados
+administrator.dashboard-workplan.form.label.total-non-finished-workplans = Número total de planes de trabajo no terminados
+administrator.dashboard-workplan.form.label.average-workplan-execution-periods = Promedio de periodos de ejecución de planes de trabajo (días)
+administrator.dashboard-workplan.form.label.deviation-workplan-execution-periods = Desviación de periodos de ejecución de planes de trabajo (días)
+administrator.dashboard-workplan.form.label.minimum-workplan-execution-periods = Mínimo de periodos de ejecución de planes de trabajo (días)
+administrator.dashboard-workplan.form.label.maximum-workplan-execution-periods = Máximo de periodos de ejecución de planes de trabajo (días)
+administrator.dashboard-workplan.form.label.average-workplan-workloads = Promedio de periodos de cargas de trabajo de planes de trabajo (horas y minutos)
+administrator.dashboard-workplan.form.label.deviation-workplan-workloads = Desviación de periodos de cargas de trabajo de planes de trabajo (horas y minutos)
+administrator.dashboard-workplan.form.label.minimum-workplan-workloads = Mínimo de periodos de cargas de trabajo de planes de trabajo (horas y minutos)
+administrator.dashboard-workplan.form.label.maximum-workplan-workloads = Máximo de periodos de cargas de trabajo de planes de trabajo (horas y minutos)
+
+administrator.dashboard-workplan.form.title.application-statuses = Estado de las solicitudes

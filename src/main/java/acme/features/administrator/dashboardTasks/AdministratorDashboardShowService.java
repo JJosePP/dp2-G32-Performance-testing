@@ -1,5 +1,5 @@
 
-package acme.features.administrator.dashboard;
+package acme.features.administrator.dashboardTasks;
 
 import java.math.BigDecimal;
 import java.math.MathContext;
@@ -41,8 +41,8 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "totalPublicTasks", "totalPrivateTasks", "totalFinishedTasks", "totalNonFinishedTasks", "averageTaskExecutionPeriod", "deviationTaskExecutionPeriod", "minimunTaskExecutionPeriod", "maximunTaskExecutionPeriod",
-			"averageTaskWorkloads", "deviationTaskWorkload", "minimunTaskWorkload", "maximumTaskWorkload");
+		request.unbind(entity, model, "totalPublic", "totalPrivate", "totalFinished", "totalNonFinished", "averageExecutionPeriod", "deviationExecutionPeriod", "minimunExecutionPeriod", "maximunExecutionPeriod",
+			"averageWorkloads", "deviationWorkload", "minimunWorkload", "maximumWorkload");
 	}
 
 	@Override
@@ -74,22 +74,22 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		minimunTaskExecutionPeriod = this.minimunTaskExecutionPeriod(periods);
 		maximunTaskExecutionPeriod = this.maximunTaskExecutionPeriod(periods);
 		averageTaskWorkloads = this.avgWorkloadTask();
-		result.setAverageTaskWorkloads(averageTaskWorkloads);
+		result.setAverageWorkloads(averageTaskWorkloads);
 		deviationTaskWorkload = this.devTaskWorkload(result);
 		minimunTaskWorkload = this.repository.minimunTaskWorkload();
 		maximumTaskWorkload = this.repository.maximumTaskWorkload();
 
-		result.setTotalPublicTasks(totalPublicTasks);
-		result.setTotalPrivateTasks(totalPrivateTasks);
-		result.setTotalFinishedTasks(totalFinishedTasks);
-		result.setTotalNonFinishedTasks(totalNonFinishedTasks);
-		result.setAverageTaskExecutionPeriod(averageTaskExecutionPeriod);
-		result.setDeviationTaskExecutionPeriod(deviationTaskExecutionPeriod);
-		result.setMinimunTaskExecutionPeriod(minimunTaskExecutionPeriod);
-		result.setMaximunTaskExecutionPeriod(maximunTaskExecutionPeriod);
-		result.setDeviationTaskWorkload(deviationTaskWorkload);
-		result.setMinimunTaskWorkload(minimunTaskWorkload);
-		result.setMaximumTaskWorkload(maximumTaskWorkload);
+		result.setTotalPublic(totalPublicTasks);
+		result.setTotalPrivate(totalPrivateTasks);
+		result.setTotalFinished(totalFinishedTasks);
+		result.setTotalNonFinished(totalNonFinishedTasks);
+		result.setAverageExecutionPeriod(averageTaskExecutionPeriod);
+		result.setDeviationExecutionPeriod(deviationTaskExecutionPeriod);
+		result.setMinimunExecutionPeriod(minimunTaskExecutionPeriod);
+		result.setMaximunExecutionPeriod(maximunTaskExecutionPeriod);
+		result.setDeviationWorkload(deviationTaskWorkload);
+		result.setMinimunWorkload(minimunTaskWorkload);
+		result.setMaximumWorkload(maximumTaskWorkload);
 
 		return result;
 	}
@@ -120,14 +120,14 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		final Double average = (double) (sum / periods.size());
 		final Double avgDays = average / (8.64e7); //(1000 * 60 * 60 * 24)
 
-		d.setAverageTaskExecutionPeriod(average);
+		d.setAverageExecutionPeriod(average);
 
 		return avgDays;
 	}
 
 	private Double deviationPeriodTask(final Dashboard d, final Collection<Long> periods) {
 
-		final double avg = d.getAverageTaskExecutionPeriod();
+		final double avg = d.getAverageExecutionPeriod();
 
 		Double variance = 0.;
 
@@ -191,7 +191,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 	
 	BigDecimal devTaskWorkload(final Dashboard d) {
 		
-		final BigDecimal average = d.getAverageTaskWorkloads();
+		final BigDecimal average = d.getAverageWorkloads();
 		BigDecimal variance = new BigDecimal("0.00");
 		final Collection<BigDecimal> workloads = this.repository.allWorkloads();
 		

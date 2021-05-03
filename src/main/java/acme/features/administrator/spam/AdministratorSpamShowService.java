@@ -1,16 +1,17 @@
-package acme.features.spam;
+package acme.features.administrator.spam;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.spam.Spam;
+import acme.features.spam.AnySpamRepository;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Anonymous;
+import acme.framework.entities.Administrator;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class SpamShowService implements AbstractShowService<Anonymous, Spam>{
+public class AdministratorSpamShowService implements AbstractShowService<Administrator, Spam>{
 	
 	@Autowired
 	protected AnySpamRepository repository;
@@ -34,13 +35,9 @@ public class SpamShowService implements AbstractShowService<Anonymous, Spam>{
 
 	@Override
 	public Spam findOne(final Request<Spam> request) {
-		assert request != null;
-		
-		Spam result;
-		
-		result = this.repository.findSpam();
-		
-		return result;
+		assert request != null;		
+		return this.repository.findSpam();
 	}
+
 
 }
