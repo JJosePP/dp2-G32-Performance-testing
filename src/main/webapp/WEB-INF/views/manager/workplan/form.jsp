@@ -13,18 +13,19 @@
 		<acme:form-option code="manager.workplan.form.label.public" value="${false}"/>
 	</acme:form-select>
 	<jstl:if test="${command == 'create' }">
-		<acme:form-select code="mM" path="tasks">
-			<jstl:forEach items="${tasks}" var="task">
-				<acme:form-option code="" value="${task.id}"/>
-			</jstl:forEach>
-		</acme:form-select>
-	</jstl:if>
-
-		<acme:form-select code="mM" path="tasks">
-			<jstl:forEach items="${tasks}" var="task">
+		<acme:form-select code="manager.workplan.form.label.taskAssinged" path="newTask">
+			<jstl:forEach items="${tasksManager}" var="task">
 				<acme:form-option code="${task.title}" value="${task.id}"></acme:form-option>
 			</jstl:forEach>
 		</acme:form-select>
+	</jstl:if>
+	<jstl:if test="${command == 'show' }">
+		<acme:form-select code="manager.workplan.form.label.newTask" path="tasksUnassigned">
+			<jstl:forEach items="${tasksUnassigned}" var="task">
+				<acme:form-option code="${task.title}" value="${task.id}"></acme:form-option>
+			</jstl:forEach>
+		</acme:form-select>
+	</jstl:if>
 	<acme:form-submit test="${command == 'create'}" code="manager.workplan.form.button.submit" action="/manager/workplan/create"/>
 	<acme:form-submit test="${command == 'show'}" code="manager.workplan.form.button.update" action="/manager/workplan/update"/>
 </acme:form>

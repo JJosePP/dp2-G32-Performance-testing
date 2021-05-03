@@ -48,7 +48,11 @@ public class ManagerWorkplanCreateService implements AbstractCreateService<Manag
 		assert entity != null;
 		assert model != null;
 		
-		request.unbind(entity, model, "title","isPrivate","startExecution","endExecution","workload");
+		final Collection<Task> tasksManager = this.taskRepository.findAllTaskById(request.getPrincipal().getAccountId());
+		
+		model.setAttribute("tasksManager", tasksManager);
+		
+		request.unbind(entity, model, "title","isPrivate","startExecution","endExecution","workload", "tasks");
 	}
 
 	@Override
@@ -68,11 +72,6 @@ public class ManagerWorkplanCreateService implements AbstractCreateService<Manag
 		result.setWorkload(BigDecimal.valueOf(0.0));
 		result.setUserAccount(usuario);
 		//result.setTasks(null);
-		final Collection<Task> tasks = this.taskRepository.findAllTaskById(principal.getAccountId());
-		final Model model = new Model();
-		model.setAttribute("tasks", tasks);
-		System.out.println(tasks);
-		request.setModel(model);
 		return result;
 	}
 
@@ -87,6 +86,10 @@ public class ManagerWorkplanCreateService implements AbstractCreateService<Manag
 	public void create(final Request<Workplan> request, final Workplan entity) {
 		assert request != null;
 		assert entity != null;
+		
+		System.out.println("LO TIENE O NO XD" + request.getModel().hasAttribute("newTask"));
+//		System.out.println("CON EL MODEL ATRIBUTE " + request.getModel().getAttribute("newTask"));
+//		System.out.println("CON EL INTEGER XD " + request.getModel().getInteger("newTask"));
 		
 		this.repository.save(entity);
 	}

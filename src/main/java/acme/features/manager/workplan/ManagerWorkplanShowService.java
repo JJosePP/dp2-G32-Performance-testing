@@ -33,7 +33,7 @@ public class ManagerWorkplanShowService implements AbstractShowService<Manager, 
 
 		//final Collection<Task> tasks = this.taskRepository.findAllTaskById(request.getPrincipal().getAccountId());
 
-		request.unbind(entity, model,"title","startExecution","endExecution","isPrivate","tasks");
+		request.unbind(entity, model,"title","startExecution","endExecution","isPrivate","tasks"/*,"tasksUnassigned"*/);
 		
 	}
 
