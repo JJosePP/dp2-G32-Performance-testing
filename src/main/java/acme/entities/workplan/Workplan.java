@@ -1,10 +1,12 @@
-package acme.entities.workPlan;
+package acme.entities.workplan;
 
 import java.math.BigDecimal;
 import java.util.Collection;
 import java.util.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
@@ -26,7 +28,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class WorkPlan extends DomainEntity {
+public class Workplan extends DomainEntity {
 	
 	// Serial version identifier ----------------------------------
 	
@@ -54,7 +56,7 @@ public class WorkPlan extends DomainEntity {
 	protected BigDecimal workload;
 	
 	
-	@ManyToMany
+	@ManyToMany(mappedBy = "workplans", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	private Collection<Task> tasks;
 
 	@NotNull

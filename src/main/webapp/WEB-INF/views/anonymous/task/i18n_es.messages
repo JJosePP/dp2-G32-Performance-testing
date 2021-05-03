@@ -21,3 +21,6 @@ anonymous.task.form.label.startExecution = Inicio de ejecución
 anonymous.task.form.label.endExecution = Fin de ejecución
 anonymous.task.form.label.workload = Carga de trabajo
 anonymous.task.form.button.return = Volver
+
+anonymous.task.list.button.byExPeriod = Ordenar por periodo de ejecución
+anonymous.task.list.button.byWorkload = Ordenar por carga de trabajo

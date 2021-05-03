@@ -1937,3 +1937,1318 @@ ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/
 ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 404
 ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
 ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 404
+ERROR [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [workplan]
+WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [workplan]
+ERROR [org.springframework.boot.SpringApplication] at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788): Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [workplan]
+at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421): [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [workplan]
+at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:121): Schema-validation: missing table [workplan]
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 11892 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+ERROR [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [workplan]
+WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [workplan]
+ERROR [org.springframework.boot.SpringApplication] at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788): Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [workplan]
+at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421): [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [workplan]
+at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:121): Schema-validation: missing table [workplan]
+ERROR [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_workplan]
+WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_workplan]
+ERROR [org.springframework.boot.SpringApplication] at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788): Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_workplan]
+at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421): [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_workplan]
+at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:121): Schema-validation: missing table [task_workplan]
+ERROR [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_workplan]
+WARN [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_workplan]
+ERROR [org.springframework.boot.SpringApplication] at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788): Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_workplan]
+at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421): [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [task_workplan]
+at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:121): Schema-validation: missing table [task_workplan]
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 11052 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 10.612 seconds (JVM running for 11.479)
+INFO [acme.framework.utilities.DatabasePopulator] Populating initial data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 11932 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 10.333 seconds (JVM running for 11.195)
+INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousAnonymous ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAdministrator ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerManager ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task04 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task05 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task06 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task07 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task08 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task09 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spam01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task10 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task11 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan1 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan2 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan3 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for anonymousUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for anonymousAnonymous.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for administratorUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for administratorAdministrator.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for administratorAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for managerUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for managerManager.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for managerAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for shout01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for shout02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for shout03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for task01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for task02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for task03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for task04.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for task05.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 16 for task06.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 17 for task07.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 18 for task08.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 19 for task09.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 20 for spam01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 21 for task10.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 22 for task11.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 23 for workPlan1.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 24 for workPlan2.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 25 for workPlan3.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousUserAccount = acme.framework.entities.UserAccount{id=1, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousAnonymous = acme.framework.entities.Anonymous{id=2, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorUserAccount = acme.framework.entities.UserAccount{id=3, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAdministrator = acme.framework.entities.Administrator{id=4, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAuthenticated = acme.framework.entities.Authenticated{id=5, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerUserAccount = acme.framework.entities.UserAccount{id=6, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerManager = acme.framework.entities.Manager{id=7, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerAuthenticated = acme.framework.entities.Authenticated{id=8, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=9, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=10, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=11, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=12, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=13, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=14, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=15, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=16, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task06 = acme.entities.tasks.Task{id=17, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task07 = acme.entities.tasks.Task{id=18, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task08 = acme.entities.tasks.Task{id=19, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task09 = acme.entities.tasks.Task{id=20, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spam01 = acme.entities.spam.Spam{id=21, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task10 = acme.entities.tasks.Task{id=22, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task11 = acme.entities.tasks.Task{id=23, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan1 = acme.entities.workplan.Workplan{id=24, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan2 = acme.entities.workplan.Workplan{id=25, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan3 = acme.entities.workplan.Workplan{id=26, version=0}
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.apache.jasper.servlet.JspServlet.handleMissingResource(JspServlet.java:406): JSP file [&#47;WEB-INF&#47;views&#47;framework&#47;C:&#47;Users&#47;jjose&#47;git&#47;dp2-G32-Devising-WIS&#47;src&#47;main&#47;webapp&#47;WEB-INF&#47;views&#47;manager&#47;workplan&#47;list.jsp] not found
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:63): JSPException including path 'C:\Users\jjose\git\dp2-G32-Devising-WIS\src\main\webapp\WEB-INF\views\manager\workplan\list.jsp'.
+at org.apache.jasper.servlet.JspServlet.handleMissingResource(JspServlet.java:406): JSP file [&#47;WEB-INF&#47;views&#47;framework&#47;C:&#47;Users&#47;jjose&#47;git&#47;dp2-G32-Devising-WIS&#47;src&#47;main&#47;webapp&#47;WEB-INF&#47;views&#47;manager&#47;workplan&#47;list.jsp] not found
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[dispatcherServlet]] at org.apache.jasper.servlet.JspServlet.handleMissingResource(JspServlet.java:406): JSP file [&#47;WEB-INF&#47;views&#47;framework&#47;C:&#47;Users&#47;jjose&#47;git&#47;dp2-G32-Devising-WIS&#47;src&#47;main&#47;webapp&#47;WEB-INF&#47;views&#47;manager&#47;workplan&#47;list.jsp] not found
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/master/panic HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014): Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: JSPException including path 'C:\Users\jjose\git\dp2-G32-Devising-WIS\src\main\webapp\WEB-INF\views\manager\workplan\list.jsp'.
+org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:399): JSPException including path 'C:\Users\jjose\git\dp2-G32-Devising-WIS\src\main\webapp\WEB-INF\views\manager\workplan\list.jsp'.
+org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:63): JSPException including path 'C:\Users\jjose\git\dp2-G32-Devising-WIS\src\main\webapp\WEB-INF\views\manager\workplan\list.jsp'.
+org.apache.jasper.servlet.JspServlet.handleMissingResource(JspServlet.java:406): JSP file [&#47;WEB-INF&#47;views&#47;framework&#47;C:&#47;Users&#47;jjose&#47;git&#47;dp2-G32-Devising-WIS&#47;src&#47;main&#47;webapp&#47;WEB-INF&#47;views&#47;manager&#47;workplan&#47;list.jsp] not found
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): End-point no disponible
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42): /WEB-INF/views/manager/workplan/form.jsp (line: [17], column: [3]) According to TLD, tag [acme:form-option] must be empty, but is not
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:63): JSPException including path '../manager/workplan/form.jsp'.
+at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42): /WEB-INF/views/manager/workplan/form.jsp (line: [17], column: [3]) According to TLD, tag [acme:form-option] must be empty, but is not
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[dispatcherServlet]] at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42): /WEB-INF/views/manager/workplan/form.jsp (line: [17], column: [3]) According to TLD, tag [acme:form-option] must be empty, but is not
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/master/panic HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014): Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: JSPException including path '../manager/workplan/form.jsp'.
+org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:399): JSPException including path '../manager/workplan/form.jsp'.
+org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:63): JSPException including path '../manager/workplan/form.jsp'.
+org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42): /WEB-INF/views/manager/workplan/form.jsp (line: [17], column: [3]) According to TLD, tag [acme:form-option] must be empty, but is not
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42): /WEB-INF/views/manager/workplan/form.jsp (line: [17], column: [50]) Unterminated [&lt;acme:form-option] tag
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:63): JSPException including path '../manager/workplan/form.jsp'.
+at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42): /WEB-INF/views/manager/workplan/form.jsp (line: [17], column: [50]) Unterminated [&lt;acme:form-option] tag
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[dispatcherServlet]] at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42): /WEB-INF/views/manager/workplan/form.jsp (line: [17], column: [50]) Unterminated [&lt;acme:form-option] tag
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/master/panic HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014): Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: JSPException including path '../manager/workplan/form.jsp'.
+org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:399): JSPException including path '../manager/workplan/form.jsp'.
+org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:63): JSPException including path '../manager/workplan/form.jsp'.
+org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42): /WEB-INF/views/manager/workplan/form.jsp (line: [17], column: [50]) Unterminated [&lt;acme:form-option] tag
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42): /WEB-INF/views/manager/workplan/form.jsp (line: [15], column: [50]) equal symbol expected
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:63): JSPException including path '../manager/workplan/form.jsp'.
+at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42): /WEB-INF/views/manager/workplan/form.jsp (line: [15], column: [50]) equal symbol expected
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[dispatcherServlet]] at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42): /WEB-INF/views/manager/workplan/form.jsp (line: [15], column: [50]) equal symbol expected
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/master/panic HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014): Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: JSPException including path '../manager/workplan/form.jsp'.
+org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:399): JSPException including path '../manager/workplan/form.jsp'.
+org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:63): JSPException including path '../manager/workplan/form.jsp'.
+org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42): /WEB-INF/views/manager/workplan/form.jsp (line: [15], column: [50]) equal symbol expected
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:61): JSPException including path '../manager/workplan/form.jsp'.
+at org.apache.jsp.WEB_002dINF.views.manager.workplan.form_jsp$Helper.invoke(form_jsp.java:580): org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[dispatcherServlet]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/master/panic HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014): Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: JSPException including path '../manager/workplan/form.jsp'.
+org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:399): JSPException including path '../manager/workplan/form.jsp'.
+org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:61): JSPException including path '../manager/workplan/form.jsp'.
+org.apache.jsp.WEB_002dINF.views.manager.workplan.form_jsp$Helper.invoke(form_jsp.java:580): org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[dispatcherServlet]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost]] at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014): Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: ServletException including path '/WEB-INF/views/framework/page.jsp'.
+at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:399): ServletException including path '/WEB-INF/views/framework/page.jsp'.
+at org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:61): ServletException including path '/WEB-INF/views/framework/page.jsp'.
+at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: java.lang.AssertionError
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:61): JSPException including path '../manager/workplan/form.jsp'.
+at org.apache.jsp.WEB_002dINF.views.manager.workplan.form_jsp$Helper.invoke(form_jsp.java:580): org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[dispatcherServlet]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/master/panic HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014): Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: JSPException including path '../manager/workplan/form.jsp'.
+org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:399): JSPException including path '../manager/workplan/form.jsp'.
+org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:61): JSPException including path '../manager/workplan/form.jsp'.
+org.apache.jsp.WEB_002dINF.views.manager.workplan.form_jsp$Helper.invoke(form_jsp.java:580): org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[dispatcherServlet]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost]] at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014): Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: ServletException including path '/WEB-INF/views/framework/page.jsp'.
+at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:399): ServletException including path '/WEB-INF/views/framework/page.jsp'.
+at org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:61): ServletException including path '/WEB-INF/views/framework/page.jsp'.
+at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+WARN [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] SQL Error: 0, SQLState: S1000
+ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] Operation not allowed after ResultSet closed
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:400): Pre-bound JDBC Connection found! JpaTransactionManager does not support running within DataSourceTransactionManager if told to manage the DataSource itself. It is recommended to use a single JpaTransactionManager for all transactions on a single DataSource, no matter whether JPA or JDBC access.
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: java.lang.AssertionError
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: java.lang.AssertionError
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: java.lang.AssertionError
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP POST /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): End-point no disponible
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[dispatcherServlet]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP POST /Acme-One/master/panic HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:250): Request method 'POST' not supported
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[dispatcherServlet]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost]] at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014): Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: ServletException including path '/WEB-INF/views/framework/page.jsp'.
+at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:399): ServletException including path '/WEB-INF/views/framework/page.jsp'.
+at org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:61): ServletException including path '/WEB-INF/views/framework/page.jsp'.
+at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[dispatcherServlet]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP POST /Acme-One/master/panic HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:250): Request method 'POST' not supported
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[dispatcherServlet]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost]] at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014): Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: ServletException including path '/WEB-INF/views/framework/page.jsp'.
+at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:399): ServletException including path '/WEB-INF/views/framework/page.jsp'.
+at org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:61): ServletException including path '/WEB-INF/views/framework/page.jsp'.
+at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[dispatcherServlet]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP POST /Acme-One/master/panic HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:250): Request method 'POST' not supported
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[dispatcherServlet]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost]] at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014): Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: ServletException including path '/WEB-INF/views/framework/page.jsp'.
+at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:399): ServletException including path '/WEB-INF/views/framework/page.jsp'.
+at org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:61): ServletException including path '/WEB-INF/views/framework/page.jsp'.
+at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.tasks.Task.workplans, could not initialize proxy - no Session
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: java.lang.AssertionError
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: java.lang.AssertionError
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: java.lang.AssertionError
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:61): JSPException including path '../manager/workplan/form.jsp'.
+at org.apache.jsp.WEB_002dINF.views.manager.workplan.form_jsp$Helper.invoke(form_jsp.java:756): org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[dispatcherServlet]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/master/panic HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014): Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: JSPException including path '../manager/workplan/form.jsp'.
+org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:399): JSPException including path '../manager/workplan/form.jsp'.
+org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:61): JSPException including path '../manager/workplan/form.jsp'.
+org.apache.jsp.WEB_002dINF.views.manager.workplan.form_jsp$Helper.invoke(form_jsp.java:756): org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[dispatcherServlet]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost]] at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014): Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: ServletException including path '/WEB-INF/views/framework/page.jsp'.
+at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:399): ServletException including path '/WEB-INF/views/framework/page.jsp'.
+at org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:61): ServletException including path '/WEB-INF/views/framework/page.jsp'.
+at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:61): JSPException including path '../manager/workplan/form.jsp'.
+at org.apache.jsp.WEB_002dINF.views.manager.workplan.form_jsp$Helper.invoke(form_jsp.java:755): org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[dispatcherServlet]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/master/panic HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014): Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: JSPException including path '../manager/workplan/form.jsp'.
+org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:399): JSPException including path '../manager/workplan/form.jsp'.
+org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:61): JSPException including path '../manager/workplan/form.jsp'.
+org.apache.jsp.WEB_002dINF.views.manager.workplan.form_jsp$Helper.invoke(form_jsp.java:755): org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[dispatcherServlet]] at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost]] at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014): Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: ServletException including path '/WEB-INF/views/framework/page.jsp'.
+at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:399): ServletException including path '/WEB-INF/views/framework/page.jsp'.
+at org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:61): ServletException including path '/WEB-INF/views/framework/page.jsp'.
+at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: java.util.NoSuchElementException
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606): failed to lazily initialize a collection of role: acme.entities.workplan.Workplan.tasks, could not initialize proxy - no Session
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 1104 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 23.06 seconds (JVM running for 24.661)
+INFO [acme.framework.utilities.DatabasePopulator] Populating initial data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 9688 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 20.695 seconds (JVM running for 22.277)
+INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousAnonymous ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAdministrator ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerManager ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task04 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task05 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task06 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task07 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task08 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task09 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spam01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task10 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task11 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan1 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan2 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan3 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for anonymousUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for anonymousAnonymous.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for administratorUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for administratorAdministrator.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for administratorAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for managerUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for managerManager.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for managerAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for shout01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for shout02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for shout03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for task01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for task02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for task03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for task04.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for task05.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 16 for task06.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 17 for task07.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 18 for task08.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 19 for task09.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 20 for spam01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 21 for task10.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 22 for task11.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 23 for workPlan1.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 24 for workPlan2.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 25 for workPlan3.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousUserAccount = acme.framework.entities.UserAccount{id=1, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousAnonymous = acme.framework.entities.Anonymous{id=2, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorUserAccount = acme.framework.entities.UserAccount{id=3, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAdministrator = acme.framework.entities.Administrator{id=4, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAuthenticated = acme.framework.entities.Authenticated{id=5, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerUserAccount = acme.framework.entities.UserAccount{id=6, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerManager = acme.framework.entities.Manager{id=7, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerAuthenticated = acme.framework.entities.Authenticated{id=8, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=9, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=10, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=11, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=12, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=13, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=14, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=15, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=16, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task06 = acme.entities.tasks.Task{id=17, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task07 = acme.entities.tasks.Task{id=18, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task08 = acme.entities.tasks.Task{id=19, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task09 = acme.entities.tasks.Task{id=20, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spam01 = acme.entities.spam.Spam{id=21, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task10 = acme.entities.tasks.Task{id=22, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task11 = acme.entities.tasks.Task{id=23, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan1 = acme.entities.workplan.Workplan{id=24, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan2 = acme.entities.workplan.Workplan{id=25, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan3 = acme.entities.workplan.Workplan{id=26, version=0}
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 7836 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 14.795 seconds (JVM running for 16.13)
+INFO [acme.framework.utilities.DatabasePopulator] Populating initial data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 10628 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 13.224 seconds (JVM running for 14.342)
+INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousAnonymous ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAdministrator ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerManager ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task04 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task05 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task06 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task07 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task08 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task09 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spam01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task10 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task11 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan1 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan2 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan3 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for anonymousUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for anonymousAnonymous.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for administratorUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for administratorAdministrator.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for administratorAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for managerUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for managerManager.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for managerAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for shout01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for shout02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for shout03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for task01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for task02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for task03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for task04.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for task05.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 16 for task06.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 17 for task07.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 18 for task08.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 19 for task09.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 20 for spam01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 21 for task10.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 22 for task11.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 23 for workPlan1.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 24 for workPlan2.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 25 for workPlan3.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousUserAccount = acme.framework.entities.UserAccount{id=1, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousAnonymous = acme.framework.entities.Anonymous{id=2, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorUserAccount = acme.framework.entities.UserAccount{id=3, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAdministrator = acme.framework.entities.Administrator{id=4, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAuthenticated = acme.framework.entities.Authenticated{id=5, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerUserAccount = acme.framework.entities.UserAccount{id=6, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerManager = acme.framework.entities.Manager{id=7, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerAuthenticated = acme.framework.entities.Authenticated{id=8, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=9, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=10, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=11, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=12, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=13, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=14, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=15, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=16, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task06 = acme.entities.tasks.Task{id=17, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task07 = acme.entities.tasks.Task{id=18, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task08 = acme.entities.tasks.Task{id=19, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task09 = acme.entities.tasks.Task{id=20, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spam01 = acme.entities.spam.Spam{id=21, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task10 = acme.entities.tasks.Task{id=22, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task11 = acme.entities.tasks.Task{id=23, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan1 = acme.entities.workplan.Workplan{id=24, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan2 = acme.entities.workplan.Workplan{id=25, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan3 = acme.entities.workplan.Workplan{id=26, version=0}
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 13208 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 14.576 seconds (JVM running for 15.982)
+INFO [acme.framework.utilities.DatabasePopulator] Populating initial data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 5928 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 13.936 seconds (JVM running for 15.302)
+INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousAnonymous ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAdministrator ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerManager ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task04 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task05 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task06 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task07 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task08 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task09 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spam01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task10 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task11 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan1 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan2 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan3 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for anonymousUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for anonymousAnonymous.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for administratorUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for administratorAdministrator.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for administratorAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for managerUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for managerManager.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for managerAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for shout01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for shout02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for shout03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for task01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for task02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for task03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for task04.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for task05.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 16 for task06.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 17 for task07.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 18 for task08.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 19 for task09.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 20 for spam01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 21 for task10.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 22 for task11.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 23 for workPlan1.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 24 for workPlan2.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 25 for workPlan3.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousUserAccount = acme.framework.entities.UserAccount{id=1, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousAnonymous = acme.framework.entities.Anonymous{id=2, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorUserAccount = acme.framework.entities.UserAccount{id=3, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAdministrator = acme.framework.entities.Administrator{id=4, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAuthenticated = acme.framework.entities.Authenticated{id=5, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerUserAccount = acme.framework.entities.UserAccount{id=6, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerManager = acme.framework.entities.Manager{id=7, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerAuthenticated = acme.framework.entities.Authenticated{id=8, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=9, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=10, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=11, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=12, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=13, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=14, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=15, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=16, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task06 = acme.entities.tasks.Task{id=17, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task07 = acme.entities.tasks.Task{id=18, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task08 = acme.entities.tasks.Task{id=19, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task09 = acme.entities.tasks.Task{id=20, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spam01 = acme.entities.spam.Spam{id=21, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task10 = acme.entities.tasks.Task{id=22, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task11 = acme.entities.tasks.Task{id=23, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan1 = acme.entities.workplan.Workplan{id=24, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan2 = acme.entities.workplan.Workplan{id=25, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan3 = acme.entities.workplan.Workplan{id=26, version=0}
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 1072 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 13.967 seconds (JVM running for 15.212)
+INFO [acme.framework.utilities.DatabasePopulator] Populating initial data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 11424 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 13.69 seconds (JVM running for 14.9)
+INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousAnonymous ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAdministrator ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerManager ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task04 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task05 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task06 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task07 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task08 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task09 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spam01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task10 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task11 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan1 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan2 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan3 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for anonymousUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for anonymousAnonymous.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for administratorUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for administratorAdministrator.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for administratorAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for managerUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for managerManager.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for managerAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for shout01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for shout02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for shout03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for task01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for task02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for task03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for task04.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for task05.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 16 for task06.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 17 for task07.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 18 for task08.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 19 for task09.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 20 for spam01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 21 for task10.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 22 for task11.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 23 for workPlan1.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 24 for workPlan2.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 25 for workPlan3.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousUserAccount = acme.framework.entities.UserAccount{id=1, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousAnonymous = acme.framework.entities.Anonymous{id=2, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorUserAccount = acme.framework.entities.UserAccount{id=3, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAdministrator = acme.framework.entities.Administrator{id=4, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAuthenticated = acme.framework.entities.Authenticated{id=5, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerUserAccount = acme.framework.entities.UserAccount{id=6, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerManager = acme.framework.entities.Manager{id=7, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerAuthenticated = acme.framework.entities.Authenticated{id=8, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=9, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=10, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=11, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=12, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=13, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=14, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=15, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=16, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task06 = acme.entities.tasks.Task{id=17, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task07 = acme.entities.tasks.Task{id=18, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task08 = acme.entities.tasks.Task{id=19, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task09 = acme.entities.tasks.Task{id=20, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spam01 = acme.entities.spam.Spam{id=21, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task10 = acme.entities.tasks.Task{id=22, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task11 = acme.entities.tasks.Task{id=23, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan1 = acme.entities.workplan.Workplan{id=24, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan2 = acme.entities.workplan.Workplan{id=25, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan3 = acme.entities.workplan.Workplan{id=26, version=0}
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 1732 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 14.502 seconds (JVM running for 15.809)
+INFO [acme.framework.utilities.DatabasePopulator] Populating initial data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 5748 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 13.61 seconds (JVM running for 14.795)
+INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousAnonymous ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAdministrator ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerManager ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task04 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task05 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task06 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task07 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task08 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task09 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spam01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task10 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task11 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan1 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan2 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan3 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for anonymousUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for anonymousAnonymous.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for administratorUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for administratorAdministrator.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for administratorAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for managerUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for managerManager.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for managerAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for shout01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for shout02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for shout03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for task01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for task02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for task03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for task04.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for task05.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 16 for task06.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 17 for task07.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 18 for task08.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 19 for task09.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 20 for spam01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 21 for task10.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 22 for task11.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 23 for workPlan1.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 24 for workPlan2.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 25 for workPlan3.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousUserAccount = acme.framework.entities.UserAccount{id=1, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousAnonymous = acme.framework.entities.Anonymous{id=2, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorUserAccount = acme.framework.entities.UserAccount{id=3, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAdministrator = acme.framework.entities.Administrator{id=4, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAuthenticated = acme.framework.entities.Authenticated{id=5, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerUserAccount = acme.framework.entities.UserAccount{id=6, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerManager = acme.framework.entities.Manager{id=7, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerAuthenticated = acme.framework.entities.Authenticated{id=8, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=9, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=10, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=11, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=12, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=13, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=14, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=15, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=16, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task06 = acme.entities.tasks.Task{id=17, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task07 = acme.entities.tasks.Task{id=18, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task08 = acme.entities.tasks.Task{id=19, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task09 = acme.entities.tasks.Task{id=20, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spam01 = acme.entities.spam.Spam{id=21, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task10 = acme.entities.tasks.Task{id=22, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task11 = acme.entities.tasks.Task{id=23, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan1 = acme.entities.workplan.Workplan{id=24, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan2 = acme.entities.workplan.Workplan{id=25, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan3 = acme.entities.workplan.Workplan{id=26, version=0}
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 7080 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 14.451 seconds (JVM running for 15.766)
+INFO [acme.framework.utilities.DatabasePopulator] Populating initial data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 12316 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 14.517 seconds (JVM running for 15.768)
+INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousAnonymous ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAdministrator ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerManager ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task04 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task05 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task06 ... FAILED
+INFO [acme.framework.utilities.DatabasePopulator] Violated constraints on entity task06: startExecution : Must be in the future
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at acme.framework.services.AuthenticationService.loadUserByUsername(AuthenticationService.java:51): anonymous
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 11648 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 11.133 seconds (JVM running for 12.097)
+INFO [acme.framework.utilities.DatabasePopulator] Populating initial data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 10292 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 11.355 seconds (JVM running for 12.539)
+INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousAnonymous ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAdministrator ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerManager ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task04 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task05 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task06 ... FAILED
+INFO [acme.framework.utilities.DatabasePopulator] Violated constraints on entity task06: startExecution : Must be in the future
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 712 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 11.025 seconds (JVM running for 11.943)
+INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousAnonymous ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAdministrator ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerManager ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task04 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task05 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task06 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task07 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task08 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task09 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spam01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task10 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task11 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan1 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan2 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan3 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for anonymousUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for anonymousAnonymous.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for administratorUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for administratorAdministrator.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for administratorAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for managerUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for managerManager.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for managerAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for shout01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for shout02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for shout03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for task01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for task02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for task03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for task04.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for task05.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 16 for task06.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 17 for task07.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 18 for task08.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 19 for task09.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 20 for spam01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 21 for task10.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 22 for task11.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 23 for workPlan1.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 24 for workPlan2.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 25 for workPlan3.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousUserAccount = acme.framework.entities.UserAccount{id=1, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousAnonymous = acme.framework.entities.Anonymous{id=2, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorUserAccount = acme.framework.entities.UserAccount{id=3, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAdministrator = acme.framework.entities.Administrator{id=4, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAuthenticated = acme.framework.entities.Authenticated{id=5, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerUserAccount = acme.framework.entities.UserAccount{id=6, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerManager = acme.framework.entities.Manager{id=7, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerAuthenticated = acme.framework.entities.Authenticated{id=8, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=9, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=10, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=11, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=12, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=13, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=14, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=15, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=16, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task06 = acme.entities.tasks.Task{id=17, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task07 = acme.entities.tasks.Task{id=18, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task08 = acme.entities.tasks.Task{id=19, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task09 = acme.entities.tasks.Task{id=20, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spam01 = acme.entities.spam.Spam{id=21, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task10 = acme.entities.tasks.Task{id=22, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task11 = acme.entities.tasks.Task{id=23, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan1 = acme.entities.workplan.Workplan{id=24, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan2 = acme.entities.workplan.Workplan{id=25, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan3 = acme.entities.workplan.Workplan{id=26, version=0}
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 8912 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 11.662 seconds (JVM running for 12.459)
+INFO [acme.framework.utilities.DatabasePopulator] Populating initial data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 9672 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 11.25 seconds (JVM running for 12.177)
+INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 6464 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 11.159 seconds (JVM running for 12.056)
+INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousAnonymous ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAdministrator ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerManager ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task04 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task05 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task06 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task07 ... FAILED
+INFO [acme.framework.utilities.DatabasePopulator] Violated constraints on entity task07: startExecution : Must be in the future
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 5468 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 11.495 seconds (JVM running for 12.419)
+INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousAnonymous ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAdministrator ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerManager ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task04 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task05 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task06 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task07 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task08 ... FAILED
+INFO [acme.framework.utilities.DatabasePopulator] Violated constraints on entity task08: startExecution : Must be in the future
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 5256 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 11.668 seconds (JVM running for 12.581)
+INFO [acme.framework.utilities.DatabasePopulator] Populating initial data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+INFO [acme.Launcher] Starting Launcher using Java 1.8.0_281 on DESKTOP-C1QOVK5 with PID 7092 (C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS\target\classes started by jjose in C:\Users\jjose\Documents\DP2\Workspace-21.1\Projects\dp2-G32-Devising-WIS)
+INFO [acme.Launcher] The following profiles are active: development,populator
+INFO [acme.Launcher] Started Launcher in 11.173 seconds (JVM running for 12.137)
+INFO [acme.framework.utilities.DatabasePopulator] Populating sample data
+INFO [acme.framework.utilities.DatabasePopulator] Recreating schema
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/initial-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Populating entities from classpath:/WEB-INF/population/sample-data.xml
+INFO [acme.framework.utilities.DatabasePopulator] Validating your entities.
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating anonymousAnonymous ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAdministrator ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating administratorAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerUserAccount ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerManager ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating managerAuthenticated ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating shout03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task02 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task03 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task04 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task05 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task06 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task07 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task08 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task09 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating spam01 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task10 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating task11 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan1 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan2 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Validating workPlan3 ... PASS
+INFO [acme.framework.utilities.DatabasePopulator] Sorting your entities topologically.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 0 for anonymousUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 1 for anonymousAnonymous.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 2 for administratorUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 3 for administratorAdministrator.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 4 for administratorAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 5 for managerUserAccount.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 6 for managerManager.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 7 for managerAuthenticated.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 8 for shout01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 9 for shout02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 10 for shout03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 11 for task01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 12 for task02.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 13 for task03.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 14 for task04.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 15 for task05.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 16 for task06.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 17 for task07.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 18 for task08.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 19 for task09.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 20 for spam01.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 21 for task10.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 22 for task11.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 23 for workPlan1.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 24 for workPlan2.
+INFO [acme.framework.utilities.DatabasePopulator] > Setting index 25 for workPlan3.
+INFO [acme.framework.utilities.DatabasePopulator] Persiting your entities.
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousUserAccount = acme.framework.entities.UserAccount{id=1, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting anonymousAnonymous = acme.framework.entities.Anonymous{id=2, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorUserAccount = acme.framework.entities.UserAccount{id=3, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAdministrator = acme.framework.entities.Administrator{id=4, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting administratorAuthenticated = acme.framework.entities.Authenticated{id=5, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerUserAccount = acme.framework.entities.UserAccount{id=6, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerManager = acme.framework.entities.Manager{id=7, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting managerAuthenticated = acme.framework.entities.Authenticated{id=8, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout01 = acme.entities.shouts.Shout{id=9, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout02 = acme.entities.shouts.Shout{id=10, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting shout03 = acme.entities.shouts.Shout{id=11, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task01 = acme.entities.tasks.Task{id=12, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task02 = acme.entities.tasks.Task{id=13, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task03 = acme.entities.tasks.Task{id=14, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task04 = acme.entities.tasks.Task{id=15, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task05 = acme.entities.tasks.Task{id=16, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task06 = acme.entities.tasks.Task{id=17, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task07 = acme.entities.tasks.Task{id=18, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task08 = acme.entities.tasks.Task{id=19, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task09 = acme.entities.tasks.Task{id=20, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting spam01 = acme.entities.spam.Spam{id=21, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task10 = acme.entities.tasks.Task{id=22, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting task11 = acme.entities.tasks.Task{id=23, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan1 = acme.entities.workplan.Workplan{id=24, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan2 = acme.entities.workplan.Workplan{id=25, version=0}
+INFO [acme.framework.utilities.DatabasePopulator] > Persisting workPlan3 = acme.entities.workplan.Workplan{id=26, version=0}
+INFO [acme.framework.configuration.ShutdownConfiguration] The system is shutting down...
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42): /WEB-INF/views/manager/workplan/form.jsp (line: [25], column: [4]) According to TLD, tag [acme:form-option] must be empty, but is not
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[jsp]] at org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:63): JSPException including path '../manager/workplan/form.jsp'.
+at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42): /WEB-INF/views/manager/workplan/form.jsp (line: [25], column: [4]) According to TLD, tag [acme:form-option] must be empty, but is not
+ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Acme-One].[dispatcherServlet]] at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42): /WEB-INF/views/manager/workplan/form.jsp (line: [25], column: [4]) According to TLD, tag [acme:form-option] must be empty, but is not
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/master/panic HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014): Request processing failed; nested exception is org.apache.tiles.request.render.CannotRenderException: JSPException including path '../manager/workplan/form.jsp'.
+org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:399): JSPException including path '../manager/workplan/form.jsp'.
+org.apache.tiles.request.servlet.ServletUtil.wrapServletException(ServletUtil.java:63): JSPException including path '../manager/workplan/form.jsp'.
+org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42): /WEB-INF/views/manager/workplan/form.jsp (line: [25], column: [4]) According to TLD, tag [acme:form-option] must be empty, but is not
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 500
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Exception: acme.framework.helpers.Assert.state(Assert.java:45): Access is not authorised
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] HTTP GET /Acme-One/WEB-INF/views/framework/page.jsp HTTP/1.1
+ERROR [org.apache.jsp.WEB_002dINF.views.framework.panic_jsp] Status: 404

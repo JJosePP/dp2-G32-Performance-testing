@@ -1,10 +1,14 @@
 package acme.entities.tasks;
 
 import java.math.BigDecimal;
+import java.util.Collection;
 import java.util.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -17,6 +21,7 @@ import javax.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
+import acme.entities.workplan.Workplan;
 import acme.framework.entities.DomainEntity;
 import acme.framework.entities.UserAccount;
 import lombok.Getter;
@@ -69,4 +74,19 @@ public class Task extends DomainEntity {
 	protected UserAccount userAccount;
 
 	protected Boolean isFinished;
+	
+
+	@ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+	protected Collection<Workplan> workplans;
+	
+	public Long getExecutionPeriod() {
+		final long startDate = this.getStartExecution().getTime();
+		final long endDate = this.getEndExecution().getTime();
+		final long period = endDate - startDate;
+		return period;
+	}
+	
+	public int compareTo(final Task t) {
+		return this.getExecutionPeriod().compareTo(t.getExecutionPeriod());
+	}
 }

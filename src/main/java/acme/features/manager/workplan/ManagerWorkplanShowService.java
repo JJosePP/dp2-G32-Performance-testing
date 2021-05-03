@@ -1,23 +1,23 @@
 package acme.features.manager.workplan;
 
-import java.util.Collection;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.workplan.Workplan;
+import acme.features.manager.task.ManagerTaskRepository;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Manager;
-import acme.framework.entities.Principal;
-import acme.framework.services.AbstractListService;
+import acme.framework.services.AbstractShowService;
 
 @Service
-public class ManagerWorkplanListService implements AbstractListService<Manager, Workplan> {
+public class ManagerWorkplanShowService implements AbstractShowService<Manager, Workplan> {
 
 	@Autowired
 	protected ManagerWorkplanRepository repository;
-	
+
+	@Autowired
+	protected ManagerTaskRepository taskRepository;
 	@Override
 	public boolean authorise(final Request<Workplan> request) {
 		assert request != null;
@@ -30,16 +30,19 @@ public class ManagerWorkplanListService implements AbstractListService<Manager, 
 		assert entity != null;
 		assert model != null;
 		
-		request.unbind(entity, model,"title","startExecution","endExecution","workload","isPrivate");
+
+		//final Collection<Task> tasks = this.taskRepository.findAllTaskById(request.getPrincipal().getAccountId());
+
+		request.unbind(entity, model,"title","startExecution","endExecution","isPrivate","tasks");
+		
 	}
 
 	@Override
-	public Collection<Workplan> findMany(final Request<Workplan> request) {
+	public Workplan findOne(final Request<Workplan> request) {
 		assert request != null;
-		final Principal principal = request.getPrincipal();
 		
-		return this.repository.findAllWorkPlankById(principal.getAccountId());
-	}
+		final Workplan w = this.repository.findOneById(request.getModel().getInteger("id"));
 
-	
+		return w;
+	}
 }

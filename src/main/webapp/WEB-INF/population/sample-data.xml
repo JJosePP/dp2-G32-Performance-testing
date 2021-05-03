@@ -188,7 +188,7 @@
 	<bean id="task06" class="acme.entities.tasks.Task">
 		<property name="title" value="Implement a Dashboard"/>
 		<property name="description" value="add a dashboard where the page statistics appear"/>
-		<property name="startExecution" value="2021/05/02 21:33"/>
+		<property name="startExecution" value="2021/05/05 21:33"/>
 		<property name="endExecution" value="2022/06/13 9:46"/>
 		<property name="workload" value="80.59"/>
 		<property name="info" value="http://www.example.org"/>
@@ -200,7 +200,7 @@
 	<bean id="task07" class="acme.entities.tasks.Task">
 		<property name="title" value="Dashboard view "/>
 		<property name="description" value="Implement dashboard view"/>
-		<property name="startExecution" value="2021/05/02 22:33"/>
+		<property name="startExecution" value="2021/05/05 22:33"/>
 		<property name="endExecution" value="2022/06/13 9:46"/>
 		<property name="workload" value="51.59"/>
 		<property name="info" value="http://www.example.org"/>
@@ -212,7 +212,7 @@
 	<bean id="task08" class="acme.entities.tasks.Task">
 		<property name="title" value="Just another example "/>
 		<property name="description" value="Hello world!"/>
-		<property name="startExecution" value="2021/05/02 22:33"/>
+		<property name="startExecution" value="2021/05/12 21:33"/>
 		<property name="endExecution" value="2022/06/13 9:46"/>
 		<property name="workload" value="51.59"/>
 		<property name="info" value="http://www.example.org"/>
@@ -224,7 +224,7 @@
 	<bean id="task09" class="acme.entities.tasks.Task">
 		<property name="title" value="Just another example "/>
 		<property name="description" value="Hello Spain!"/>
-		<property name="startExecution" value="2021/05/02 22:33"/>
+		<property name="startExecution" value="2021/05/22 22:33"/>
 		<property name="endExecution" value="2022/06/13 9:46"/>
 		<property name="workload" value="51.59"/>
 		<property name="info" value="http://www.example.org"/>
@@ -241,31 +241,41 @@
 	<bean id="task10" class="acme.entities.tasks.Task">
 		<property name="title" value="Just another example "/>
 		<property name="description" value="Hello Spain!"/>
-		<property name="startExecution" value="2021/05/02 22:33"/>
+		<property name="startExecution" value="2021/06/02 22:33"/>
 		<property name="endExecution" value="2022/06/13 9:46"/>
 		<property name="workload" value="51.59"/>
 		<property name="info" value="http://www.example.org"/>
     	<property name="userAccount"> <ref bean="managerUserAccount"/></property>
 		<property name="isPrivate" value="false"></property>
 		<property name="isFinished" value="false"></property>
+		<property name="workplans">
+			<list>
+				<ref bean="workPlan2"/>
+			</list>
+		</property>
 	</bean>
 	
 	<bean id="task11" class="acme.entities.tasks.Task">
 		<property name="title" value="Just another example "/>
 		<property name="description" value="Hello Spain!"/>
-		<property name="startExecution" value="2021/05/02 22:33"/>
+		<property name="startExecution" value="2021/05/21 22:33"/>
 		<property name="endExecution" value="2022/06/13 9:46"/>
 		<property name="workload" value="51.59"/>
 		<property name="info" value="http://www.example.org"/>
     	<property name="userAccount"> <ref bean="managerUserAccount"/></property>
 		<property name="isPrivate" value="false"></property>
 		<property name="isFinished" value="false"></property>
+		<property name="workplans">
+			<list>
+				<ref bean="workPlan2"/>
+			</list>
+		</property>
 	</bean>
 	<!-- Workplan -->
-	<bean name="workPlan1" class="acme.entities.workPlan.WorkPlan">
+	<bean name="workPlan1" class="acme.entities.workplan.Workplan">
 		<property name="title" value="Work Plan example" />
 		<property name="isPrivate" value="false" />
-		<property name="startExecution" value="2021/05/02 22:32" />
+		<property name="startExecution" value="2021/05/15 22:32" />
 		<property name="endExecution" value="2022/06/13 9:47" />
 		<property name="tasks">
 			<list>
@@ -276,7 +286,7 @@
 		<property name="userAccount"> <ref bean="anonymousUserAccount"/></property>
 	</bean>
 	
-	<bean name="workPlan2" class="acme.entities.workPlan.WorkPlan">
+	<bean name="workPlan2" class="acme.entities.workplan.Workplan">
 		<property name="title" value="Work Plan example" />
 		<property name="isPrivate" value="false" />
 		<property name="startExecution" value="2021/05/05 22:32" />
@@ -290,7 +300,7 @@
 		<property name="userAccount"> <ref bean="managerUserAccount"/></property>
 	</bean>
 	
-	<bean name="workPlan3" class="acme.entities.workPlan.WorkPlan">
+	<bean name="workPlan3" class="acme.entities.workplan.Workplan">
 		<property name="title" value="Work Plan example" />
 		<property name="isPrivate" value="false" />
 		<property name="startExecution" value="2021/06/16 22:32" />

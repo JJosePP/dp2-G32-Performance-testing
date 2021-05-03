@@ -6,7 +6,7 @@
 
 <tiles-definitions>
 	<definition name="manager/workplan/list" extends="master">		
-		<put-attribute name="body" type="template" value="C:\Users\jjose\git\dp2-G32-Devising-WIS\src\main\webapp\WEB-INF\views\manager\workplan\list.jsp" />
+		<put-attribute name="body" type="template" value="../manager/workplan/list.jsp" />
 	</definition>
 	<definition name="manager/workplan/form" extends="master">
 		<put-attribute name="body" type="template" value="../manager/workplan/form.jsp" />
