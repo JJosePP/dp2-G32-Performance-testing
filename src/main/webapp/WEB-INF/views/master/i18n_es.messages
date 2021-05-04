@@ -36,7 +36,6 @@ master.menu.anonymous.task-list= Lista de tareas
 
 master.menu.administrator = Administrador
 master.menu.administrator.dashboard = Panel de indicadores de tareas
-master.menu.administrator.dashboard-workplan = Panel de indicadores de planes de trabajo
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.populate-initial = Poblar BD (inicial)
 master.menu.administrator.populate-sample = Poblar BD (ejemplos)
