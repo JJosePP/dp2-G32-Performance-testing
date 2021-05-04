@@ -72,4 +72,14 @@ public class Task extends DomainEntity {
 	@NotNull
 	protected Boolean isFinished;
 	
+	public Long getExecutionPeriod() {
+		final long startDate = this.getStartExecution().getTime();
+		final long endDate = this.getEndExecution().getTime();
+		final long period = endDate - startDate;
+		return period;
+	}
+	
+	public int compareTo(final Task t) {
+		return this.getExecutionPeriod().compareTo(t.getExecutionPeriod());
+	}
 }

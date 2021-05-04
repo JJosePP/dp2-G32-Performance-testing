@@ -17,6 +17,7 @@ import acme.framework.components.Command;
 public enum CustomCommand implements Command {
 	
 	LIST_SORTED_BY_EXECUTION_PERIOD,
-	LIST_SORTED_BY_WORKLOAD
+	LIST_SORTED_BY_WORKLOAD,
+	LIST_BY_EXECUTION_PERIOD
 	
 }
