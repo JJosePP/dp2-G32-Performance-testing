@@ -6,9 +6,9 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:form-return action="/manager/task/list-sorted-by-execution-period"
+	<acme:form-return action="/manageracc/task/list-sorted-by-execution-period"
 		code="manager.task.list.button.sortExecutionPeriod" />
-	<acme:form-return action="/manager/task/list-sorted-by-workload"
+	<acme:form-return action="/manageracc/task/list-sorted-by-workload"
 		code="manager.task.list.button.sortWorkload" />
 </acme:form>
 <br>
