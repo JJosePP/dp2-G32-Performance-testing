@@ -12,15 +12,21 @@
 		<acme:form-option code="manager.workplan.form.label.private" value="${true}"/>
 		<acme:form-option code="manager.workplan.form.label.public" value="${false}"/>
 	</acme:form-select>
+
 	<jstl:if test="${command == 'create' }">
-		<acme:form-select code="manager.workplan.form.label.taskAssinged" path="newTask">
+		<acme:form-select code="manager.workplan.form.label.newTask" path="newTask">
 			<jstl:forEach items="${tasksManager}" var="task">
 				<acme:form-option code="${task.title}" value="${task.id}"></acme:form-option>
 			</jstl:forEach>
 		</acme:form-select>
 	</jstl:if>
 	<jstl:if test="${command == 'show' }">
-		<acme:form-select code="manager.workplan.form.label.newTask" path="tasksUnassigned">
+		<acme:form-select code="manager.workplan.form.label.taskAssinged" path="">
+			<jstl:forEach items="${tasks}" var="task">
+				<acme:form-option code="${task.title}" value="${task.id}"></acme:form-option>
+			</jstl:forEach>
+		</acme:form-select>
+		<acme:form-select code="manager.workplan.form.label.addTask" path="tasksUnassigned">
 			<jstl:forEach items="${tasksUnassigned}" var="task">
 				<acme:form-option code="${task.title}" value="${task.id}"></acme:form-option>
 			</jstl:forEach>
@@ -28,4 +34,6 @@
 	</jstl:if>
 	<acme:form-submit test="${command == 'create'}" code="manager.workplan.form.button.submit" action="/manager/workplan/create"/>
 	<acme:form-submit test="${command == 'show'}" code="manager.workplan.form.button.update" action="/manager/workplan/update"/>
+	<acme:form-submit test="${command == 'show'}" code="manager.workplan.form.button.delete" action="/manager/workplan/delete"/>
+	<acme:form-return code="manager.workplan.form.button.return"/>
 </acme:form>

@@ -1,8 +1,12 @@
 package acme.features.manager.workplan;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.tasks.Task;
 import acme.entities.workplan.Workplan;
 import acme.features.manager.task.ManagerTaskRepository;
 import acme.framework.components.Model;
@@ -31,9 +35,19 @@ public class ManagerWorkplanShowService implements AbstractShowService<Manager, 
 		assert model != null;
 		
 
-		//final Collection<Task> tasks = this.taskRepository.findAllTaskById(request.getPrincipal().getAccountId());
+		final Collection<Task> tasks = this.taskRepository.findAllTaskById(request.getPrincipal().getAccountId());
+		final Collection<Task> workplanTasks = entity.getTasks();
+		final Collection<Task> tasksUnassigned = new ArrayList<>();
+		
+		for(final Task t:tasks) {
+			if(!workplanTasks.contains(t)) {
+				tasksUnassigned.add(t);
+			}
+		}
+		
+		model.setAttribute("tasksUnassigned", tasksUnassigned);
 
-		request.unbind(entity, model,"title","startExecution","endExecution","isPrivate","tasks"/*,"tasksUnassigned"*/);
+		request.unbind(entity, model,"title","startExecution","endExecution","workload","isPrivate","tasks");
 		
 	}
 
