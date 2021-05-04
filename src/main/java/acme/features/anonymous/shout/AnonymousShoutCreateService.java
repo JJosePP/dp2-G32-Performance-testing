@@ -12,12 +12,16 @@
 
 package acme.features.anonymous.shout;
 
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.shouts.Shout;
+import acme.entities.spam.Spam;
+import acme.features.spam.AnySpamRepository;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -31,6 +35,10 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 
 	@Autowired
 	protected AnonymousShoutRepository repository;
+	
+	@Autowired
+	protected AnySpamRepository spamRepository;
+
 
 	// AbstractCreateService<Administrator, Shout> interface --------------
 
@@ -82,6 +90,15 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+		
+		final boolean notSpamText = this.esSpam(entity.getText());
+		final boolean notSpamAuthor = this.esSpam(entity.getAuthor());
+		final boolean notSpamInfo = this.esSpam(entity.getInfo());
+
+		errors.state(request, !notSpamText, "text", "anonymous.shout.error.text");
+		errors.state(request, !notSpamAuthor, "author", "anonymous.shout.error.text");
+		errors.state(request, !notSpamInfo, "info", "anonymous.shout.error.text");
+
 
 	}
 
@@ -89,12 +106,41 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 	public void create(final Request<Shout> request, final Shout entity) {
 		assert request != null;
 		assert entity != null;
-
+		
 		Date moment;
 
 		moment = new Date(System.currentTimeMillis() - 1);
 		entity.setMoment(moment);
 		this.repository.save(entity);
+
+	}
+	
+	public boolean esSpam(final String text) {
+		
+		final Spam spamObject = this.spamRepository.findSpam();
+		
+		final List<String> spamWords = Arrays.asList(spamObject.getWords().split(", "));
+		
+		final String[] shoutWords = text.toLowerCase().split(" ");
+		
+		Double numberSpamWords = 0.;
+		Double spamPercentaje;
+		final Double length = (double) shoutWords.length;
+		
+		for(final String word:shoutWords) {
+			final String cleanWord = word.replaceAll("(?![À-ÿ\\u00f1\\u00d1a-zA-Z0-9]).", "");
+			if(spamWords.contains(cleanWord)) {
+				numberSpamWords++;
+			}
+		}
+		
+		spamPercentaje = ((numberSpamWords/length)*100);
+		if(spamPercentaje>spamObject.getThreshold()) {
+			return true;
+		}else {
+			return false;
+		}
+		
 	}
 
 }

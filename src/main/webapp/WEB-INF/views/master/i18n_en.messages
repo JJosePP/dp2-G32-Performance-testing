@@ -10,12 +10,12 @@
 
 # master.banner.welcome #######################################################
 
-master.banner.background = #caf0af 
+master.banner.background = #c7e4b2 
 
 # master.welcome ##############################################################
 
 master.welcome.title = Welcome!
-master.welcome.text = Welcome to Acme One! Your first project in D&T.
+master.welcome.text = Welcome to Acme Planner!
 
 # master.menu #################################################################
 
@@ -27,24 +27,32 @@ master.menu.sign-out = Sign out
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anonymous
-master.menu.anonymous.favourite-link = Favourite link
-master.menu.anonymous.manuel-favourite-link = Manuel Perez's favourite link
-master.menu.anonymous.antonio-favourite-link = Antonio Perez's favourite link
-master.menu.anonymous.daniel-favourite-link = Toro's favourite link
-master.menu.anonymous.alvaro-favourite-link = Echegoyan's favourite link
-master.menu.anonymous.JuanJose-favourite-link = Juan Jose Perez´s favourite link
-master.menu.anonymous.alejandro-favourite-link = Piury's favourite link
 master.menu.anonymous.create-shout-link = Create shout
 master.menu.anonymous.shout-list = List shouts
+master.menu.anonymous.task-list = List tasks
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
-master.menu.administrator.dashboard = Dashboard
+master.menu.administrator.dashboard = Tasks' Dashboard
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.populate-initial = Populate DB (initial)
 master.menu.administrator.populate-sample = Populate DB (samples)
 master.menu.administrator.shutdown = Shut down
+master.menu.administrator.spam = Spam
+master.menu.administrator.spam.show = Spam's list
+
+
+# master.menu.administrator.task ###################################################
+
+master.menu.administrator.task = Tasks
+administrator.menu.manager.tasks.list = My tasks
+administrator.menu.manager.tasks.create = Create task
+
+# master.menu.manager ################################################################
+master.menu.manager = Manager
+master.menu.manager.tasks.list = My tasks
+master.menu.manager.tasks.create = Create task
 
 # master.menu.provider ########################################################
 
@@ -64,6 +72,7 @@ master.menu.user-account.provider = Provider data
 master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
+master.menu.user-account.task-list = List tasks
 
 # master.footer ###############################################################
 
@@ -81,13 +90,13 @@ master.footer.label.spanish = Spanish
 
 master.company.title = The company
 master.company.text = \
-	Acme One, Inc. is a fictitious fictitious company that provides a \
+	Acme Planner, Inc. is a fictitious fictitious company that provides a \
 	starter project for the students of the Design and Testing subject of the \
 	Software Engineering Curriculum of the University of Sevilla.
-master.company.name = Acme One, Inc.
-master.company.address = Number Street, City, State, Country
-master.company.phone = +000 123 456
-master.company.email = contact@acme.com
+master.company.name = Acme Planner, Inc.
+master.company.address = s/n Av. Reina Mercedes , Sevilla, Sevilla, Spain
+master.company.phone = +34 951 346 337
+master.company.email = contact@acme_plan.com
 
 # master.license ##############################################################
 
@@ -111,4 +120,3 @@ master.panic.label.request = Request:
 master.panic.label.status = Status:
 master.panic.label.exceptions = Exceptions:
 master.panic.text.consult-log = Please, consult the log to see them full stack trace.
-
