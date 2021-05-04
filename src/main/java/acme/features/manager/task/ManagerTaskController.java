@@ -13,7 +13,7 @@ import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Manager;
 
 @Controller
-@RequestMapping("/manager/task/")
+@RequestMapping("/manageracc/task/")
 public class ManagerTaskController extends AbstractController<Manager, Task>{
 	
 	@Autowired
