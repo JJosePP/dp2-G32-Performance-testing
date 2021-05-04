@@ -1,8 +1,8 @@
 package acme.entities.tasks;
 
 import java.math.BigDecimal;
-import java.util.Collection;
 import java.util.Date;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -77,7 +77,7 @@ public class Task extends DomainEntity {
 	
 
 	@ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-	protected Collection<Workplan> workplans;
+	protected Set<Workplan> workplans;
 	
 	public Long getExecutionPeriod() {
 		final long startDate = this.getStartExecution().getTime();

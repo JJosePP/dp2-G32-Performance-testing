@@ -1,8 +1,8 @@
 package acme.entities.workplan;
 
 import java.math.BigDecimal;
-import java.util.Collection;
 import java.util.Date;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -57,7 +57,7 @@ public class Workplan extends DomainEntity {
 	
 	
 	@ManyToMany(mappedBy = "workplans", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-	private Collection<Task> tasks;
+	private Set<Task> tasks;
 
 	@NotNull
 	@ManyToOne

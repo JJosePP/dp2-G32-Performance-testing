@@ -1,7 +1,5 @@
 package acme.features.manager.workplan;
 
-import java.util.Collection;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -68,23 +66,24 @@ public class ManagerWorkplanUpdateService implements AbstractUpdateService<Manag
 		
 		final Integer newTaskId = request.getModel().getInteger("tasksUnassigned");
 		
-		//Obtenemos la task seleccionada
-		final Task newTask = this.taskRepository.findOneTaskById(newTaskId);
+		if(newTaskId.equals(-1)) {
+			this.repository.save(entity);
+		}else {
+			//Obtenemos la task seleccionada
+			//worplan con id = 1
+			final Task newTask = this.taskRepository.findOneTaskById(newTaskId);
+			
+			
+			entity.getTasks().add(newTask);
+			
+			newTask.getWorkplans().add(entity);
+			
+			
+			//Guardamos las entidades modificadas
+			this.repository.save(entity);
+			this.taskRepository.save(newTask);
+		}
 		
-		//Se añade el workplan que estamos editando a la lista de workplans de la task seleccionada
-		final Collection<Workplan> workplanList = newTask.getWorkplans();
-		workplanList.add(entity);
-		newTask.setWorkplans(workplanList);
-		
-		//Obtenemos la lista de tasks del workload y añadimos la task seleccionada a la lista de tasks del nuevo workplan
-		final Collection<Task> taskList = entity.getTasks();
-		taskList.add(newTask);
-		
-		entity.setTasks(taskList);
-		
-		//Guardamos las entidades modificadas
-		this.repository.save(entity);
-		this.taskRepository.save(newTask);
 		
 	}
 

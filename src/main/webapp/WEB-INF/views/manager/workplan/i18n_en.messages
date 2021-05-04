@@ -18,3 +18,4 @@ manager.workplan.form.button.return = Return
 manager.workplan.form.label.taskAssinged = Tasks assigned
 manager.workplan.form.label.newTask = New task
 manager.workplan.form.label.addTask = Add a new task
+NONE = None

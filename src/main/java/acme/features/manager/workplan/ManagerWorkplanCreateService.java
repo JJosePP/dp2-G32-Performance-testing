@@ -1,7 +1,6 @@
 package acme.features.manager.workplan;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 
@@ -87,26 +86,9 @@ public class ManagerWorkplanCreateService implements AbstractCreateService<Manag
 	public void create(final Request<Workplan> request, final Workplan entity) {
 		assert request != null;
 		assert entity != null;
-		
-		final Integer newTaskId = request.getModel().getInteger("newTask");
-		
-		//Obtenemos la task seleccionada
-		final Task newTask = this.taskRepository.findOneTaskById(newTaskId);
-		
-		//Se añade el workplan creado a la lista de workplans de la task seleccionada
-		final Collection<Workplan> workplanList = newTask.getWorkplans();
-		workplanList.add(entity);
-		newTask.setWorkplans(workplanList);
-		
-		//Creamos una lista de tasks y añadimos la task seleccionada a la lista de tasks del nuevo workplan
-		final Collection<Task> taskList = new ArrayList<>();
-		taskList.add(newTask);
-		
-		entity.setTasks(taskList);
-		
-		//Guardamos las entidades modificadas
+
 		this.repository.save(entity);
-		this.taskRepository.save(newTask);
+
 	}
 	
 }
