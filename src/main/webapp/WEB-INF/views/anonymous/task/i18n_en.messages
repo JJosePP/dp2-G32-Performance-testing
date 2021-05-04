@@ -21,3 +21,6 @@ anonymous.task.form.label.startExecution = Start Execution
 anonymous.task.form.label.endExecution = End Execution
 anonymous.task.form.label.workload = Workload
 anonymous.task.form.button.return = Return
+
+anonymous.task.list.button.byExPeriod = Order by execution period
+anonymous.task.list.button.byWorkload = Order by workload

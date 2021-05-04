@@ -338,34 +338,5 @@
 		<property name="threshold" value="10"/>
 	</bean>
 	
-	<!-- Workplan -->
-	<bean name="workPlan1" class="acme.entities.workPlan.WorkPlan">
-		<property name="title" value="Work Plan example" />
-		<property name="isPrivate" value="false" />
-		<property name="startExecution" value="2021/06/02 22:32" />
-		<property name="endExecution" value="2022/07/13 9:47" />
-		<property name="workload" value="430.32"/>
-		<property name="tasks">
-			<list>
-				<ref bean="task01" />
-				<ref bean="task02" />
-			</list>
-		</property>
-		<property name="userAccount"> <ref bean="anonymousUserAccount"/></property>
-	</bean>
-	
-		<bean name="workPlan2" class="acme.entities.workPlan.WorkPlan">
-		<property name="title" value="Work Plan example 2" />
-		<property name="isPrivate" value="true" />
-		<property name="startExecution" value="2021/07/09 17:15" />
-		<property name="endExecution" value="2022/09/07 9:13" />
-		<property name="workload" value="310.35"/>
-		<property name="tasks">
-			<list>
-				<ref bean="task06" />
-				<ref bean="task09" />
-			</list>
-		</property>
-		<property name="userAccount"> <ref bean="managerUserAccount2"/></property>
-	</bean>
+
 </beans>

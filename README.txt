@@ -8,4 +8,8 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+Version 1.0.0 
+
+https://github.com/alvechdel/dp2-G32-Devising-WIS
+
 This is Acme Planner, a project in D&T.
