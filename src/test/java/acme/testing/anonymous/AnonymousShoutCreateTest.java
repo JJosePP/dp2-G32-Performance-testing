@@ -25,7 +25,6 @@ public class AnonymousShoutCreateTest extends AcmePlannerTest{
 		
 		super.checkColumnHasValue(recordIndex, 1, author);
 		super.checkColumnHasValue(recordIndex, 2, text);
-		
 	}
 	
 	//Se comprueba que se no crean todos los shouts con todos los posibles errores que podrían contener
