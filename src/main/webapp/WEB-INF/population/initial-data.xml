@@ -102,6 +102,30 @@
 		<property name="userAccount" ref="managerUserAccount" />
 	</bean>
 	
+	<!-- Authenticated  -->
+	
+		<bean  name="authenticatedUserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="authenticated1" />
+		<property name="password" value="authenticated1" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Antonio" />
+				<property name="surname" value="Garrido" />
+				<property name="email" value="antonioGarr@gmail.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="authenticatedAuthenticated" />
+			</list>
+		</property>
+	</bean>
+
+	<bean name="authenticatedAuthenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="authenticatedUserAccount" />
+	</bean>
+	
 	<!-- Shouts -->
 	
 	<bean id="shout01" class="acme.entities.shouts.Shout">
