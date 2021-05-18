@@ -25,7 +25,9 @@ public class SpamUpdateTest extends AcmePlannerTest {
 		super.fillInputBoxIn("threshold", threshold);
 		super.fillInputBoxIn("words", words);
 		
+		System.out.println(super.getContextQuery());
 		super.clickOnSubmitButton("Update");
+		System.out.println(super.getContextQuery());
 		
 		super.clickOnMenu("Spam", "Spam list");
 		
@@ -70,4 +72,21 @@ public class SpamUpdateTest extends AcmePlannerTest {
 		super.signOut();
 				
 	}
+	
+	//Se comprueba que no se puede actualizar la lista de palabras marcadas como spam para alguien que no sea administrador
+	@ParameterizedTest
+	@CsvFileSource(resources="/administrator/spam/notAuthorised-update.csv", encoding= "utf-8", numLinesToSkip= 1)
+	@Order(40)
+	public void updateNotAuthorised(final String threshold, final String words, final String credentialsUsername, final String credentialsPassword) {
+		
+		super.signIn(credentialsUsername, credentialsPassword);
+		
+		this.driver.get("http://localhost:8050/Acme-Planner/administrator/spam/update?language=en&debug=true&" + threshold + "&words=" + words.replaceAll("\"", ""));
+		super.checkErrorsExist();
+		
+		super.signOut();
+				
+	}
+	
+	
 }
