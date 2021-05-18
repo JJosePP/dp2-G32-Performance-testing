@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.spam.Spam;
-import acme.features.spam.AnySpamRepository;
+import acme.features.spam.SpamRepository;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Administrator;
@@ -14,7 +14,7 @@ import acme.framework.services.AbstractShowService;
 public class AdministratorSpamShowService implements AbstractShowService<Administrator, Spam>{
 	
 	@Autowired
-	protected AnySpamRepository repository;
+	protected SpamRepository repository;
 
 	@Override
 	public boolean authorise(final Request<Spam> request) {

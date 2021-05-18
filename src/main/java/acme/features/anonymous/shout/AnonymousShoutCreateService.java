@@ -21,7 +21,7 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.shouts.Shout;
 import acme.entities.spam.Spam;
-import acme.features.spam.AnySpamRepository;
+import acme.features.spam.SpamRepository;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -37,7 +37,7 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 	protected AnonymousShoutRepository repository;
 	
 	@Autowired
-	protected AnySpamRepository spamRepository;
+	protected SpamRepository spamRepository;
 
 
 	// AbstractCreateService<Administrator, Shout> interface --------------
