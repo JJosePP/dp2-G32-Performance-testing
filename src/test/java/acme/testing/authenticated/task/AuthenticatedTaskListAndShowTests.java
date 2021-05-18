@@ -123,37 +123,37 @@ public class AuthenticatedTaskListAndShowTests extends AcmePlannerTest{
 	@Order(14)
 	public void listNegative(final String id) {
 		super.signIn("authenticated", "authenticated");
-		super.navigate("/authenticated/task/list", id);
+		this.driver.get("http://localhost:8050/Acme-Planner/authenticated/task/list?language=en&debug=true&" + id);
 		super.checkErrorsExist();
 	}
 	
 	//Se comprueba que no se pueden listar las tareas ordenadas por el periodo de ejecución con el ID de otro usuario
 	@ParameterizedTest
 	@CsvFileSource(resources="/authenticated/task/list-negative.csv", encoding= "utf-8", numLinesToSkip= 1)
-	@Order(14)
+	@Order(15)
 	public void listNegativeSortByExecution(final String id) {
 		super.signIn("authenticated", "authenticated");
-		super.navigate("/authenticated/task/list-sorted-by-execution-period", id);
+		this.driver.get("http://localhost:8050/Acme-Planner/authenticated/task/list-sorted-by-execution-period?language=en&debug=true&" + id);
 		super.checkErrorsExist();
 	}
 	
 	//Se comprueba que no se pueden listar las tareas ordenadas por el workload con el ID de otro usuario
 	@ParameterizedTest
 	@CsvFileSource(resources="/authenticated/task/list-negative.csv", encoding= "utf-8", numLinesToSkip= 1)
-	@Order(14)
+	@Order(16)
 	public void listNegativeSortByWorkload(final String id) {
 		super.signIn("authenticated", "authenticated");
-		super.navigate("/authenticated/task/list-sorted-by-workload", id);
+		this.driver.get("http://localhost:8050/Acme-Planner/authenticated/task/list-sorted-by-workload?language=en&debug=true&" + id);
 		super.checkErrorsExist();
 	}
 	
 	//Se comprueba que no se puede acceder a una tarea que no existe
 	@ParameterizedTest
 	@CsvFileSource(resources="/authenticated/task/show-negative.csv", encoding= "utf-8", numLinesToSkip= 1)
-	@Order(14)
+	@Order(17)
 	public void showNegative(final String id) {
 		super.signIn("authenticated", "authenticated");
-		super.navigate("/authenticated/task/show", id);
+		this.driver.get("http://localhost:8050/Acme-Planner/authenticated/task/show?id=13?language=en&debug=true&" + id);
 		super.checkErrorsExist();
 	}
 }
