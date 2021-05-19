@@ -56,16 +56,19 @@ public class SpamShowTest extends AcmePlannerTest{
 	
 	//Se comprueba que los datos solo pueden ser listados por el administrador
 	@ParameterizedTest
-	@CsvFileSource(resources="/administrator/spam/notAuthorised-dummy.csv", encoding= "utf-8", numLinesToSkip= 0)
+	@CsvFileSource(resources="/administrator/spam/notAuthorised-show.csv", encoding= "utf-8", numLinesToSkip=1)
 	@Order(30)
-	public void showNotAuthorised(final String dummyParameter) {
+	public void showNotAuthorised(final String credentialsUsername, final String credentialsPassword) {
 		
-		super.signIn("manager", "manager");
-		
-		super.navigate("/administrator/spam/show", "");
-		super.checkErrorsExist();
-		
-		super.signOut();
+		if(credentialsUsername.contains("anonymous")) {
+			this.driver.get("http://localhost:8050/Acme-Planner/administrator/spam/show?language=en&debug=true");
+			super.checkErrorsExist();
+		}else {
+			super.signIn(credentialsUsername, credentialsPassword);
+			this.driver.get("http://localhost:8050/Acme-Planner/administrator/spam/show?language=en&debug=true");
+			super.checkErrorsExist();
+			super.signOut();
+		}
 				
 	}
 }
