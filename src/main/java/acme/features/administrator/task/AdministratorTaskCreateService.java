@@ -98,15 +98,15 @@ public class AdministratorTaskCreateService implements AbstractCreateService<Adm
 		// TODO Auto-generated method stub
 		assert request != null;
 		assert entity != null;
-		if(request.getModel().getString("newStatus").equals("True")) {
+		if(request.getModel().getString("newStatus").equals("true")) {
 			entity.setIsPrivate(Boolean.TRUE);
-		}else if(request.getModel().getString("newStatus").equals("False")){
+		}else if(request.getModel().getString("newStatus").equals("false")){
 			entity.setIsPrivate(Boolean.FALSE);
 		}
 		
-		if(request.getModel().getString("newFinished").equals("True")) {
+		if(request.getModel().getString("newFinished").equals("true")) {
 			entity.setIsFinished(Boolean.TRUE);
-		}else if(request.getModel().getString("newFinished").equals("False")){
+		}else if(request.getModel().getString("newFinished").equals("false")){
 			entity.setIsFinished(Boolean.FALSE);
 		}
 		this.repository.save(entity);
