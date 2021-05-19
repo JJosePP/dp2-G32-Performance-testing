@@ -21,7 +21,11 @@ public class AuthenticatedTaskListService implements AbstractListService<Authent
 	public boolean authorise(final Request<Task> request) {
 		// TODO Auto-generated method stub
 		assert request != null;
-		return true;
+		if(request.getModel().hasAttribute("id")) {
+			return request.getModel().getInteger("id").equals(request.getPrincipal().getAccountId());
+		}else {
+			return true;
+		}
 	}
 
 	@Override
