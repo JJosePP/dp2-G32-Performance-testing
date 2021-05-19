@@ -44,11 +44,11 @@ public class AdministratorDashboardShowServiceTests extends AcmePlannerTest {
 	public void showDashboardNegative(final String credentialsUsername, final String credentialsPassword) {
 		
 		if(credentialsUsername.contains("anonymous")) {
-			super.navigate("/administrator/dashboard/show", "");
+			this.driver.get("http://localhost:8050/Acme-Planner/administrator/dashboard/show?language=en&debug=true");
 			super.checkErrorsExist();
 		}else {
 			super.signIn(credentialsUsername, credentialsPassword);
-			super.navigate("/administrator/dashboard/show", "");
+			this.driver.get("http://localhost:8050/Acme-Planner/administrator/dashboard/show?language=en&debug=true");
 			super.checkErrorsExist();
 			super.signOut();
 		}
