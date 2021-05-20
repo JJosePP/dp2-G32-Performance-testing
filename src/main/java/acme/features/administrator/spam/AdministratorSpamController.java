@@ -16,9 +16,6 @@ import acme.framework.entities.Administrator;
 public class AdministratorSpamController extends AbstractController<Administrator, Spam>{
 	
 	@Autowired
-	protected AdministratorSpamUpdateService createService;
-	
-	@Autowired
 	protected AdministratorSpamShowService showService;
 	
 	@Autowired
@@ -31,7 +28,6 @@ public class AdministratorSpamController extends AbstractController<Administrato
 
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
-		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 
 	}
 }

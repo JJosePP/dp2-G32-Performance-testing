@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.spam.Spam;
 import acme.entities.tasks.Task;
-import acme.features.spam.AnySpamRepository;
+import acme.features.spam.SpamRepository;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -22,7 +22,7 @@ public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, 
 	protected ManagerTaskRepository repository;
 	
 	@Autowired
-	protected AnySpamRepository spamRepository;
+	protected SpamRepository spamRepository;
 
 	@Override
 	public boolean authorise(final Request<Task> request) {
