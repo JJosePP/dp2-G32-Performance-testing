@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.spam.Spam;
-import acme.features.spam.AnySpamRepository;
+import acme.features.spam.SpamRepository;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -15,12 +15,11 @@ import acme.framework.services.AbstractUpdateService;
 public class AdministratorSpamUpdateService implements AbstractUpdateService<Administrator, Spam>{
 
 	@Autowired
-	protected AnySpamRepository repository;
+	protected SpamRepository repository;
 	
 	@Override
 	public boolean authorise(final Request<Spam> request) {
 		assert request != null;
-
 		return true;
 	}
 
@@ -35,14 +34,7 @@ public class AdministratorSpamUpdateService implements AbstractUpdateService<Adm
 	}
 
 	@Override
-	public void unbind(final Request<Spam> request, final Spam entity, final Model model) {
-		assert request != null;
-		assert entity != null;
-		assert model != null;
-
-		request.unbind(entity, model, "words", "threshold");
-		
-	}
+	public void unbind(final Request<Spam> request, final Spam entity, final Model model) {}
 
 	@Override
 	public Spam findOne(final Request<Spam> request) {

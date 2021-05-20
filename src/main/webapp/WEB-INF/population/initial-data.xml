@@ -128,7 +128,7 @@
 	</bean>
 	
 	<!-- Authenticated  -->
-	
+
 		<bean  name="authenticatedUserAccount" class="acme.framework.entities.UserAccount">
 		<property name="username" value="authenticated1" />
 		<property name="password" value="authenticated1" />
