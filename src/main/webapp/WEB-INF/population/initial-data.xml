@@ -71,35 +71,11 @@
 	
 	<bean name="administratorAuthenticated" class="acme.framework.entities.Authenticated">
 		<property name="userAccount" ref="administratorUserAccount" />
-	</bean>
-	
-	<!-- Authenticated -->
-	
-	<bean name="authenticatedUserAccount" class="acme.framework.entities.UserAccount">
-		<property name="username" value="authenticated" />
-		<property name="password" value="authenticated" />
-		<property name="enabled" value="true" />
-		<property name="identity">
-			<bean class="acme.datatypes.UserIdentity">
-				<property name="name" value="Authenticated" />
-				<property name="surname" value="Au" />
-				<property name="email" value="authenticated@acme.com" />
-			</bean>
-		</property>
-		<property name="roles">
-			<list>
-				<ref bean="administratorAuthenticated" />
-			</list>
-		</property>
-	</bean>
-
-	<bean name="authenticatedAuthenticated" class="acme.framework.entities.Authenticated">
-		<property name="userAccount" ref="authenticatedUserAccount" />
-	</bean>
-	
+	</bean>	
 	
 	<!-- Managers -->
 	
+	<!-- manager1 -->
 	<bean  name="managerUserAccount" class="acme.framework.entities.UserAccount">
 		<property name="username" value="manager" />
 		<property name="password" value="manager" />
@@ -123,13 +99,42 @@
 		<property name="userAccount" ref="managerUserAccount" />
 	</bean>
 	
+	
 	<bean name="managerAuthenticated" class="acme.framework.entities.Authenticated">
 		<property name="userAccount" ref="managerUserAccount" />
 	</bean>
 	
+	<!-- manager2 -->
+	<bean  name="managerUserAccount2" class="acme.framework.entities.UserAccount">
+		<property name="username" value="manager2" />
+		<property name="password" value="manager2" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Manager2" />
+				<property name="surname" value="Acme.com2" />
+				<property name="email" value="manager2@acme.com" />
+ 			</bean>
+		</property>
+		<property name="roles">
+			<list>       
+        <ref bean="managerManager2" />
+				<ref bean="managerAuthenticated2" />
+			</list>
+		</property>
+	</bean>
+  
+  <bean name="managerManager2" class="acme.framework.entities.Manager">
+		<property name="userAccount" ref="managerUserAccount2" />
+	</bean>
+	
+	<bean name="managerAuthenticated2" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="managerUserAccount2" />
+  </bean>
+  
 	<!-- Authenticated  -->
 
-		<bean  name="authenticatedUserAccount" class="acme.framework.entities.UserAccount">
+		<bean  name="authenticatedUserAccount1" class="acme.framework.entities.UserAccount">
 		<property name="username" value="authenticated1" />
 		<property name="password" value="authenticated1" />
 		<property name="enabled" value="true" />
@@ -138,17 +143,16 @@
 				<property name="name" value="Antonio" />
 				<property name="surname" value="Garrido" />
 				<property name="email" value="antonioGarr@gmail.com" />
-			</bean>
-		</property>
-		<property name="roles">
-			<list>
+ 		<property name="roles">
+			<list>            
 				<ref bean="authenticatedAuthenticated" />
 			</list>
 		</property>
 	</bean>
+				
 
 	<bean name="authenticatedAuthenticated" class="acme.framework.entities.Authenticated">
-		<property name="userAccount" ref="authenticatedUserAccount" />
+		<property name="userAccount" ref="authenticatedUserAccount1" />
 	</bean>
 	
 	<!-- Shouts -->
@@ -180,7 +184,7 @@
 		<property name="endExecution" value="2022/05/20 7:46"/>
 		<property name="workload" value="13.59"/>
 		<property name="info" value="http://www.example.org"/>
-		<property name="userAccount"> <ref bean="authenticatedUserAccount"/></property>
+		<property name="userAccount"> <ref bean="authenticatedUserAccount1"/></property>
 		<property name="isPrivate" value="false"></property>
 		<property name="isFinished" value="true"></property>
 	</bean>
@@ -192,11 +196,35 @@
 		<property name="endExecution" value="2022/03/20 7:46"/>
 		<property name="workload" value="23.59"/>
 		<property name="info" value="http://www.example.org"/>
-		<property name="userAccount"> <ref bean="authenticatedUserAccount"/></property>
+		<property name="userAccount"> <ref bean="authenticatedUserAccount1"/></property>
 		<property name="isPrivate" value="false"></property>
 		<property name="isFinished" value="true"></property>
 	</bean>
 	
+	
+		<bean id="task06" class="acme.entities.tasks.Task">
+		<property name="title" value="Test 1"/>
+		<property name="description" value="Another test"/>
+		<property name="startExecution" value="2021/06/05 22:33"/>
+		<property name="endExecution" value="2022/02/11 7:46"/>
+		<property name="workload" value="98.59"/>
+		<property name="info" value="http://www.example.org"/>
+		<property name="userAccount"> <ref bean="managerUserAccount"/></property>
+		<property name="isPrivate" value="true"></property>
+		<property name="isFinished" value="true"></property>
+	</bean>
+	
+	<bean id="task07" class="acme.entities.tasks.Task">
+		<property name="title" value="Test 2"/>
+		<property name="description" value="Another test"/>
+		<property name="startExecution" value="2021/08/05 22:33"/>
+		<property name="endExecution" value="2022/02/15 9:46"/>
+		<property name="workload" value="85.59"/>
+		<property name="info" value="http://www.example.org"/>
+		<property name="userAccount"> <ref bean="managerUserAccount"/></property>
+		<property name="isPrivate" value="true"></property>
+		<property name="isFinished" value="true"></property>
+	</bean>
 	
 	<!-- Spam -->
 	
