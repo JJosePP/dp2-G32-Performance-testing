@@ -153,7 +153,7 @@ public abstract class AcmeTest extends AbstractTest {
 		List<WebElement> row;
 		WebElement attribute, toggle;
 		String contents, value;
-
+ 
 		row = this.getListingRecord(recordIndex);
 		assert attributeIndex + 1 < row.size() : String.format("Attribute %d in record %d is out of range", attributeIndex, recordIndex);
 		attribute = row.get(attributeIndex + 1);
@@ -169,7 +169,7 @@ public abstract class AcmeTest extends AbstractTest {
 		contents = (contents == null ? "" : contents.trim());
 		value = (expectedValue != null ? expectedValue.trim() : "");
 
-		assert contents.equals(value) : String.format("Expected value '%s' in attribute %d of record %d, but found '%s'", expectedValue, attributeIndex, recordIndex, value);
+		assert contents.equals(value) : String.format("Expected value '%s' in attribute %d of record %d, but found '%s'", value, attributeIndex, recordIndex, contents);
 	}
 
 	// Form-filling methods ---------------------------------------------------
