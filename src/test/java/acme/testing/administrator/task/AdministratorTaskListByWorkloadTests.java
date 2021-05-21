@@ -36,7 +36,7 @@ public class AdministratorTaskListByWorkloadTests extends AcmePlannerTest{
 		super.signOut();
 	}
 	
-	// Se comprueba que un usuario anonimo no puede listar tareas de un administrador
+	// Se comprueba que un administrador no puede listar tareas de otro administrador
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/task/list-by-workload-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)
@@ -44,5 +44,7 @@ public class AdministratorTaskListByWorkloadTests extends AcmePlannerTest{
 		super.signIn("administrator2", "administrator2");
 		this.driver.get("http://localhost:8050/Acme-Planner/administrator/task/list-sorted-by-workload?language=en&debug=true&id=" + id);
 		super.checkErrorsExist();
+		
+		super.signOut();
 	}
 }
