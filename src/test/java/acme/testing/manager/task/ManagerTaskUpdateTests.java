@@ -104,4 +104,17 @@ public class ManagerTaskUpdateTests extends AcmePlannerTest{
 
 		super.signOut();
 	}	
+	
+	// Se comprueba que un manager no puede actualizar tareas pertenecientes a otro manager
+	@ParameterizedTest
+	@CsvFileSource(resources = "/manager/task/update-two-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@Order(15)
+	public void updateNegativeTwo(final String id) {
+		super.signIn("manager2", "manager2");
+		this.driver.get("http://localhost:8050/Acme-Planner/manageracc/task/update?language=en&debug=true&id=" + id);
+		
+		super.checkErrorsExist();
+		
+		super.signOut();
+	}
 }
