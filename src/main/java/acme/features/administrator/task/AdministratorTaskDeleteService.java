@@ -35,23 +35,12 @@ public class AdministratorTaskDeleteService implements AbstractDeleteService<Adm
 
 	@Override
 	public void bind(final Request<Task> request, final Task entity, final Errors errors) {
-		// TODO Auto-generated method stub
-		assert request != null;
-		assert entity != null;
-		assert errors != null;
-		
-		request.bind(entity, errors);
 		
 	}
 
 	@Override
 	public void unbind(final Request<Task> request, final Task entity, final Model model) {
-		// TODO Auto-generated method stub
-		assert request != null;
-		assert entity != null;
-		assert model != null;
 		
-		request.unbind(entity, model, "title", "description", "startExecution","endExecution","info","workload","isPrivate");
 	}
 
 	@Override
