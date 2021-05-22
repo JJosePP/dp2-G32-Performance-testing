@@ -13,7 +13,6 @@ import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Manager;
-import acme.framework.entities.Principal;
 import acme.framework.services.AbstractUpdateService;
 
 @Service
@@ -29,7 +28,7 @@ public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, 
 	public boolean authorise(final Request<Task> request) {
 		// TODO Auto-generated method stub
 		assert request != null;
-		final Principal principal;
+		
 		final int idPrincipal = request.getPrincipal().getAccountId();
 		
 		final int idUserTask = this.repository.findOneTaskById(request.getModel().getInteger("id")).getUserAccount().getId();
@@ -87,15 +86,15 @@ public class ManagerTaskUpdateService implements AbstractUpdateService<Manager, 
 		assert request != null;
 		assert entity != null;
 		
-		if(request.getModel().getString("newFinished").equals("True")) {
+		if(request.getModel().getString("newStatus").equals("true")) {
 			entity.setIsPrivate(Boolean.TRUE);
-		}else if(request.getModel().getString("newFinished").equals("False")){
+		}else if(request.getModel().getString("newStatus").equals("false")){
 			entity.setIsPrivate(Boolean.FALSE);
 		}
 		
-		if(request.getModel().getString("newFinished").equals("True")) {
+		if(request.getModel().getString("newFinished").equals("true")) {
 			entity.setIsFinished(Boolean.TRUE);
-		}else if(request.getModel().getString("newFinished").equals("False")){
+		}else if(request.getModel().getString("newFinished").equals("false")){
 			entity.setIsFinished(Boolean.FALSE);
 		}
 		this.repository.save(entity);
