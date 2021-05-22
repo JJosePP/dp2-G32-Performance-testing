@@ -159,7 +159,7 @@ public abstract class AcmeTest extends AbstractTest {
 		List<WebElement> row;
 		WebElement attribute, toggle;
 		String contents, value;
-
+ 
 		row = this.getListingRecord(recordIndex);
 		assert attributeIndex + 1 < row.size() : String.format("Attribute %d in record %d is out of range", attributeIndex, recordIndex);
 		attribute = row.get(attributeIndex + 1);

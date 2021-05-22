@@ -182,7 +182,7 @@
 				
 
 	<bean name="authenticatedAuthenticated" class="acme.framework.entities.Authenticated">
-		<property name="userAccount" ref="authenticatedUserAccount1" />
+			<property name="userAccount" ref="authenticatedUserAccount1" />
 	</bean>
 	
 	<!-- Shouts -->
@@ -267,7 +267,7 @@
 		<property name="isPrivate" value="true"></property>
 		<property name="isFinished" value="true"></property>
 	</bean>
-	
+
 	<bean id="task09" class="acme.entities.tasks.Task">
 		<property name="title" value="Test2"/>
 		<property name="description" value="Another test"/>
