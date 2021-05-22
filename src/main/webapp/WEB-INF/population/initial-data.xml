@@ -188,7 +188,7 @@
 	<!-- Shouts -->
 	
 	<bean id="shout01" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/04/20 19:39"/>
+		<property name="moment" value="2021/05/15 19:39"/>
 		<property name="author" value="John Doe"/>
 		<property name="text" value="I'm happy!"/>
 		<property name="info" value="http://www.example.org"/>		
@@ -254,8 +254,8 @@
 		<property name="userAccount"> <ref bean="managerUserAccount"/></property>
 		<property name="isPrivate" value="true"></property>
 		<property name="isFinished" value="true"></property>
-	</bean>
 	
+	</bean>
 		<bean id="task08" class="acme.entities.tasks.Task">
 		<property name="title" value="Test1"/>
 		<property name="description" value="Another test"/>
@@ -267,6 +267,7 @@
 		<property name="isPrivate" value="true"></property>
 		<property name="isFinished" value="true"></property>
 	</bean>
+
 	<bean id="task09" class="acme.entities.tasks.Task">
 		<property name="title" value="Test2"/>
 		<property name="description" value="Another test"/>
