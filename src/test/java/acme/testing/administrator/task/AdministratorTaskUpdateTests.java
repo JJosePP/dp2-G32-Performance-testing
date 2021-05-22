@@ -102,4 +102,17 @@ public class AdministratorTaskUpdateTests extends AcmePlannerTest{
 		
 		super.signOut();
 	}	
+	
+	// Se comprueba que un administrador no puede actualizar tareas pertenecientes a otro administrador
+	@ParameterizedTest
+	@CsvFileSource(resources = "/administrator/task/update-two-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@Order(15)
+	public void updateNegativeTwo(final String id) {
+		super.signIn("administrator2", "administrator2");
+		this.driver.get("http://localhost:8050/Acme-Planner/administrator/task/update?language=en&debug=true&id=" + id);
+		
+		super.checkErrorsExist();
+		
+		super.signOut();
+	}
 }
