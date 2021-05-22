@@ -13,7 +13,7 @@ public class AuthenticatedTaskListAndShowTests extends AcmePlannerTest{
 	@CsvFileSource(resources="/authenticated/task/list.csv", encoding= "utf-8", numLinesToSkip= 1)
 	@Order(10)
 	public void listTask(final int recordIndex, final String title, final String description, final String startExecution, final String endExecution, final String workload, final String finished) {
-		super.signIn("authenticated", "authenticated");
+		super.signIn("authenticated1", "authenticated1");
 		
 		super.clickOnMenu("Account", "List tasks");
 		super.checkColumnHasValue(recordIndex, 0, title);
@@ -40,7 +40,7 @@ public class AuthenticatedTaskListAndShowTests extends AcmePlannerTest{
 	@CsvFileSource(resources="/authenticated/task/list.csv", encoding= "utf-8", numLinesToSkip= 1)
 	@Order(11)
 	public void listTaskSortById(final int recordIndex, final String title, final String description, final String startExecution, final String endExecution, final String workload, final String finished) {
-		super.signIn("authenticated", "authenticated");
+		super.signIn("authenticated1", "authenticated1");
 		
 		super.clickOnMenu("Account", "List tasks");
 		super.clickOnReturnButton("Sort by ID");
@@ -67,7 +67,7 @@ public class AuthenticatedTaskListAndShowTests extends AcmePlannerTest{
 	@CsvFileSource(resources="/authenticated/task/list-order-execution-period.csv", encoding= "utf-8", numLinesToSkip= 1)
 	@Order(12)
 	public void listTaskSortByExecution(final int recordIndex, final String title, final String description, final String startExecution, final String endExecution, final String workload, final String finished) {
-		super.signIn("authenticated", "authenticated");
+		super.signIn("authenticated1", "authenticated1");
 		
 		super.clickOnMenu("Account", "List tasks");
 		super.clickOnReturnButton("Sort by execution period");
@@ -95,7 +95,7 @@ public class AuthenticatedTaskListAndShowTests extends AcmePlannerTest{
 	@CsvFileSource(resources="/authenticated/task/list.csv", encoding= "utf-8", numLinesToSkip= 1)
 	@Order(13)
 	public void listTaskSortByWorkload(final int recordIndex, final String title, final String description, final String startExecution, final String endExecution, final String workload, final String finished) {
-		super.signIn("authenticated", "authenticated");
+		super.signIn("authenticated1", "authenticated1");
 		
 		super.clickOnMenu("Account", "List tasks");
 		super.clickOnReturnButton("Sort by workload");
@@ -122,7 +122,7 @@ public class AuthenticatedTaskListAndShowTests extends AcmePlannerTest{
 	@CsvFileSource(resources="/authenticated/task/list-negative.csv", encoding= "utf-8", numLinesToSkip= 1)
 	@Order(14)
 	public void listNegative(final String id) {
-		super.signIn("authenticated", "authenticated");
+		super.signIn("authenticated1", "authenticated1");
 		this.driver.get("http://localhost:8050/Acme-Planner/authenticated/task/list?language=en&debug=true&" + id);
 		super.checkErrorsExist();
 	}
@@ -132,7 +132,7 @@ public class AuthenticatedTaskListAndShowTests extends AcmePlannerTest{
 	@CsvFileSource(resources="/authenticated/task/list-negative.csv", encoding= "utf-8", numLinesToSkip= 1)
 	@Order(15)
 	public void listNegativeSortByExecution(final String id) {
-		super.signIn("authenticated", "authenticated");
+		super.signIn("authenticated1", "authenticated1");
 		this.driver.get("http://localhost:8050/Acme-Planner/authenticated/task/list-sorted-by-execution-period?language=en&debug=true&" + id);
 		super.checkErrorsExist();
 	}
@@ -142,7 +142,7 @@ public class AuthenticatedTaskListAndShowTests extends AcmePlannerTest{
 	@CsvFileSource(resources="/authenticated/task/list-negative.csv", encoding= "utf-8", numLinesToSkip= 1)
 	@Order(16)
 	public void listNegativeSortByWorkload(final String id) {
-		super.signIn("authenticated", "authenticated");
+		super.signIn("authenticated1", "authenticated1");
 		this.driver.get("http://localhost:8050/Acme-Planner/authenticated/task/list-sorted-by-workload?language=en&debug=true&" + id);
 		super.checkErrorsExist();
 	}
@@ -152,7 +152,7 @@ public class AuthenticatedTaskListAndShowTests extends AcmePlannerTest{
 	@CsvFileSource(resources="/authenticated/task/show-negative.csv", encoding= "utf-8", numLinesToSkip= 1)
 	@Order(17)
 	public void showNegative(final String id) {
-		super.signIn("authenticated", "authenticated");
+		super.signIn("authenticated1", "authenticated1");
 		this.driver.get("http://localhost:8050/Acme-Planner/authenticated/task/show?id=13?language=en&debug=true&" + id);
 		super.checkErrorsExist();
 	}

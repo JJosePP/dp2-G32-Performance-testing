@@ -18,6 +18,6 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<import resource="classpath:/WEB-INF/population/conversion-service.xml"/>
-	<!--  Vaío, añadir datos completamente diferentes de initial-data -->
+	<!--  Vacío, añadir datos completamente diferentes de initial-data -->
 
 </beans>
