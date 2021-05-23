@@ -35,12 +35,12 @@ public class ManagerTaskDeleteService implements AbstractDeleteService<Manager, 
 
 	@Override
 	public void bind(final Request<Task> request, final Task entity, final Errors errors){
-
+		// This method is purposely empty
 	}
 
 	@Override
 	public void unbind(final Request<Task> request, final Task entity, final Model model){
-
+		// This method is purposely empty
 	}
 
 	@Override
