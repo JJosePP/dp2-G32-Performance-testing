@@ -30,14 +30,14 @@ public class AdministratorTaskCreateService implements AbstractCreateService<Adm
 
 	@Override
 	public boolean authorise(final Request<Task> request) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		return true;
 	}
 
 	@Override
 	public void bind(final Request<Task> request, final Task entity, final Errors errors) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
@@ -46,7 +46,7 @@ public class AdministratorTaskCreateService implements AbstractCreateService<Adm
 
 	@Override
 	public void unbind(final Request<Task> request, final Task entity, final Model model) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -56,7 +56,7 @@ public class AdministratorTaskCreateService implements AbstractCreateService<Adm
 
 	@Override
 	public Task instantiate(final Request<Task> request) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		final Date startExecution = new Date("2021/08/15 13:02");
 		final Date endExecution = new Date("2021/08/23 11:02");
@@ -81,7 +81,7 @@ public class AdministratorTaskCreateService implements AbstractCreateService<Adm
 
 	@Override
 	public void validate(final Request<Task> request, final Task entity, final Errors errors) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
@@ -95,7 +95,7 @@ public class AdministratorTaskCreateService implements AbstractCreateService<Adm
 
 	@Override
 	public void create(final Request<Task> request, final Task entity) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		assert entity != null;
 		if(request.getModel().getString("newStatus").equals("true")) {
@@ -126,7 +126,7 @@ public class AdministratorTaskCreateService implements AbstractCreateService<Adm
 		final Double length = (double) taskWords.length;
 		
 		for(final String word:taskWords) {
-			final String cleanWord = word.replaceAll("(?![À-ÿ\\u00f1\\u00d1a-zA-Z0-9]).", "");
+			final String cleanWord = word.replaceAll("(?![À-ÿa-zA-Z0-9]).", "");
 			if(spamWords.contains(cleanWord)) {
 				numberSpamWords++;
 			}

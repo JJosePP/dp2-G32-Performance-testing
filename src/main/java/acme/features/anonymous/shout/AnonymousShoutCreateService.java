@@ -128,7 +128,7 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		final Double length = (double) shoutWords.length;
 		
 		for(final String word:shoutWords) {
-			final String cleanWord = word.replaceAll("(?![À-ÿ\\u00f1\\u00d1a-zA-Z0-9]).", "");
+			final String cleanWord = word.replaceAll("(?![À-ÿa-zA-Z0-9]).", "");
 			if(spamWords.contains(cleanWord)) {
 				numberSpamWords++;
 			}

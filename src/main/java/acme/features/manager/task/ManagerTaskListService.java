@@ -20,7 +20,7 @@ public class ManagerTaskListService implements AbstractListService<Manager, Task
 
 	@Override
 	public boolean authorise(final Request<Task> request) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		
 		if(request.getModel().hasAttribute("id")) {
@@ -32,7 +32,7 @@ public class ManagerTaskListService implements AbstractListService<Manager, Task
 
 	@Override
 	public void unbind(final Request<Task> request, final Task entity, final Model model) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -43,7 +43,7 @@ public class ManagerTaskListService implements AbstractListService<Manager, Task
 
 	@Override
 	public Collection<Task> findMany(final Request<Task> request) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		Principal principal;
 		principal = request.getPrincipal();

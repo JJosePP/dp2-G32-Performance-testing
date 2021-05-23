@@ -17,14 +17,14 @@ public class AuthenticatedTaskShowService implements AbstractShowService<Authent
 	
 	@Override
 	public boolean authorise(final Request<Task> request) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		return true;
 	}
 
 	@Override
 	public void unbind(final Request<Task> request, final Task entity, final Model model) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -35,7 +35,7 @@ public class AuthenticatedTaskShowService implements AbstractShowService<Authent
 
 	@Override
 	public Task findOne(final Request<Task> request) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		final int id = request.getModel().getInteger("id");
 		return this.repository.findOneTaskById(id);

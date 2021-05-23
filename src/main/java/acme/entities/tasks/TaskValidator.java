@@ -14,6 +14,7 @@ public class TaskValidator implements ConstraintValidator<TaskConstraint, Task>{
 		
 	@Override
 	public void initialize(final TaskConstraint constraint) {
+		//This method is purposely empty to avoid punishing coverage tests and making them be above 60% coverage
 	}
 
 	@Override
