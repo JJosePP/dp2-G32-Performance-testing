@@ -7,7 +7,6 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 import acme.testing.AcmePlannerTest;
 
 public class AuthenticatedTaskListAndShowTests extends AcmePlannerTest{
-	
 	//Se comprueba el listado y el visionado de cada tarea individual logueado como un autentificado
 	@ParameterizedTest
 	@CsvFileSource(resources="/authenticated/task/list.csv", encoding= "utf-8", numLinesToSkip= 1)
@@ -146,14 +145,14 @@ public class AuthenticatedTaskListAndShowTests extends AcmePlannerTest{
 		this.driver.get("http://localhost:8050/Acme-Planner/authenticated/task/list-sorted-by-workload?language=en&debug=true&" + id);
 		super.checkErrorsExist();
 	}
-	
+
 	//Se comprueba que no se puede acceder a una tarea que no existe
 	@ParameterizedTest
 	@CsvFileSource(resources="/authenticated/task/show-negative.csv", encoding= "utf-8", numLinesToSkip= 1)
 	@Order(17)
 	public void showNegative(final String id) {
 		super.signIn("authenticated1", "authenticated1");
-		this.driver.get("http://localhost:8050/Acme-Planner/authenticated/task/show?id=13?language=en&debug=true&" + id);
+		this.driver.get("http://localhost:8050/Acme-Planner/authenticated/task/show?" + id + "&language=en&debug=true&");
 		super.checkErrorsExist();
 	}
 }
