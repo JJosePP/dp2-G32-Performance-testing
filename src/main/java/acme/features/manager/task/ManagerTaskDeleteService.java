@@ -34,11 +34,13 @@ public class ManagerTaskDeleteService implements AbstractDeleteService<Manager, 
 	@Override
 	public void bind(final Request<Task> request, final Task entity, final Errors errors){
 		//This method is purposely empty to avoid punishing coverage tests and making them be above 60% coverage
+
 	}
 
 	@Override
 	public void unbind(final Request<Task> request, final Task entity, final Model model){
 		//This method is purposely empty to avoid punishing coverage tests and making them be above 60% coverage
+
 	}
 
 	@Override
