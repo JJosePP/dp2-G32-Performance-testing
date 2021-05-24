@@ -7,7 +7,6 @@ import acme.entities.tasks.Task;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Manager;
-import acme.framework.entities.Principal;
 import acme.framework.services.AbstractShowService;
 
 @Service
@@ -19,9 +18,8 @@ public class ManagerTaskShowService implements AbstractShowService<Manager, Task
 
 	@Override
 	public boolean authorise(final Request<Task> request) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
-		final Principal principal;
 		final int idPrincipal = request.getPrincipal().getAccountId();
 		
 		final int idUserTask = this.repository.findOneTaskById(request.getModel().getInteger("id")).getUserAccount().getId();
@@ -34,7 +32,7 @@ public class ManagerTaskShowService implements AbstractShowService<Manager, Task
 
 	@Override
 	public void unbind(final Request<Task> request, final Task entity, final Model model) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -43,7 +41,7 @@ public class ManagerTaskShowService implements AbstractShowService<Manager, Task
 
 	@Override
 	public Task findOne(final Request<Task> request) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		return this.repository.findOneTaskById(request.getModel().getInteger("id"));
 	}

@@ -20,7 +20,7 @@ public class AdministratorTaskListService implements AbstractListService<Adminis
 
 	@Override
 	public boolean authorise(final Request<Task> request) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		if(request.getModel().hasAttribute("id")) {
 			return request.getModel().getInteger("id").equals(request.getPrincipal().getAccountId());
@@ -31,7 +31,7 @@ public class AdministratorTaskListService implements AbstractListService<Adminis
 
 	@Override
 	public void unbind(final Request<Task> request, final Task entity, final Model model) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -42,7 +42,7 @@ public class AdministratorTaskListService implements AbstractListService<Adminis
 
 	@Override
 	public Collection<Task> findMany(final Request<Task> request) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		Principal principal;
 		principal = request.getPrincipal();
