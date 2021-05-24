@@ -25,9 +25,9 @@ public class AdministratorTaskDeleteTest extends AcmePlannerTest {
 	// Comprobamos que una task se elimina correctamente
 	
 	@ParameterizedTest
-	@CsvFileSource(resources = "/administrator/task/list.csv", encoding = "utf-8", numLinesToSkip = 1)
-	@Order(12)	
-	public void list(final int recordIndex, final String title, final String description, final String startExecution, final String endExecution, final String info, final String workload, final String isFinished, final String newFinished, final String isPrivate, final String newStatus) {		
+	@CsvFileSource(resources = "/administrator/task/delete.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@Order(20)	
+	public void delete(final int recordIndex, final String title, final String description, final String info) {		
 		
 		//Iniciamos sesión
 		super.signIn("administrator", "administrator");
@@ -43,13 +43,13 @@ public class AdministratorTaskDeleteTest extends AcmePlannerTest {
 		super.clickOnListingRecord(recordIndex);
 		
 		//Obetenemos la url de la task que vamos a borrar
-		final String urlTaskkBorrada = super.driver.getCurrentUrl();
+		final String urlTaskBorrada = super.driver.getCurrentUrl();
 		
 		//Borramos la task
 		super.clickOnSubmitButton("Delete");
 		
 		//Intentamos acceder a la task borrada y comprobamos si hay errores
-		this.driver.get(urlTaskkBorrada);
+		this.driver.get(urlTaskBorrada);
 		
 		super.checkErrorsExist();
 		
@@ -61,7 +61,7 @@ public class AdministratorTaskDeleteTest extends AcmePlannerTest {
 	// Comprobamos que un manager no puede borrar las tareas asociadas a otro manager
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/task/delete-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
-	@Order(13)
+	@Order(10)
 	public void deleteNegative(final String id) {
 		super.signIn("administrator2", "administrator2");
 
