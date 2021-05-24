@@ -25,8 +25,8 @@ public class AnonymousTaskListTest extends AcmePlannerTest {
 		super.fillInputBoxIn("endExecution", endExecution);
 		super.fillInputBoxIn("info", info);
 		super.fillInputBoxIn("workload", workload);
-		super.fillInputBoxIn("newFinished", "False");
-		super.fillInputBoxIn("newStatus", "False");
+		super.fillInputBoxIn("newFinished", "false");
+		super.fillInputBoxIn("newStatus", "false");
 		super.clickOnSubmitButton("Submit");
 		super.clickOnMenu("Tasks", "My tasks");
 		
