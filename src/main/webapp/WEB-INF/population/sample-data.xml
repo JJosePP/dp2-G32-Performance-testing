@@ -144,7 +144,7 @@
 	</bean>
 	
 	<bean id="shout02" class="acme.entities.shouts.Shout">
-		<property name="moment" value="202/05/21 17:12"/>
+		<property name="moment" value="2020/05/21 17:12"/>
 		<property name="author" value="John Doe's brother"/>
 		<property name="text" value="I'm happy too!"/>
 		<property name="info" value="http://www.example.org"/>		
