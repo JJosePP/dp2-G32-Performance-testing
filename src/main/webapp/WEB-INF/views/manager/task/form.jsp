@@ -19,12 +19,12 @@
 	
 	<acme:form-select code="manager.task.form.label.newFinished" path="newFinished">
 		<jstl:if test="${isFinished}">
-			<acme:form-option code="YES" value="True" selected="true"/>
-			<acme:form-option code="NO" value="False"/>
+			<acme:form-option code="YES" value="true" selected="true"/>
+			<acme:form-option code="NO" value="false"/>
 		</jstl:if>
 		<jstl:if test="${!isFinished}">
-			<acme:form-option code="YES" value="True"/>
-			<acme:form-option code="NO" value="False" selected="true"/>
+			<acme:form-option code="YES" value="true"/>
+			<acme:form-option code="NO" value="false" selected="true"/>
 		</jstl:if>
 	</acme:form-select>
 	
@@ -33,12 +33,12 @@
 	</jstl:if>
 	<acme:form-select code="manager.task.form.label.newStatus" path="newStatus">
 		<jstl:if test="${isPrivate}">
-			<acme:form-option code="Private" value="True" selected="true"/>
-			<acme:form-option code="Public" value="False"/>
+			<acme:form-option code="Private" value="true" selected="true"/>
+			<acme:form-option code="Public" value="false"/>
 		</jstl:if>
 		<jstl:if test="${!isPrivate}">
-			<acme:form-option code="Private" value="True"/>
-			<acme:form-option code="Public" value="False" selected="true"/>
+			<acme:form-option code="Private" value="true"/>
+			<acme:form-option code="Public" value="false" selected="true"/>
 		</jstl:if>
 	</acme:form-select>
 	

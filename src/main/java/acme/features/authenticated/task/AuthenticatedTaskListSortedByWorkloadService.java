@@ -20,7 +20,11 @@ public class AuthenticatedTaskListSortedByWorkloadService implements AbstractLis
 	@Override
 	public boolean authorise(final Request<Task> request) {
 		assert request != null;
-		return true;
+		if(request.getModel().hasAttribute("id")) {
+			return request.getModel().getInteger("id").equals(request.getPrincipal().getAccountId());
+		}else {
+			return true;
+		}
 	}
 
 	@Override

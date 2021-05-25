@@ -107,8 +107,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 			periodsList.add(period);
 		}
 
-		final Collection<Long> periods = periodsList;
-		return periods;
+		return periodsList;
 	}
 	private Double avgPeriodTask(final Dashboard d, final Collection<Long> periods) {
 		long sum = 0L;
@@ -116,8 +115,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		for (final Long p : periods) {
 			sum = sum + p;
 		}
-
-		final Double average = (double) (sum / periods.size());
+		final Double average = (sum / (double) periods.size());
 		final Double avgDays = average / (8.64e7); //(1000 * 60 * 60 * 24)
 
 		d.setAverageExecutionPeriod(average);
@@ -141,9 +139,8 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 		final Double deviation = Math.sqrt(variance);
 
-		final Double devDays = deviation / (8.64e7);
+		return deviation / (8.64e7);  //Days of deviation
 
-		return devDays;
 	}
 
 	Double minimunTaskExecutionPeriod(final Collection<Long> periods) {
@@ -160,7 +157,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 	BigDecimal avgWorkloadTask() {
 		final Collection<BigDecimal> workloads = this.repository.allWorkloads();
-		BigDecimal sum = BigDecimal.ZERO; 
+		BigDecimal sum; 
 		BigDecimal parteEntera = new BigDecimal("0.00"); //Inicializo 0 horas
 		BigDecimal parteDecimal = new BigDecimal("0.00"); //Inicializo 0 minutos
 		
@@ -203,9 +200,8 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		
 		variance = variance.divide(BigDecimal.valueOf(workloads.size()), AdministratorDashboardShowService.mc);
 
-		final BigDecimal deviation = BigDecimal.valueOf(Math.sqrt(variance.doubleValue())).setScale(2, RoundingMode.HALF_UP);
+		return  BigDecimal.valueOf(Math.sqrt(variance.doubleValue())).setScale(2, RoundingMode.HALF_UP); //Deviation
 
-		return deviation;
 	}
 
 

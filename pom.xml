@@ -22,6 +22,7 @@
 	<description>This is my first project in D&amp;T.</description>
 
 	<artifactId>Acme-Planner</artifactId>
+	<version>21.4</version>
 	<packaging>war</packaging>
 
 	<parent>

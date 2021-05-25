@@ -19,14 +19,18 @@ public class AuthenticatedTaskListService implements AbstractListService<Authent
 
 	@Override
 	public boolean authorise(final Request<Task> request) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
-		return true;
+		if(request.getModel().hasAttribute("id")) {
+			return request.getModel().getInteger("id").equals(request.getPrincipal().getAccountId());
+		}else {
+			return true;
+		}
 	}
 
 	@Override
 	public void unbind(final Request<Task> request, final Task entity, final Model model) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -36,7 +40,7 @@ public class AuthenticatedTaskListService implements AbstractListService<Authent
 
 	@Override
 	public Collection<Task> findMany(final Request<Task> request) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		return this.repository.findPublicAndFinishedTask();
 	}
