@@ -80,7 +80,7 @@ public abstract class AcmeTest extends AbstractTest {
 		String xpath;
 		By locator;
 
-		xpath = String.format("//div[@class='form-group'][input[@id='%s'] and div[@class='text-danger']]", name);
+		xpath = String.format("//div[@class='form-group'][.//*[@id='%s'] and .//div[@class='text-danger']]", name);
 		locator = By.xpath(xpath);
 		assert super.exists(locator) : String.format("No errors found in input box '%s'", name);
 	}
@@ -100,7 +100,7 @@ public abstract class AcmeTest extends AbstractTest {
 		String xpath;
 		By inputGroupLocator;
 
-		xpath = String.format("//div[@class='form-group'][input[@id='%s'] and div[@class='text-danger']]", name);
+		xpath = String.format("//div[@class='form-group'][.//*[@id='%s'] and .//div[@class='text-danger']]", name);
 		inputGroupLocator = By.xpath(xpath);
 		assert !super.exists(inputGroupLocator) : String.format("Unexpected errors in input box '%s'", name);
 	}
@@ -159,7 +159,7 @@ public abstract class AcmeTest extends AbstractTest {
 		List<WebElement> row;
 		WebElement attribute, toggle;
 		String contents, value;
- 
+
 		row = this.getListingRecord(recordIndex);
 		assert attributeIndex + 1 < row.size() : String.format("Attribute %d in record %d is out of range", attributeIndex, recordIndex);
 		attribute = row.get(attributeIndex + 1);
