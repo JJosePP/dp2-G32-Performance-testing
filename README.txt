@@ -10,6 +10,6 @@
 
 Version 2.0.0 
 
-https://github.com/manpercar1/dp2-G32-Functional-Testing
+https://github.com/JJosePP/dp2-G32-Performance-testing
 
 This is Acme Planner, a project in D&T.
