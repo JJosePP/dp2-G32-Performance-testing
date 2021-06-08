@@ -201,7 +201,7 @@
 	<bean id="task06" class="acme.entities.tasks.Task">
 		<property name="title" value="Test 1"/>
 		<property name="description" value="Another test"/>
-		<property name="startExecution" value="2021/06/05 22:33"/>
+		<property name="startExecution" value="2021/07/07 22:33"/>
 		<property name="endExecution" value="2022/02/11 7:46"/>
 		<property name="workload" value="98.59"/>
 		<property name="info" value="http://www.example.org"/>
